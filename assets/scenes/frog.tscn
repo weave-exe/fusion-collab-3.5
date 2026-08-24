@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cs0wo3ek1dsdq"]
+
+[ext_resource type="Script" uid="uid://dnikg2jpnwkve" path="res://assets/scripts/frog.gd" id="1_0qo1u"]
+[ext_resource type="Texture2D" uid="uid://c3f8nbn7fvr31" path="res://assets/sprites/placeholder/crate.png" id="1_bphxa"]
+
+[node name="Frog" type="Node2D" unique_id=1056201374]
+script = ExtResource("1_0qo1u")
+
+[node name="FrogSprites" type="Sprite2D" parent="." unique_id=1560090798]
+texture = ExtResource("1_bphxa")
+flip_v = true

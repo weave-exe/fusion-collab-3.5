@@ -12,13 +12,15 @@ func setup(_level: Level, _tile: Vector2i) -> void:
 	tile = _tile
 	global_position = level.grid.tile_to_world(tile)
 
-func can_move(direction: Vector2i) -> bool:
+func can_move(direction: Vector2i, can_push: bool) -> bool:
 	var target := tile + direction
 	if level.grid.is_blocking_player(target):
 		return false
 	var moveable = level.get_moveable_at_tile(target)
 	if moveable:
-		return moveable.can_move(direction)
+		if can_push:
+			return moveable.can_move(direction, true)
+		return false
 	return true
 
 func move(direction: Vector2i) -> void:
