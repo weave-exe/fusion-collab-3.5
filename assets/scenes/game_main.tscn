@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bvviimgftb6ul"]
+
+[ext_resource type="Script" uid="uid://be0rxmg0c3itn" path="res://assets/scripts/game_main.gd" id="1_mvut7"]
+[ext_resource type="PackedScene" uid="uid://dfss7a7mv0k4f" path="res://assets/scenes/decorative/background_water.tscn" id="2_jtx3k"]
+[ext_resource type="PackedScene" uid="uid://c60wuarx8rxe7" path="res://assets/scenes/levels/level_0.tscn" id="2_kgsd4"]
+
+[sub_resource type="Environment" id="Environment_kgsd4"]
+background_mode = 3
+background_energy_multiplier = 2.65
+glow_enabled = true
+glow_intensity = 0.44
+glow_strength = 0.69
+glow_bloom = 0.13
+glow_blend_mode = 0
+
+[node name="GameMain" type="Node2D" unique_id=865138517]
+script = ExtResource("1_mvut7")
+levels = Array[PackedScene]([ExtResource("2_kgsd4")])
+
+[node name="LevelContainer" type="Node2D" parent="." unique_id=880857937]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1455786540]
+
+[node name="BackgroundWater" parent="." unique_id=767260329 instance=ExtResource("2_jtx3k")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1205518732]
+environment = SubResource("Environment_kgsd4")
