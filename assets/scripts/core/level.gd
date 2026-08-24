@@ -29,9 +29,17 @@ func get_moveable_at_tile(tile: Vector2i) -> Moveable:
 	return null
 	
 func try_move(moveable: Moveable, direction: Vector2i) -> bool:
-	if not moveable.can_move(direction):
+	if not moveable.can_move(direction, true):
 		return false
 	_update_history()
+	moveable.move(direction)
+	# check for completion conditions here
+	return true
+
+#frogs can't add to the undo stack, or push things
+func try_move_frog(moveable: Frog, direction: Vector2i) -> bool:
+	if not moveable.can_move(direction, false):
+		return false
 	moveable.move(direction)
 	# check for completion conditions here
 	return true
