@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://dfss7a7mv0k4f"]
+
+[ext_resource type="Shader" uid="uid://bs7t6sjh0gbiu" path="res://assets/misc/shaders/water.gdshader" id="1_myuih"]
+[ext_resource type="Texture2D" uid="uid://cgvshsi3ka3nk" path="res://assets/sprites/decoration/background water.png" id="2_1blkh"]
+
+[sub_resource type="Gradient" id="Gradient_5aext"]
+offsets = PackedFloat32Array(0, 0.70149255)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_3w2km"]
+noise_type = 2
+frequency = 0.1057
+cellular_distance_function = 1
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_5aext"]
+width = 640
+height = 360
+generate_mipmaps = false
+noise = SubResource("FastNoiseLite_3w2km")
+color_ramp = SubResource("Gradient_5aext")
+seamless = true
+seamless_blend_skirt = 0.196
+
+[sub_resource type="Gradient" id="Gradient_myuih"]
+colors = PackedColorArray(0, 0, 0, 1, 0.5708502, 0.003948069, 0.9603686, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_1blkh"]
+noise_type = 0
+frequency = 0.0023
+fractal_type = 0
+fractal_octaves = 6
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_myuih"]
+width = 640
+height = 360
+generate_mipmaps = false
+noise = SubResource("FastNoiseLite_1blkh")
+color_ramp = SubResource("Gradient_myuih")
+seamless = true
+invert = true
+seamless_blend_skirt = 0.514
+
+[sub_resource type="Gradient" id="Gradient_3w2km"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_wfsp4"]
+frequency = 0.1
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_3w2km"]
+width = 640
+height = 360
+noise = SubResource("FastNoiseLite_wfsp4")
+color_ramp = SubResource("Gradient_3w2km")
+seamless = true
+seamless_blend_skirt = 0.28
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5aext"]
+shader = ExtResource("1_myuih")
+shader_parameter/noise = SubResource("NoiseTexture2D_5aext")
+shader_parameter/noisesub = SubResource("NoiseTexture2D_3w2km")
+shader_parameter/noisedeep = SubResource("NoiseTexture2D_myuih")
+shader_parameter/speed = 2.0
+shader_parameter/opacity = 0.51999998837696
+shader_parameter/detail = 1.24999997206
+shader_parameter/speedsub = 4.0
+shader_parameter/opacitysub = 0.3499999921768
+shader_parameter/detailsub = 0.35999999195328
+shader_parameter/speeddeep = 22.0
+shader_parameter/opacitydeep = 0.40999999083568
+shader_parameter/detaildeep = 0.16999999620016
+
+[node name="BackgroundWater" type="Sprite2D" unique_id=767260329]
+z_index = -2
+material = SubResource("ShaderMaterial_5aext")
+texture = ExtResource("2_1blkh")

@@ -5,8 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cwsceq1vaacnb" path="res://assets/scenes/log.tscn" id="3_lnu2h"]
 [ext_resource type="Texture2D" uid="uid://bvgo6y1lbmfvh" path="res://assets/sprites/tilesets/grass.png" id="4_cb5na"]
 [ext_resource type="Texture2D" uid="uid://fvgape6qxmes" path="res://assets/sprites/tilesets/water.png" id="5_j62u1"]
-[ext_resource type="Shader" uid="uid://bs7t6sjh0gbiu" path="res://assets/misc/shaders/water.gdshader" id="6_5aext"]
-[ext_resource type="Texture2D" uid="uid://cgvshsi3ka3nk" path="res://assets/sprites/decoration/background water.png" id="7_3w2km"]
+[ext_resource type="PackedScene" uid="uid://dfss7a7mv0k4f" path="res://assets/scenes/decorative/background_water.tscn" id="6_5aext"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqjtg"]
 texture = ExtResource("2_yqjtg")
@@ -1473,47 +1472,6 @@ sources/0 = SubResource("TileSetAtlasSource_yqjtg")
 sources/1 = SubResource("TileSetScenesCollectionSource_lnu2h")
 sources/2 = SubResource("TileSetAtlasSource_j62u1")
 
-[sub_resource type="Gradient" id="Gradient_5aext"]
-offsets = PackedFloat32Array(0, 0.7910448)
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_3w2km"]
-noise_type = 2
-frequency = 0.2
-cellular_distance_function = 1
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_5aext"]
-width = 640
-height = 320
-generate_mipmaps = false
-noise = SubResource("FastNoiseLite_3w2km")
-color_ramp = SubResource("Gradient_5aext")
-seamless = true
-seamless_blend_skirt = 0.196
-
-[sub_resource type="Gradient" id="Gradient_3w2km"]
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_wfsp4"]
-frequency = 0.2
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_3w2km"]
-width = 640
-height = 320
-noise = SubResource("FastNoiseLite_wfsp4")
-color_ramp = SubResource("Gradient_3w2km")
-seamless = true
-seamless_blend_skirt = 0.28
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_5aext"]
-shader = ExtResource("6_5aext")
-shader_parameter/noise = SubResource("NoiseTexture2D_5aext")
-shader_parameter/noisesub = SubResource("NoiseTexture2D_3w2km")
-shader_parameter/speed = 2.0
-shader_parameter/opacity = 1.0
-shader_parameter/detail = 0.9499999787656
-shader_parameter/speedsub = 4.0
-shader_parameter/opacitysub = 0.40999999083568
-shader_parameter/detailsub = 0.3499999921768
-
 [sub_resource type="Environment" id="Environment_35ju6"]
 background_mode = 3
 background_energy_multiplier = 2.65
@@ -1531,10 +1489,7 @@ tile_set = SubResource("TileSet_khtlt")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=773559647]
 
-[node name="BackgroundWater" type="Sprite2D" parent="." unique_id=761817696]
-z_index = -2
-material = SubResource("ShaderMaterial_5aext")
-texture = ExtResource("7_3w2km")
+[node name="BackgroundWater" parent="." unique_id=767260329 instance=ExtResource("6_5aext")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=206101305]
 environment = SubResource("Environment_35ju6")
