@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8ijy7qs2qq5"
-path="res://.godot/imported/placeholderforgithub.png-33fc194c9d79b7aa80607b79814d473e.ctex"
+uid="uid://bbe4nywciv1uy"
+path="res://.godot/imported/gnome_decals.png-d39b2575cf205f05c67b9ddfc622384a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/decoration/placeholderforgithub.png"
-dest_files=["res://.godot/imported/placeholderforgithub.png-33fc194c9d79b7aa80607b79814d473e.ctex"]
+source_file="res://assets/sprites/decoration/gnome_decals.png"
+dest_files=["res://.godot/imported/gnome_decals.png-d39b2575cf205f05c67b9ddfc622384a.ctex"]
 
 [params]
 

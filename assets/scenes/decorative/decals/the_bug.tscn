@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bosy4gmmyvvnf"]
+
+[ext_resource type="Texture2D" uid="uid://bbe4nywciv1uy" path="res://assets/sprites/decoration/gnome_decals.png" id="1_eeinj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eeinj"]
+atlas = ExtResource("1_eeinj")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3w587"]
+atlas = ExtResource("1_eeinj")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_35ju6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eeinj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3w587")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="The_Bug" type="Node2D" unique_id=1066090965]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=949799559]
+z_index = -1
+sprite_frames = SubResource("SpriteFrames_35ju6")
+autoplay = "default"
+frame_progress = 0.28354523
