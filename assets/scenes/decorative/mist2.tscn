@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://gm6k6yjpbjlx"]
+
+[ext_resource type="Shader" uid="uid://q5kvqsm5m362" path="res://assets/misc/shaders/mist.gdshader" id="1_y3sdh"]
+[ext_resource type="Texture2D" uid="uid://c71isix6qtisf" path="res://assets/sprites/decoration/mist.png" id="2_g71co"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_35ju6"]
+shader = ExtResource("1_y3sdh")
+shader_parameter/mist_texture = ExtResource("2_g71co")
+shader_parameter/speed_x = 0.00999999605115999
+shader_parameter/speed_y = -0.0600000023842
+
+[node name="MistParallax" type="ParallaxBackground" unique_id=102155432]
+layer = 2
+scroll_ignore_camera_zoom = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="." unique_id=1675713093]
+motion_mirroring = Vector2(640, 360)
+
+[node name="ColorRect" type="ColorRect" parent="ParallaxLayer" unique_id=628531907]
+material = SubResource("ShaderMaterial_35ju6")
+offset_left = -320.0
+offset_top = -180.0
+offset_right = 320.0
+offset_bottom = 180.0
+color = Color(0.34117648, 0.45490196, 0.63529414, 0.7882353)
