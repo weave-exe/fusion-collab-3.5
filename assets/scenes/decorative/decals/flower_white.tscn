@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cka2vp1lacpod"]
+
+[ext_resource type="Texture2D" uid="uid://bbe4nywciv1uy" path="res://assets/sprites/decoration/gnome_decals.png" id="1_54kkn"]
+
+[node name="Flower_White" type="Node2D" unique_id=1066090965]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=146636199]
+z_index = -1
+texture = ExtResource("1_54kkn")
+region_enabled = true
+region_rect = Rect2(32, 0, 16, 16)
