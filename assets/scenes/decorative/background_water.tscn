@@ -68,6 +68,6 @@ shader_parameter/opacitydeep = 0.40999999083568
 shader_parameter/detaildeep = 0.16999999620016
 
 [node name="BackgroundWater" type="Sprite2D" unique_id=767260329]
-z_index = -2
+z_index = -5
 material = SubResource("ShaderMaterial_5aext")
 texture = ExtResource("2_1blkh")

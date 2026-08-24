@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ohk2hk5tww2m"]
+
+[ext_resource type="Texture2D" uid="uid://bbe4nywciv1uy" path="res://assets/sprites/decoration/gnome_decals.png" id="1_tieci"]
+
+[node name="Flower_Pot" type="Node2D" unique_id=1066090965]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=146636199]
+z_index = -1
+texture = ExtResource("1_tieci")
+region_enabled = true
+region_rect = Rect2(32, 16, 16, 16)
