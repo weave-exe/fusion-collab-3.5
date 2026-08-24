@@ -17,9 +17,9 @@ void fragment() {
 	vec4 noise_color = texture (noise,proper_texture+t);
 	vec4 noise_color_sub = texture (noisesub,proper_texture-tsub)*opacitysub;
 
-	if (COLOR.b>0.4)
+	if (COLOR.b>0.2)
 		{
-		COLOR.rgb += COLOR.g * smoothstep((1.0-detail+detailsub),1.0,(noise_color-noise_color_sub).r)*opacity;
+		COLOR.rgb += COLOR.g * smoothstep((1.0-detail+detailsub),1.0,(noise_color-noise_color_sub).r)*opacity*1.5;
 		COLOR.rgb += COLOR.b * smoothstep((1.0-detail+detailsub),1.0,(noise_color-noise_color_sub).r)*opacity/4.0;
 		}
 	// Called for every pixel the material is visible on.
