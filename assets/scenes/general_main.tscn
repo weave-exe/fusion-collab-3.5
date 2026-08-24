@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bw57pkmpgxos4"]
+
+[ext_resource type="PackedScene" uid="uid://bvviimgftb6ul" path="res://assets/scenes/game_main.tscn" id="1_rgwe6"]
+[ext_resource type="PackedScene" uid="uid://ddx7lmc6oorfv" path="res://assets/scenes/ui_main.tscn" id="2_cpnpi"]
+
+[node name="GeneralMain" type="Node2D" unique_id=1573685439]
+
+[node name="GameCanvas" type="CanvasLayer" parent="." unique_id=632419110]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="GameCanvas" unique_id=285979370]
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stretch = true
+stretch_shrink = 3
+
+[node name="SubViewport" type="SubViewport" parent="GameCanvas/SubViewportContainer" unique_id=411041924]
+handle_input_locally = false
+snap_2d_transforms_to_pixel = true
+canvas_item_default_texture_filter = 0
+size = Vector2i(640, 360)
+render_target_update_mode = 4
+
+[node name="GameMain" parent="GameCanvas/SubViewportContainer/SubViewport" unique_id=865138517 instance=ExtResource("1_rgwe6")]
+
+[node name="UIMain" parent="GameCanvas" unique_id=1401640239 instance=ExtResource("2_cpnpi")]
+position = Vector2(1000, 527)
