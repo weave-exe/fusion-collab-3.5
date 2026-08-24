@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://6q6bplmm02ny"]
+
+[ext_resource type="Texture2D" uid="uid://bow3iaekvb6rj" path="res://assets/sprites/placeholder/twitterforgnomes.png" id="1_j8cr3"]
+[ext_resource type="FontFile" uid="uid://cvfwspgoivda6" path="res://assets/misc/fonts/Blenda Script.otf" id="2_avags"]
+
+[sub_resource type="Theme" id="Theme_35ju6"]
+default_font = ExtResource("2_avags")
+default_font_size = 24
+
+[node name="TwitterMain" type="Node2D" unique_id=1809476527]
+z_index = 41
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1471383219]
+texture = ExtResource("1_j8cr3")
+
+[node name="Label" type="Label" parent="Sprite2D" unique_id=1744883365]
+offset_left = -332.0
+offset_top = -295.0
+offset_right = 1207.0
+offset_bottom = -223.0
+theme = SubResource("Theme_35ju6")
+text = "Capture a frog but don't kill it. Put it between the logs.
+It will get cold and fall asleep. Then put it in the water but don't let it drown! It will warm back up and wake up. 
+Now you have a frog in the water."

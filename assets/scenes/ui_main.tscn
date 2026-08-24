@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ddx7lmc6oorfv"]
+
+[ext_resource type="PackedScene" uid="uid://6q6bplmm02ny" path="res://assets/scenes/ui/twitter_main.tscn" id="1_15cn5"]
+[ext_resource type="Script" uid="uid://b48urlm8mau7g" path="res://assets/scripts/ui_main.gd" id="1_aab70"]
+
+[node name="UIMain" type="Node2D" unique_id=1401640239 node_paths=PackedStringArray("phone", "dark_overlay")]
+script = ExtResource("1_aab70")
+phone = NodePath("TwitterMain")
+dark_overlay = NodePath("DarkOverlay")
+
+[node name="DarkOverlay" type="ColorRect" parent="." unique_id=222214996]
+visible = false
+offset_left = -2754.0
+offset_top = -1243.0
+offset_right = 1958.0
+offset_bottom = 1152.0
+color = Color(0.15682021, 0.02578392, 0.22590202, 0.8627451)
+
+[node name="TwitterMain" parent="." unique_id=1809476527 instance=ExtResource("1_15cn5")]
+visible = false
