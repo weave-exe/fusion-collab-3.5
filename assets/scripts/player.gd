@@ -15,8 +15,8 @@ func _input(event: InputEvent) -> void:
 		level.try_move(self, Vector2i.DOWN)
 	elif event.is_action_pressed("undo"):
 		level.undo()
+		return
 	
-	#this sucks I'll change it later
 	var frog = level.get_moveable_at_tile(tile + Vector2i.UP)
 	if frog as Frog != null:
 		frog.do_frog_movement(Vector2i.UP)
