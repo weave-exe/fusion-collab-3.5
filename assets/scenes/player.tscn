@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://chjx4g3nx46no" path="res://assets/scripts/player.gd" id="1_s027a"]
 [ext_resource type="Texture2D" uid="uid://cbbeoe864xn0j" path="res://assets/sprites/characters/gnome_idle.png" id="2_8sknh"]
 [ext_resource type="AudioStream" uid="uid://04ax32ks5hyr" path="res://assets/audio/sound/gnome_move_1.ogg" id="3_0gfpk"]
+[ext_resource type="Texture2D" uid="uid://ck32ibiljmu8v" path="res://assets/misc/particles/dust.png" id="5_8sknh"]
 [ext_resource type="AudioStream" uid="uid://dbfsxmv0wfxy" path="res://assets/audio/sound/rewind.wav" id="6_tc801"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0gfpk"]
@@ -125,9 +126,18 @@ Vector2i(1, 1): {
 }
 }
 
-[node name="Player" type="Node2D" unique_id=781662428 node_paths=PackedStringArray("player_audiostream")]
+[sub_resource type="Gradient" id="Gradient_8sknh"]
+offsets = PackedFloat32Array(0, 0.16049382, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0.9098039, 0.7882353, 0.7529412, 0.79607844, 1, 1, 1, 0)
+
+[sub_resource type="Gradient" id="Gradient_0gfpk"]
+colors = PackedColorArray(0.94251674, 0.8026897, 0.9934979, 1, 1, 1, 1, 1)
+
+[node name="Player" type="Node2D" unique_id=781662428 node_paths=PackedStringArray("player_audiostream", "particles", "particle_timer") groups=["Player"]]
 script = ExtResource("1_s027a")
 player_audiostream = NodePath("PlayerAudioStream")
+particles = NodePath("Particles")
+particle_timer = NodePath("ParticleTimer")
 metadata/_custom_type_script = "uid://b5qmu3d344sls"
 
 [node name="PlayerSprite" type="AnimatedSprite2D" parent="." unique_id=591099488]
@@ -140,3 +150,31 @@ autoplay = "idle_down"
 [node name="PlayerAudioStream" type="AudioStreamPlayer" parent="." unique_id=570904902]
 stream = SubResource("AudioStreamInteractive_s027a")
 volume_db = -11.2
+
+[node name="Particles" type="CPUParticles2D" parent="." unique_id=925323715]
+z_index = 1
+position = Vector2(0, 6)
+emitting = false
+amount = 3
+texture = ExtResource("5_8sknh")
+lifetime = 0.92
+preprocess = 1.51
+randomness = 0.21
+lifetime_randomness = 0.18
+emission_shape = 3
+emission_rect_extents = Vector2(7, 1)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 5.0
+initial_velocity_max = 10.0
+angle_min = -720.0
+angle_max = 1196.5
+scale_amount_max = 1.2
+color_ramp = SubResource("Gradient_8sknh")
+color_initial_ramp = SubResource("Gradient_0gfpk")
+
+[node name="ParticleTimer" type="Timer" parent="." unique_id=324829694]
+wait_time = 0.275
+one_shot = true
+
+[connection signal="timeout" from="ParticleTimer" to="." method="_on_particle_timer_timeout"]
