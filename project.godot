@@ -36,6 +36,7 @@ window/stretch/aspect="expand"
 [global_group]
 
 LevelTileMap=""
+Player=""
 
 [input]
 

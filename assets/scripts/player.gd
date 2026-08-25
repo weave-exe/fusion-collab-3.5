@@ -1,6 +1,8 @@
 extends Moveable
 
 @export var player_audiostream: AudioStreamPlayer
+@export var particles: CPUParticles2D
+@export var particle_timer: Timer
 
 func _input(event: InputEvent) -> void:
 	if UIG.phone_open:
@@ -12,6 +14,7 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("move_up"):
 		level.try_move(self, Vector2i.UP)
 		$PlayerSprite.animation = "idle_up"
+		
 		update_player_audio("walking")
 	elif event.is_action_pressed("move_left"):
 		level.try_move(self, Vector2i.LEFT)
@@ -50,5 +53,15 @@ func update_player_audio(audio_name: String):
 
 	player_audiostream["parameters/switch_to_clip"] = audio_name
 	player_audiostream.play()
-
 	
+func PlayerParticles(polarity:bool):
+	if polarity:
+		particles.emitting=true
+		particle_timer.start()
+	else:
+		particles.emitting=false
+	
+
+
+func _on_particle_timer_timeout() -> void:
+	PlayerParticles(false)

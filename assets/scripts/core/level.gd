@@ -33,6 +33,8 @@ func try_move(moveable: Moveable, direction: Vector2i) -> bool:
 		return false
 	_update_history()
 	moveable.move(direction)
+	if moveable.is_in_group("Player"):
+		moveable.PlayerParticles(true)
 	# check for completion conditions here
 	return true
 
