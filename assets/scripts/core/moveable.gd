@@ -30,6 +30,7 @@ func move(direction: Vector2i) -> void:
 	tile += direction
 	slide(level.grid.tile_to_world(tile))	
 	
+	
 func force_move(target: Vector2i) -> void:
 	tile = target
 	slide(level.grid.tile_to_world(tile))

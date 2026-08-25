@@ -4,7 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://dfss7a7mv0k4f" path="res://assets/scenes/decorative/background_water.tscn" id="2_jtx3k"]
 [ext_resource type="PackedScene" uid="uid://c60wuarx8rxe7" path="res://assets/scenes/levels/level_0.tscn" id="2_kgsd4"]
 [ext_resource type="PackedScene" uid="uid://gm6k6yjpbjlx" path="res://assets/scenes/decorative/mist2.tscn" id="4_5rqp6"]
+[ext_resource type="AudioStream" uid="uid://dbsgl0y6c7biu" path="res://assets/audio/sound/ForestMorningBirds_SFXB.75.wav" id="4_nd2f5"]
 [ext_resource type="PackedScene" uid="uid://dhw1iqckc8ha7" path="res://assets/scenes/decorative/mist.tscn" id="5_nd2f5"]
+
+[sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_3cxim"]
+clip_count = 1
+clip_0/name = &"birds"
+clip_0/stream = ExtResource("4_nd2f5")
+clip_0/auto_advance = 0
 
 [sub_resource type="Environment" id="Environment_kgsd4"]
 background_mode = 3
@@ -24,6 +31,11 @@ levels = Array[PackedScene]([ExtResource("2_kgsd4")])
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1455786540]
 
 [node name="BackgroundWater" parent="." unique_id=767260329 instance=ExtResource("2_jtx3k")]
+
+[node name="BackgroundSfx" type="AudioStreamPlayer" parent="." unique_id=1606724873]
+stream = SubResource("AudioStreamInteractive_3cxim")
+volume_db = -10.133
+autoplay = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1205518732]
 environment = SubResource("Environment_kgsd4")
