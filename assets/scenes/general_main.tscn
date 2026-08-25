@@ -1,9 +1,77 @@
 [gd_scene format=3 uid="uid://bw57pkmpgxos4"]
 
+[ext_resource type="Script" uid="uid://c3so5a4mhteio" path="res://assets/scripts/core/world_audio_manager.gd" id="1_cpnpi"]
 [ext_resource type="PackedScene" uid="uid://bvviimgftb6ul" path="res://assets/scenes/game_main.tscn" id="1_rgwe6"]
 [ext_resource type="PackedScene" uid="uid://ddx7lmc6oorfv" path="res://assets/scenes/ui_main.tscn" id="2_cpnpi"]
+[ext_resource type="AudioStream" uid="uid://fpmxitw00cqf" path="res://assets/audio/music/test_1.wav" id="2_wxk3r"]
+[ext_resource type="AudioStream" uid="uid://cqp6dnj242tqh" path="res://assets/audio/music/gnome chitbune.wav" id="3_oxucs"]
+
+[sub_resource type="GDScript" id="GDScript_wxk3r"]
+script/source = "extends Node2D
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_rgwe6"]
+stream_count = 1
+stream_0 = ExtResource("2_wxk3r")
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_cpnpi"]
+stream_count = 1
+stream_0 = ExtResource("3_oxucs")
+
+[sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_rgwe6"]
+clip_count = 2
+clip_0/name = &"GameplayMusic"
+clip_0/stream = SubResource("AudioStreamPlaylist_rgwe6")
+clip_0/auto_advance = 0
+clip_1/name = &"TwitterMusic"
+clip_1/stream = SubResource("AudioStreamPlaylist_cpnpi")
+clip_1/auto_advance = 0
+_transitions = {
+Vector2i(0, 0): {
+"fade_beats": 1.0,
+"fade_mode": 3,
+"from_time": 0,
+"to_time": 1
+},
+Vector2i(0, 1): {
+"fade_beats": 1.0,
+"fade_mode": 3,
+"from_time": 0,
+"to_time": 0
+},
+Vector2i(1, 0): {
+"fade_beats": 1.0,
+"fade_mode": 3,
+"from_time": 0,
+"to_time": 0
+},
+Vector2i(1, 1): {
+"fade_beats": 1.0,
+"fade_mode": 3,
+"from_time": 0,
+"to_time": 0
+}
+}
 
 [node name="GeneralMain" type="Node2D" unique_id=1573685439]
+script = SubResource("GDScript_wxk3r")
+
+[node name="WorldAudioManager" type="Node" parent="." unique_id=1195859740 node_paths=PackedStringArray("bg_music_player")]
+script = ExtResource("1_cpnpi")
+bg_music_player = NodePath("BackgroundMusicPlayer")
+
+[node name="BackgroundMusicPlayer" type="AudioStreamPlayer" parent="WorldAudioManager" unique_id=1102967123]
+stream = SubResource("AudioStreamInteractive_rgwe6")
+volume_db = -20.02
+autoplay = true
 
 [node name="GameCanvas" type="CanvasLayer" parent="." unique_id=632419110]
 

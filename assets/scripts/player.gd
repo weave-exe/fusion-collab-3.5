@@ -1,5 +1,7 @@
 extends Moveable
 
+@export var player_audiostream: AudioStreamPlayer
+
 func _input(event: InputEvent) -> void:
 	if !event.is_pressed():
 		return
@@ -7,14 +9,19 @@ func _input(event: InputEvent) -> void:
 	
 	if event.is_action_pressed("move_up"):
 		level.try_move(self, Vector2i.UP)
+		update_player_audio("walking")
 	elif event.is_action_pressed("move_left"):
 		level.try_move(self, Vector2i.LEFT)
+		update_player_audio("walking")
 	elif event.is_action_pressed("move_right"):
 		level.try_move(self, Vector2i.RIGHT)
+		update_player_audio("walking")
 	elif event.is_action_pressed("move_down"):
 		level.try_move(self, Vector2i.DOWN)
+		update_player_audio("walking")
 	elif event.is_action_pressed("undo"):
 		level.undo()
+		update_player_audio("rewind")
 		return
 	
 	var frog = level.get_moveable_at_tile(tile + Vector2i.UP)
@@ -29,3 +36,13 @@ func _input(event: InputEvent) -> void:
 	frog = level.get_moveable_at_tile(tile + Vector2i.RIGHT)
 	if frog as Frog != null:
 		frog.do_frog_movement(Vector2i.RIGHT)
+	
+func update_player_audio(audio_name: String):
+	if audio_name == "none":
+		player_audiostream.stop()
+		return
+
+	player_audiostream["parameters/switch_to_clip"] = audio_name
+	player_audiostream.play()
+
+	

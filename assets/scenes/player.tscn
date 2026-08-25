@@ -2,10 +2,58 @@
 
 [ext_resource type="Script" uid="uid://chjx4g3nx46no" path="res://assets/scripts/player.gd" id="1_s027a"]
 [ext_resource type="Texture2D" uid="uid://05mxrwm5s04g" path="res://assets/sprites/placeholder/player.png" id="2_qhqgy"]
+[ext_resource type="AudioStream" uid="uid://04ax32ks5hyr" path="res://assets/audio/sound/gnome_move_1.ogg" id="3_0gfpk"]
+[ext_resource type="AudioStream" uid="uid://dbfsxmv0wfxy" path="res://assets/audio/sound/rewind.wav" id="6_tc801"]
 
-[node name="Player" type="Node2D" unique_id=781662428]
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_0gfpk"]
+random_pitch = 1.0807254
+streams_count = 1
+stream_0/stream = ExtResource("3_0gfpk")
+
+[sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_8sknh"]
+clip_count = 1
+clip_0/name = &"Rewind"
+clip_0/stream = ExtResource("6_tc801")
+clip_0/auto_advance = 0
+
+[sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_s027a"]
+clip_count = 2
+clip_0/name = &"walking"
+clip_0/stream = SubResource("AudioStreamRandomizer_0gfpk")
+clip_0/auto_advance = 0
+clip_1/name = &"rewind"
+clip_1/stream = SubResource("AudioStreamInteractive_8sknh")
+clip_1/auto_advance = 0
+_transitions = {
+Vector2i(0, 0): {
+"fade_beats": 0.3,
+"fade_mode": 2,
+"from_time": 0,
+"hold_previous": true,
+"to_time": 1
+},
+Vector2i(0, 1): {
+"fade_beats": 0.0,
+"fade_mode": 2,
+"from_time": 0,
+"to_time": 1
+},
+Vector2i(1, 1): {
+"fade_beats": 1.0,
+"fade_mode": 3,
+"from_time": 0,
+"to_time": 0
+}
+}
+
+[node name="Player" type="Node2D" unique_id=781662428 node_paths=PackedStringArray("player_audiostream")]
 script = ExtResource("1_s027a")
+player_audiostream = NodePath("PlayerAudioStream")
 metadata/_custom_type_script = "uid://b5qmu3d344sls"
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=574185645]
 texture = ExtResource("2_qhqgy")
+
+[node name="PlayerAudioStream" type="AudioStreamPlayer" parent="." unique_id=570904902]
+stream = SubResource("AudioStreamInteractive_s027a")
+volume_db = -11.2
