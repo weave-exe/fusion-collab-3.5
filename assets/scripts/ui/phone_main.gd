@@ -4,10 +4,59 @@ extends Node2D
 @export var dark_overlay: CanvasItem
 @export var off_screen: Node2D
 @export var tweet_manager: Node2D
+@export var menu_manager: CanvasGroup
 
 # refactoring to just 1 tween for open/close phone
 var _tween: Tween
+func open_twitter():
+	if not UIG.phone_open:
+		enable_phone()
+	if UIG.menu_open:
+		disable_menu_elements()
+	enable_twitter_elements()
 
+		
+func close_twitter():
+	if UIG.phone_open:
+		disable_phone()
+	disable_twitter_elements()
+
+	
+func open_menu():
+	if not UIG.phone_open:
+		enable_phone()
+	if UIG.twitter_open:
+		disable_twitter_elements()
+	enable_menu_elements()
+
+
+func close_menu():
+	if UIG.phone_open:
+		disable_phone()
+	disable_menu_elements()
+
+# breaking ui up into smaller chunks basically
+func enable_menu_elements():
+	menu_manager.visible=true
+	UIG.menu_open=true
+	for i in menu_manager.level_buttons.size():
+		menu_manager.level_buttons[i].disabled=false
+	
+func disable_menu_elements():
+	menu_manager.visible=false
+	UIG.menu_open=false
+	for i in menu_manager.level_buttons.size():
+		menu_manager.level_buttons[i].disabled=true
+	
+func enable_twitter_elements():
+	tweet_manager.visible=true
+	UIG.twitter_open=true
+	
+func disable_twitter_elements():
+	tweet_manager.visible=false
+	UIG.twitter_open=false
+	
+		
 func enable_phone():
 	# only allow changing phone state if no current animation is playing
 	if _tween and _tween.is_valid():
@@ -35,6 +84,7 @@ func enable_phone():
 	
 	
 func disable_phone():
+	print ("trying its best")
 	# only allow changing phone state if no current animation is playing
 	if _tween and _tween.is_valid():
 		return

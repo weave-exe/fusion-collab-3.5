@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://c8i3vqljexcf7"]
+
+[ext_resource type="FontFile" uid="uid://cvfwspgoivda6" path="res://assets/misc/fonts/Blenda Script.otf" id="1_lbrvy"]
+[ext_resource type="Texture2D" uid="uid://cwdkmrny0e1de" path="res://assets/sprites/ui/button.png" id="2_ka4du"]
+[ext_resource type="Script" uid="uid://lerxpbfh5ep1" path="res://assets/scripts/ui/level_select_button.gd" id="3_1i3n6"]
+[ext_resource type="Texture2D" uid="uid://bwn6nq0t6ptin" path="res://assets/sprites/ui/button_pressed.png" id="3_mvto1"]
+[ext_resource type="Texture2D" uid="uid://dgiktts6tsinh" path="res://assets/sprites/ui/button_hover.png" id="4_ndxvu"]
+[ext_resource type="Texture2D" uid="uid://csha5wpgok2xt" path="res://assets/sprites/ui/button_shadow.png" id="6_mvto1"]
+
+[sub_resource type="Theme" id="Theme_35ju6"]
+default_font = ExtResource("1_lbrvy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vydsi"]
+texture = ExtResource("2_ka4du")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qjdjr"]
+texture = ExtResource("3_mvto1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wxk3r"]
+texture = ExtResource("4_ndxvu")
+
+[sub_resource type="Theme" id="Theme_daniy"]
+default_font = ExtResource("1_lbrvy")
+default_font_size = 35
+
+[node name="LevelSelectButton" type="Button" unique_id=253036202 node_paths=PackedStringArray("richtext")]
+offset_right = 80.0
+offset_bottom = 80.0
+theme = SubResource("Theme_35ju6")
+theme_override_styles/normal = SubResource("StyleBoxTexture_vydsi")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_vydsi")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qjdjr")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_qjdjr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_wxk3r")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_wxk3r")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_wxk3r")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_wxk3r")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_qjdjr")
+disabled = true
+script = ExtResource("3_1i3n6")
+level_num = 1
+richtext = NodePath("LevelNumber")
+
+[node name="ButtonShadow" type="Sprite2D" parent="." unique_id=2006348356]
+z_index = -1
+position = Vector2(34, 47)
+texture = ExtResource("6_mvto1")
+
+[node name="LevelNumber" type="RichTextLabel" parent="." unique_id=828981434]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 15.0
+offset_right = 76.0
+offset_bottom = 75.0
+mouse_filter = 2
+theme = SubResource("Theme_daniy")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "[center]#[/center]"
+
+[connection signal="button_up" from="." to="." method="_on_button_up"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

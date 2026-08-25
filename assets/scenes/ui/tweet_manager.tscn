@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://68308175gp1s"]
+
+[ext_resource type="Script" uid="uid://dksriu26pr7hg" path="res://assets/scripts/ui/tweet_manager.gd" id="1_eh0vu"]
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="2_hkisf"]
+[ext_resource type="PackedScene" uid="uid://cmtro4inkmppw" path="res://assets/scenes/ui/tweet.tscn" id="3_ue0qi"]
+
+[sub_resource type="Resource" id="Resource_csp5y"]
+script = ExtResource("2_hkisf")
+account_name = "test"
+text = "test2"
+avatar = Vector2i(2, 0)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"
+
+[node name="TweetManager" type="Node2D" unique_id=43676563 node_paths=PackedStringArray("tweets")]
+script = ExtResource("1_eh0vu")
+tweets = [NodePath("Tweet"), NodePath("Tweet2")]
+tweet_data = Array[ExtResource("2_hkisf")]([SubResource("Resource_csp5y")])
+
+[node name="Tweet" parent="." unique_id=371548667 instance=ExtResource("3_ue0qi")]
+
+[node name="Tweet2" parent="." unique_id=1563430080 instance=ExtResource("3_ue0qi")]
+position = Vector2(-1, 398)
