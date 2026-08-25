@@ -1,3 +1,4 @@
 extends Node
 
-@onready var twitter_open=false
+@onready var phone_open=false
+const avatar_size:int=80

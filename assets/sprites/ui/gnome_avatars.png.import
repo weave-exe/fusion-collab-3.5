@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6yawydnptagc"
-path="res://.godot/imported/gnomephone.png-b5c6e714ed6b4ef76ff1dc18631492fb.ctex"
+uid="uid://dek62trq5vsii"
+path="res://.godot/imported/gnome_avatars.png-288b15267612bc45ad340d8737872ddb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/gnomephone.png"
-dest_files=["res://.godot/imported/gnomephone.png-b5c6e714ed6b4ef76ff1dc18631492fb.ctex"]
+source_file="res://assets/sprites/ui/gnome_avatars.png"
+dest_files=["res://.godot/imported/gnome_avatars.png-288b15267612bc45ad340d8737872ddb.ctex"]
 
 [params]
 

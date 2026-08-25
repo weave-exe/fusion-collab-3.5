@@ -7,10 +7,10 @@ extends Node2D
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("open_twitter"):
 		
-		if not UIG.twitter_open:
-			twitter.EnableTwitter()
+		if not UIG.phone_open:
+			twitter.EnablePhone()
 		else:
-			twitter.DisableTwitter()
+			twitter.DisablePhone()
 		
 
 

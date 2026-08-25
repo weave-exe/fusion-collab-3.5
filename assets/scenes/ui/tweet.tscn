@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://cmtro4inkmppw"]
+
+[ext_resource type="FontFile" uid="uid://cvfwspgoivda6" path="res://assets/misc/fonts/Blenda Script.otf" id="1_3gre5"]
+[ext_resource type="Script" uid="uid://eo5qiola3yms" path="res://assets/scripts/ui/tweet.gd" id="1_gc8bq"]
+[ext_resource type="Texture2D" uid="uid://dek62trq5vsii" path="res://assets/sprites/ui/gnome_avatars.png" id="2_gc8bq"]
+
+[sub_resource type="Theme" id="Theme_35ju6"]
+default_font = ExtResource("1_3gre5")
+default_font_size = 24
+
+[node name="Tweet" type="Node2D" unique_id=371548667 node_paths=PackedStringArray("text", "account_name", "avatar")]
+script = ExtResource("1_gc8bq")
+text = NodePath("Text")
+account_name = NodePath("AccountName")
+avatar = NodePath("Avatar")
+
+[node name="Text" type="Label" parent="." unique_id=1727114105]
+offset_left = 150.0
+offset_top = 141.0
+offset_right = 1209.0
+offset_bottom = 308.0
+theme = SubResource("Theme_35ju6")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "My name is Gnedwin. I made this factory"
+
+[node name="AccountName" type="Label" parent="." unique_id=1314114179]
+offset_left = 149.0
+offset_top = 103.0
+offset_right = 1208.0
+offset_bottom = 270.0
+theme = SubResource("Theme_35ju6")
+theme_override_colors/font_color = Color(0.38796812, 0.515466, 0.5785199, 1)
+text = "@edwin_hates_oshiro"
+
+[node name="Avatar" type="Sprite2D" parent="." unique_id=1051964270]
+z_index = 3
+position = Vector2(96, 134)
+texture = ExtResource("2_gc8bq")
+region_enabled = true
+region_rect = Rect2(0, 0, 80, 80)
