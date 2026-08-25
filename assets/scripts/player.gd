@@ -7,19 +7,23 @@ func _input(event: InputEvent) -> void:
 		return
 	if !event.is_pressed():
 		return
-	var direction := Vector2i.ZERO
+	var _direction := Vector2i.ZERO
 	
 	if event.is_action_pressed("move_up"):
 		level.try_move(self, Vector2i.UP)
+		$PlayerSprite.animation = "idle_up"
 		update_player_audio("walking")
 	elif event.is_action_pressed("move_left"):
 		level.try_move(self, Vector2i.LEFT)
+		$PlayerSprite.animation = "idle_left"
 		update_player_audio("walking")
 	elif event.is_action_pressed("move_right"):
 		level.try_move(self, Vector2i.RIGHT)
+		$PlayerSprite.animation = "idle_right"
 		update_player_audio("walking")
 	elif event.is_action_pressed("move_down"):
 		level.try_move(self, Vector2i.DOWN)
+		$PlayerSprite.animation = "idle_down"
 		update_player_audio("walking")
 	elif event.is_action_pressed("undo"):
 		level.undo()
