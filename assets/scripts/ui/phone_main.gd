@@ -41,6 +41,8 @@ func enable_menu_elements():
 	UIG.menu_open=true
 	for i in menu_manager.level_buttons.size():
 		menu_manager.level_buttons[i].disabled=false
+	for i in menu_manager.sliders.size():
+		menu_manager.sliders[i].recalc_pos()
 	
 func disable_menu_elements():
 	menu_manager.visible=false
@@ -51,6 +53,7 @@ func disable_menu_elements():
 func enable_twitter_elements():
 	tweet_manager.visible=true
 	UIG.twitter_open=true
+
 	
 func disable_twitter_elements():
 	tweet_manager.visible=false
