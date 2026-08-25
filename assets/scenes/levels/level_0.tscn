@@ -4,6 +4,8 @@
 [ext_resource type="TileSet" uid="uid://7kyid1hvpeoq" path="res://assets/resources/main_tileset.tres" id="2_gfms1"]
 [ext_resource type="PackedScene" uid="uid://cwsceq1vaacnb" path="res://assets/scenes/log.tscn" id="3_c2dqn"]
 [ext_resource type="PackedScene" uid="uid://djsfa5vta46co" path="res://assets/scenes/player.tscn" id="4_o1qqy"]
+[ext_resource type="PackedScene" uid="uid://bceu0kbt2wv2q" path="res://assets/scenes/long_log.tscn" id="5_gfms1"]
+[ext_resource type="PackedScene" uid="uid://bdm8j4gqeuqbx" path="res://assets/scenes/l_shaped_log.tscn" id="6_c2dqn"]
 
 [node name="Level0" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root")]
 script = ExtResource("1_qnb2k")
@@ -21,3 +23,9 @@ position = Vector2(24, 72)
 
 [node name="Player" parent="Moveables" unique_id=781662428 instance=ExtResource("4_o1qqy")]
 position = Vector2(56, 72)
+
+[node name="Log2" parent="Moveables" unique_id=491936530 instance=ExtResource("5_gfms1")]
+position = Vector2(-104, 103)
+
+[node name="Log3" parent="Moveables" unique_id=858719230 instance=ExtResource("6_c2dqn")]
+position = Vector2(-57, 118)
