@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="Tweet" format=3 uid="uid://1d23oaqhrw3t"]
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://1d23oaqhrw3t"]
 
-[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_resource.gd" id="1_csp5y"]
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_csp5y"]
 
 [resource]
 script = ExtResource("1_csp5y")
-account_name = "oshiro"
-text = "for some reason my range of expressions is #painfullylimited"
-avatar = Vector2i(4, 0)
+account_name = "abuffgnome"
+text = ":scheming:"
+avatar = Vector2i(1, 0)
 metadata/_custom_type_script = "uid://cgh8yoy761vx4"

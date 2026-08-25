@@ -5,6 +5,14 @@
 [ext_resource type="Texture2D" uid="uid://dw66ev17lm5g0" path="res://assets/sprites/ui/phonescreen.png" id="2_mjct5"]
 [ext_resource type="PackedScene" uid="uid://cmtro4inkmppw" path="res://assets/scenes/ui/tweet.tscn" id="3_mjct5"]
 [ext_resource type="Script" uid="uid://dksriu26pr7hg" path="res://assets/scripts/ui/tweet_manager.gd" id="3_tkrwa"]
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="4_r8p0p"]
+
+[sub_resource type="Resource" id="Resource_csp5y"]
+script = ExtResource("4_r8p0p")
+account_name = "test"
+text = "test2"
+avatar = Vector2i(2, 0)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"
 
 [node name="TwitterMain" type="Node2D" unique_id=1809476527 node_paths=PackedStringArray("phone", "dark_overlay", "off_screen", "tweet_manager")]
 z_index = 41
@@ -28,14 +36,12 @@ offset_bottom = 407.0
 
 [node name="TweetManager" type="Node2D" parent="Phone/OnScreen" unique_id=41583658 node_paths=PackedStringArray("tweets")]
 script = ExtResource("3_tkrwa")
-tweets = [NodePath("Tweet"), NodePath("Tweet2"), NodePath("Tweet3")]
+tweets = [NodePath("Tweet"), null]
+tweet_data = Array[ExtResource("4_r8p0p")]([SubResource("Resource_csp5y")])
 
 [node name="Tweet" parent="Phone/OnScreen/TweetManager" unique_id=371548667 instance=ExtResource("3_mjct5")]
 
-[node name="Tweet2" parent="Phone/OnScreen/TweetManager" unique_id=986363053 instance=ExtResource("3_mjct5")]
-position = Vector2(-7, 209)
-
-[node name="Tweet3" parent="Phone/OnScreen/TweetManager" unique_id=517003425 instance=ExtResource("3_mjct5")]
+[node name="Tweet2" parent="Phone/OnScreen/TweetManager" unique_id=517003425 instance=ExtResource("3_mjct5")]
 position = Vector2(-1, 398)
 
 [node name="OffScreen" type="Sprite2D" parent="Phone" unique_id=928368999]

@@ -1,7 +1,9 @@
 extends Node2D
 
-@export var tweets: Array[Node2D]
+@export var tweets: Array[Tweet]
+@export var tweet_data: Array[TweetData]
 
-func TestTweets():
-	for i in tweets.size():
-		tweets[i].avatar.region_rect=Rect2(i*UIG.avatar_size,0*UIG.avatar_size,UIG.avatar_size,UIG.avatar_size)
+func bind_tweets():
+	for i in tweet_data.size():
+		if i < tweets.size():
+			tweets[i].bind(tweet_data[i])

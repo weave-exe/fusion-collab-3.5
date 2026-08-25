@@ -1,15 +1,12 @@
 extends Node2D
+class_name Tweet
 
 @export var text: Label
 @export var account_name: Label
 @export var avatar: Sprite2D
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	avatar
-	pass # Replace with function body.
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func bind(data: TweetData) -> void:
+	text.text = data.text
+	account_name.text = "@" + data.account_name
+	avatar.region_rect = Rect2(data.avatar.x * UIG.avatar_size, data.avatar.y * UIG.avatar_size, UIG.avatar_size, UIG.avatar_size)
