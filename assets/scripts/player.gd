@@ -3,6 +3,8 @@ extends Moveable
 @export var player_audiostream: AudioStreamPlayer
 
 func _input(event: InputEvent) -> void:
+	if UIG.phone_open:
+		return
 	if !event.is_pressed():
 		return
 	var direction := Vector2i.ZERO
