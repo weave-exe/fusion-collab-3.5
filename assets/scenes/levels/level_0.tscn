@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://djsfa5vta46co" path="res://assets/scenes/player.tscn" id="4_o1qqy"]
 [ext_resource type="PackedScene" uid="uid://bceu0kbt2wv2q" path="res://assets/scenes/long_log.tscn" id="5_gfms1"]
 [ext_resource type="PackedScene" uid="uid://bdm8j4gqeuqbx" path="res://assets/scenes/l_shaped_log.tscn" id="6_c2dqn"]
+[ext_resource type="PackedScene" uid="uid://cs0wo3ek1dsdq" path="res://assets/scenes/frog.tscn" id="7_o1qqy"]
 
 [node name="Level0" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root")]
 script = ExtResource("1_qnb2k")
@@ -29,3 +30,6 @@ position = Vector2(-104, 103)
 
 [node name="Log3" parent="Moveables" unique_id=858719230 instance=ExtResource("6_c2dqn")]
 position = Vector2(-57, 118)
+
+[node name="Frog" parent="." unique_id=1056201374 instance=ExtResource("7_o1qqy")]
+position = Vector2(-152, 8)
