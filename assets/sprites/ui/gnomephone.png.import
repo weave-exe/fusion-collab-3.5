@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cahkv3idnsapo"
-path="res://.godot/imported/placeholderforgithub.png-3d7920928fb3fc00be204c45c9c84aee.ctex"
+uid="uid://qo7svmh0spcv"
+path="res://.godot/imported/gnomephone.png-b5c6e714ed6b4ef76ff1dc18631492fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/placeholderforgithub.png"
-dest_files=["res://.godot/imported/placeholderforgithub.png-3d7920928fb3fc00be204c45c9c84aee.ctex"]
+source_file="res://assets/sprites/ui/gnomephone.png"
+dest_files=["res://.godot/imported/gnomephone.png-b5c6e714ed6b4ef76ff1dc18631492fb.ctex"]
 
 [params]
 
