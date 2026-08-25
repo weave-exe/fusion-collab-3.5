@@ -1,19 +1,30 @@
 [gd_scene format=3 uid="uid://6q6bplmm02ny"]
 
-[ext_resource type="Texture2D" uid="uid://bow3iaekvb6rj" path="res://assets/sprites/placeholder/twitterforgnomes.png" id="1_j8cr3"]
+[ext_resource type="Texture2D" uid="uid://qo7svmh0spcv" path="res://assets/sprites/ui/gnomephone.png" id="1_jqqv0"]
+[ext_resource type="Script" uid="uid://cdvh81tablfh1" path="res://assets/scripts/ui/twitter_main.gd" id="1_mjct5"]
 [ext_resource type="FontFile" uid="uid://cvfwspgoivda6" path="res://assets/misc/fonts/Blenda Script.otf" id="2_avags"]
+[ext_resource type="Texture2D" uid="uid://dw66ev17lm5g0" path="res://assets/sprites/ui/phonescreen.png" id="2_mjct5"]
 
 [sub_resource type="Theme" id="Theme_35ju6"]
 default_font = ExtResource("2_avags")
 default_font_size = 24
 
-[node name="TwitterMain" type="Node2D" unique_id=1809476527]
+[node name="TwitterMain" type="Node2D" unique_id=1809476527 node_paths=PackedStringArray("phone", "dark_overlay")]
 z_index = 41
+script = ExtResource("1_mjct5")
+phone = NodePath("Phone")
+dark_overlay = NodePath("DarkOverlay")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1471383219]
-texture = ExtResource("1_j8cr3")
+[node name="Phone" type="Sprite2D" parent="." unique_id=1471383219]
+visible = false
+z_index = 8
+texture = ExtResource("1_jqqv0")
 
-[node name="Label" type="Label" parent="Sprite2D" unique_id=1744883365]
+[node name="OffScreen" type="Sprite2D" parent="Phone" unique_id=928368999]
+z_index = -1
+texture = ExtResource("2_mjct5")
+
+[node name="Label" type="Label" parent="Phone" unique_id=1744883365]
 offset_left = -332.0
 offset_top = -295.0
 offset_right = 1207.0
@@ -22,3 +33,11 @@ theme = SubResource("Theme_35ju6")
 text = "Capture a frog but don't kill it. Put it between the logs.
 It will get cold and fall asleep. Then put it in the water but don't let it drown! It will warm back up and wake up. 
 Now you have a frog in the water."
+
+[node name="DarkOverlay" type="ColorRect" parent="." unique_id=393825456]
+visible = false
+offset_left = -2754.0
+offset_top = -1243.0
+offset_right = 1958.0
+offset_bottom = 1152.0
+color = Color(0.15682021, 0.02578392, 0.22590202, 0.8627451)

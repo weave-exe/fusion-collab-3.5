@@ -23,6 +23,7 @@ buses/default_bus_layout=""
 
 LevelManager="*uid://duscgpprrw15j"
 AudioGlobal="*uid://cps775ku3atwb"
+UIG="*uid://d3fhlbsgyacgg"
 
 [display]
 
