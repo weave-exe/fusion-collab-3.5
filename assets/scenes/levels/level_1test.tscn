@@ -1,0 +1,31 @@
+[gd_scene format=4 uid="uid://bdpisnrmrjf6v"]
+
+[ext_resource type="Script" uid="uid://csn5nkmwjd60j" path="res://assets/scripts/core/level.gd" id="1_orsu6"]
+[ext_resource type="TileSet" uid="uid://7kyid1hvpeoq" path="res://assets/resources/main_tileset.tres" id="2_wukpp"]
+[ext_resource type="PackedScene" uid="uid://cwsceq1vaacnb" path="res://assets/scenes/log.tscn" id="3_t3x4f"]
+[ext_resource type="PackedScene" uid="uid://djsfa5vta46co" path="res://assets/scenes/player.tscn" id="4_5mq1h"]
+[ext_resource type="PackedScene" uid="uid://bceu0kbt2wv2q" path="res://assets/scenes/long_log.tscn" id="5_s3dmr"]
+[ext_resource type="PackedScene" uid="uid://bdm8j4gqeuqbx" path="res://assets/scenes/l_shaped_log.tscn" id="6_4oedu"]
+
+[node name="Level0" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root")]
+script = ExtResource("1_orsu6")
+terrain_layer = NodePath("TileMapLayer")
+moveables_root = NodePath("Moveables")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1567310552 groups=["LevelTileMap"]]
+tile_map_data = PackedByteArray("AAAEAAUAAgAHAAcAAAAEAAQAAgAHAAYAAAAEAAMAAgAGAAUAAAADAAUAAgAGAAcAAAADAAQAAgAGAAYAAAADAAMAAgAHAAUAAAACAAUAAgAHAAcAAAACAAQAAgACAAAAAAACAAMAAgAFAAUAAAADAAYAAgAGAAYAAAACAAYAAgAGAAYAAAABAAYAAgACAAEAAAABAAUAAgAGAAYAAAABAAQAAgAGAAUAAAAAAAYAAgAGAAgAAAAAAAUAAgAGAAcAAAAAAAQAAgAGAAUAAAD//wYAAgAFAAgAAAD//wUAAgAFAAYAAAD//wQAAgAFAAUAAAAFAAcAAgAIAAgAAAAFAAYAAgAIAAYAAAAFAAUAAgADAAEAAAAEAAcAAgAHAAgAAAAEAAYAAgAHAAYAAAADAAcAAgAGAAgAAAACAAcAAgAHAAgAAAABAAcAAgAFAAgAAAAIAAUAAgAIAAgAAAAIAAQAAgAIAAcAAAAIAAMAAgAIAAYAAAAIAAIAAgAIAAYAAAAIAAEAAgAIAAUAAAAHAAUAAgAHAAgAAAAHAAQAAgAGAAYAAAAHAAMAAgAHAAcAAAAHAAIAAgAHAAYAAAAHAAEAAgAHAAUAAAAGAAUAAgAHAAgAAAAGAAQAAgAGAAcAAAAGAAMAAgAHAAYAAAAGAAIAAgAGAAYAAAAGAAEAAgAHAAUAAAAFAAQAAgAGAAYAAAAFAAMAAgACAAAAAAAFAAIAAgAFAAYAAAAFAAEAAgAFAAUAAAD7/wEAAgAGAAIAAAD7/wAAAgACAAIAAAD7////AgAFAAEAAAD7//7/AgAGAAAAAAD9/wAAAgACAAIAAAD8/wAAAgABAAUAAAD9/wEAAgAIAAIAAAD9////AgAHAAEAAAD9//7/AgAHAAAAAAD//wEAAgAIAAIAAAD//wAAAgAGAAAAAAD///7/AgABAAEAAAA=")
+tile_set = ExtResource("2_wukpp")
+
+[node name="Moveables" type="Node2D" parent="." unique_id=1616387951]
+
+[node name="Log" parent="Moveables" unique_id=732302422 instance=ExtResource("3_t3x4f")]
+position = Vector2(24, 72)
+
+[node name="Player" parent="Moveables" unique_id=781662428 instance=ExtResource("4_5mq1h")]
+position = Vector2(56, 72)
+
+[node name="Log2" parent="Moveables" unique_id=491936530 instance=ExtResource("5_s3dmr")]
+position = Vector2(-104, 103)
+
+[node name="Log3" parent="Moveables" unique_id=858719230 instance=ExtResource("6_4oedu")]
+position = Vector2(-57, 118)

@@ -1,19 +1,26 @@
 extends Node2D
 
-@export var twitter: Node2D
+@export var phone: Node2D
 
 
 # Called when the node enters the scene tree for the first time.
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("open_twitter"):
 		
-		if not UIG.phone_open:
-			twitter.enable_phone()
+		if not UIG.twitter_open:
+			phone.open_twitter()
 		else:
-			twitter.disable_phone()
+			phone.close_twitter()	
+	if event.is_action_pressed("pause"):
+		if not UIG.menu_open:
+			phone.open_menu()
+		else:
+			phone.close_menu()	
+
+			
+
 		
 
 
 
-	# doesnt work yet but dark_overlay.visible=false
 		
