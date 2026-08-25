@@ -72,7 +72,6 @@ bg_music_player = NodePath("BackgroundMusicPlayer")
 stream = SubResource("AudioStreamInteractive_rgwe6")
 volume_db = -20.02
 autoplay = true
-bus = &"music"
 
 [node name="GameCanvas" type="CanvasLayer" parent="." unique_id=632419110]
 
