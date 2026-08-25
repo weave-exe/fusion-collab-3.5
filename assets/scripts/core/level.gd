@@ -24,7 +24,7 @@ func _collect_movables() -> void:
 
 func get_moveable_at_tile(tile: Vector2i) -> Moveable:
 	for moveable in moveables:
-		if moveable.tile == tile:
+		if tile in moveable.get_occupied_tiles():
 			return moveable
 	return null
 	
@@ -55,6 +55,3 @@ func _update_history():
 	for moveable in moveables:
 		history_snapshot.append({"moveable": moveable, "tile": moveable.tile})
 	_history.append(history_snapshot)
-	
-	
-	
