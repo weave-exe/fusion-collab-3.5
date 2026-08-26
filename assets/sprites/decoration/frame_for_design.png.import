@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5fje6oxdukc"
-path="res://.godot/imported/placeholderforgithub.png-07d61996cba561de4bfe71767a79afc1.ctex"
+uid="uid://byc6g6qkn2n11"
+path="res://.godot/imported/frame_for_design.png-99e4eef5e7b9cc8e0826fa7da9e2d13a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/resources/placeholderforgithub.png"
-dest_files=["res://.godot/imported/placeholderforgithub.png-07d61996cba561de4bfe71767a79afc1.ctex"]
+source_file="res://assets/sprites/decoration/frame_for_design.png"
+dest_files=["res://.godot/imported/frame_for_design.png-99e4eef5e7b9cc8e0826fa7da9e2d13a.ctex"]
 
 [params]
 
