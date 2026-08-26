@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dwmdyh8xul7xr"]
+
+[ext_resource type="Texture2D" uid="uid://bbe4nywciv1uy" path="res://assets/sprites/decoration/gnome_decals.png" id="1_ui0av"]
+
+[node name="Lily_Pad" type="Sprite2D" unique_id=2043718838]
+z_index = 1
+texture = ExtResource("1_ui0av")
+region_enabled = true
+region_rect = Rect2(0, 48, 16, 16)

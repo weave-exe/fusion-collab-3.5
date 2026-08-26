@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctnxdmc72ineg"
-path="res://.godot/imported/placeholderforgithub.png-6a209ebf154691b72b73c4fa65837ecd.ctex"
+uid="uid://dyurxiywrbo5r"
+path="res://.godot/imported/gnome_diesandgoestoheaven.png-13787d191ae8c20f6c5ae53bd08290b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/audio/music/placeholderforgithub.png"
-dest_files=["res://.godot/imported/placeholderforgithub.png-6a209ebf154691b72b73c4fa65837ecd.ctex"]
+source_file="res://assets/sprites/characters/gnome_diesandgoestoheaven.png"
+dest_files=["res://.godot/imported/gnome_diesandgoestoheaven.png-13787d191ae8c20f6c5ae53bd08290b9.ctex"]
 
 [params]
 

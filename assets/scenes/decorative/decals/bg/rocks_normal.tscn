@@ -2,9 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bbe4nywciv1uy" path="res://assets/sprites/decoration/gnome_decals.png" id="1_tm0f7"]
 
-[node name="Rocks_Normal" type="Node2D" unique_id=1066090965]
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=146636199]
+[node name="Rocks_Normal" type="Sprite2D" unique_id=146636199]
 z_index = -1
 texture = ExtResource("1_tm0f7")
 region_enabled = true

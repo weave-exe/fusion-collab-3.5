@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bqjpcxf0ajgn4"]
+
+[ext_resource type="Texture2D" uid="uid://cp3ni7umc80wp" path="res://assets/sprites/decoration/gnome_oob_decals.png" id="1_esj3o"]
+
+[node name="Fg_Plant_C" type="Sprite2D" unique_id=2043718838]
+z_index = 1
+texture = ExtResource("1_esj3o")
+region_enabled = true
+region_rect = Rect2(16, 32, 16, 16)
