@@ -2,7 +2,6 @@ extends Node2D
 class_name Moveable
 
 @export var slide_time := 0.08
-
 @export var shape: Array[Vector2i] = [Vector2i.ZERO]
 
 var level: Level

@@ -18,3 +18,6 @@ func is_blocking_player(tile: Vector2i) -> bool:
 	if data == null:
 		return true
 	return data.get_custom_data("block_player")
+	
+func is_frog_block():
+	pass

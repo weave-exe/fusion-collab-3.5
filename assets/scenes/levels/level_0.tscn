@@ -31,5 +31,5 @@ position = Vector2(-104, 103)
 [node name="Log3" parent="Moveables" unique_id=858719230 instance=ExtResource("6_c2dqn")]
 position = Vector2(-57, 118)
 
-[node name="Frog" parent="." unique_id=1056201374 instance=ExtResource("7_o1qqy")]
+[node name="Frog" parent="Moveables" unique_id=1056201374 instance=ExtResource("7_o1qqy")]
 position = Vector2(-152, 8)
