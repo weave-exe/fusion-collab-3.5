@@ -65,3 +65,10 @@ func PlayerParticles(polarity:bool):
 
 func _on_particle_timer_timeout() -> void:
 	PlayerParticles(false)
+
+
+func _on_level_0_level_won() -> void:
+	pass # Replace with function body.
+	
+func disappear() -> void: # test function to test win conditions
+	$Sprite2D.hide()
