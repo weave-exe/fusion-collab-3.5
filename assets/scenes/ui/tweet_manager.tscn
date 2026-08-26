@@ -2,21 +2,31 @@
 
 [ext_resource type="Script" uid="uid://dksriu26pr7hg" path="res://assets/scripts/ui/tweet_manager.gd" id="1_eh0vu"]
 [ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="2_hkisf"]
-[ext_resource type="PackedScene" uid="uid://cmtro4inkmppw" path="res://assets/scenes/ui/tweet.tscn" id="3_ue0qi"]
+[ext_resource type="Resource" uid="uid://b7vcrd6c3v386" path="res://assets/resources/tweets/level_test/tweet0.tres" id="3_46bl7"]
 
-[sub_resource type="Resource" id="Resource_csp5y"]
-script = ExtResource("2_hkisf")
-account_name = "test"
-text = "test2"
-avatar = Vector2i(2, 0)
-metadata/_custom_type_script = "uid://cgh8yoy761vx4"
-
-[node name="TweetManager" type="Node2D" unique_id=43676563 node_paths=PackedStringArray("tweets")]
+[node name="TweetManager" type="Control" unique_id=1358511149 node_paths=PackedStringArray("feed_list")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_eh0vu")
-tweets = [NodePath("Tweet"), NodePath("Tweet2")]
-tweet_data = Array[ExtResource("2_hkisf")]([SubResource("Resource_csp5y")])
+feed_list = NodePath("ScrollContainer/FeedList")
+tweet_data = Array[ExtResource("2_hkisf")]([ExtResource("3_46bl7")])
 
-[node name="Tweet" parent="." unique_id=371548667 instance=ExtResource("3_ue0qi")]
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=637834783]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+follow_focus = true
+horizontal_scroll_mode = 0
 
-[node name="Tweet2" parent="." unique_id=1563430080 instance=ExtResource("3_ue0qi")]
-position = Vector2(-1, 398)
+[node name="FeedList" type="VBoxContainer" parent="ScrollContainer" unique_id=1311053974]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
