@@ -150,6 +150,7 @@ autoplay = "idle_down"
 [node name="PlayerAudioStream" type="AudioStreamPlayer" parent="." unique_id=570904902]
 stream = SubResource("AudioStreamInteractive_s027a")
 volume_db = -11.2
+bus = &"SFX"
 
 [node name="Particles" type="CPUParticles2D" parent="." unique_id=925323715]
 z_index = 1

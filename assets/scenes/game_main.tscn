@@ -37,6 +37,7 @@ levels = Array[PackedScene]([ExtResource("2_kgsd4"), ExtResource("3_mlek0")])
 stream = SubResource("AudioStreamInteractive_3cxim")
 volume_db = -10.133
 autoplay = true
+bus = &"BgSFX"
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1205518732]
 environment = SubResource("Environment_kgsd4")
