@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://f5u04egtixuo"]
+
+[ext_resource type="Texture2D" uid="uid://dtyda284od70l" path="res://assets/sprites/decoration/tutorial_decals.png" id="1_cwvd7"]
+
+[node name="Undo" type="Sprite2D" unique_id=2043718838]
+z_index = 1
+texture = ExtResource("1_cwvd7")
+region_enabled = true
+region_rect = Rect2(48, 32, 96, 16)

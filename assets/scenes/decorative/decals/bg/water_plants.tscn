@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://b0ao6us5lemfe"]
+[gd_scene format=3 uid="uid://u6baj7lvvmr"]
 
-[ext_resource type="Texture2D" uid="uid://bbe4nywciv1uy" path="res://assets/sprites/decoration/gnome_decals.png" id="1_mouee"]
+[ext_resource type="Texture2D" uid="uid://bbe4nywciv1uy" path="res://assets/sprites/decoration/gnome_decals.png" id="1_8lcbt"]
 
 [node name="Water_Plant" type="Sprite2D" unique_id=2043718838]
 z_index = 1
-texture = ExtResource("1_mouee")
+texture = ExtResource("1_8lcbt")
 region_enabled = true
 region_rect = Rect2(32, 48, 16, 16)
