@@ -3,6 +3,13 @@ class_name Frog
 
 func _ready() -> void:
 	$FrogSprite.play("idle_down")
+	
+func can_move(direction: Vector2i, can_push: bool) -> bool:
+	if level.grid.is_blocking_frog(tile + direction):
+		print("Frog is blocked")
+		return false
+	return super.can_move(direction, can_push)
+		
 #to be run after player movement is calculated
 func do_frog_movement(direction:Vector2i):
 	if direction == Vector2i.DOWN:

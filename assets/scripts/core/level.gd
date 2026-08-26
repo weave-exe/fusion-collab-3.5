@@ -3,6 +3,7 @@ class_name Level
 
 @export var terrain_layer: TileMapLayer
 @export var moveables_root: Node2D
+@export var decal_layer: TileMapLayer
 
 var grid: Grid
 var moveables: Array[Moveable] = []
@@ -11,7 +12,7 @@ var moveables: Array[Moveable] = []
 var _history: Array[Array] = []
 
 func _ready() -> void:
-	grid = Grid.new(terrain_layer)
+	grid = Grid.new(terrain_layer, decal_layer)
 	_collect_movables()
 	
 func _collect_movables() -> void:
