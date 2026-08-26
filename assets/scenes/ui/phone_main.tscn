@@ -45,7 +45,7 @@ z_index = 2
 script = ExtResource("6_f4v07")
 level_buttons = [NodePath("LevelSelectButton"), NodePath("LevelSelectButton2"), NodePath("LevelSelectButton3")]
 phone = NodePath("../../..")
-sliders = [NodePath("MasterSlider")]
+sliders = [NodePath("MusicSlider")]
 
 [node name="LevelSelectButton" parent="Phone/OnScreen/MenuManager" unique_id=253036202 instance=ExtResource("7_yr2h1")]
 offset_left = 50.0
@@ -67,36 +67,62 @@ offset_right = 341.0
 offset_bottom = 159.0
 level_num = 3
 
-[node name="MasterSlider" parent="Phone/OnScreen/MenuManager" unique_id=1489120698 instance=ExtResource("8_pkm2w")]
+[node name="MusicSlider" parent="Phone/OnScreen/MenuManager" unique_id=1489120698 instance=ExtResource("8_pkm2w")]
 offset_left = 210.0
 offset_top = 624.0
 offset_right = 610.0
 offset_bottom = 654.0
+bus = "Music"
 
-[node name="MasterSlider2" parent="Phone/OnScreen/MenuManager" unique_id=884273659 instance=ExtResource("8_pkm2w")]
+[node name="SFXSlider" parent="Phone/OnScreen/MenuManager" unique_id=884273659 instance=ExtResource("8_pkm2w")]
 offset_left = 210.0
 offset_top = 666.0
 offset_right = 610.0
 offset_bottom = 696.0
-bus = "Music"
+bus = "SFX"
 
-[node name="VolumeLabel" type="Label" parent="Phone/OnScreen/MenuManager" unique_id=456863326]
-offset_left = 62.0
-offset_top = 612.0
-offset_right = 163.0
-offset_bottom = 655.0
+[node name="AmbienceSlider" parent="Phone/OnScreen/MenuManager" unique_id=344109943 instance=ExtResource("8_pkm2w")]
+offset_left = 210.0
+offset_top = 708.0
+offset_right = 610.0
+offset_bottom = 738.0
+bus = "BgSFX"
+
+[node name="VolumeLabel2" type="Label" parent="Phone/OnScreen/MenuManager" unique_id=1943437394]
+offset_left = 60.0
+offset_top = 616.0
+offset_right = 245.0
+offset_bottom = 659.0
+theme = SubResource("Theme_35ju6")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Music"
+
+[node name="VolumeLabel5" type="Label" parent="Phone/OnScreen/MenuManager" unique_id=1201841318]
+offset_left = 257.0
+offset_top = 575.0
+offset_right = 442.0
+offset_bottom = 618.0
 theme = SubResource("Theme_35ju6")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Volume"
 
-[node name="VolumeLabel2" type="Label" parent="Phone/OnScreen/MenuManager" unique_id=1943437394]
-offset_left = 42.0
-offset_top = 654.0
-offset_right = 227.0
-offset_bottom = 697.0
+[node name="VolumeLabel3" type="Label" parent="Phone/OnScreen/MenuManager" unique_id=1787260609]
+offset_left = 59.0
+offset_top = 660.0
+offset_right = 244.0
+offset_bottom = 703.0
 theme = SubResource("Theme_35ju6")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Music (broken)"
+text = "SFX"
+
+[node name="VolumeLabel4" type="Label" parent="Phone/OnScreen/MenuManager" unique_id=1958481419]
+offset_left = 57.0
+offset_top = 705.0
+offset_right = 242.0
+offset_bottom = 748.0
+theme = SubResource("Theme_35ju6")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Ambience"
 
 [node name="OffScreen" type="Sprite2D" parent="Phone" unique_id=928368999]
 z_index = -1
