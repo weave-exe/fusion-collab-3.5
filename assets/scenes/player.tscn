@@ -134,6 +134,7 @@ colors = PackedColorArray(0, 0, 0, 0, 0.9098039, 0.7882353, 0.7529412, 0.7960784
 colors = PackedColorArray(0.94251674, 0.8026897, 0.9934979, 1, 1, 1, 1, 1)
 
 [node name="Player" type="Node2D" unique_id=781662428 node_paths=PackedStringArray("player_audiostream", "particles", "particle_timer") groups=["Player"]]
+z_index = 10
 script = ExtResource("1_s027a")
 player_audiostream = NodePath("PlayerAudioStream")
 particles = NodePath("Particles")

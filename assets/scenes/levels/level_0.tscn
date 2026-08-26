@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://c60wuarx8rxe7"]
 
 [ext_resource type="Script" uid="uid://csn5nkmwjd60j" path="res://assets/scripts/core/level.gd" id="1_qnb2k"]
-[ext_resource type="PackedScene" uid="uid://3di3awavxmh5" path="res://assets/scenes/mushroom.tscn" id="2_8f7av"]
+[ext_resource type="Texture2D" uid="uid://pf2w27thafaq" path="res://assets/sprites/decoration/shrooms.png" id="2_8f7av"]
 [ext_resource type="TileSet" uid="uid://7kyid1hvpeoq" path="res://assets/resources/main_tileset.tres" id="2_gfms1"]
 [ext_resource type="PackedScene" uid="uid://cwsceq1vaacnb" path="res://assets/scenes/log.tscn" id="3_c2dqn"]
 [ext_resource type="PackedScene" uid="uid://djsfa5vta46co" path="res://assets/scenes/player.tscn" id="4_o1qqy"]
@@ -9,14 +9,28 @@
 [ext_resource type="PackedScene" uid="uid://bdm8j4gqeuqbx" path="res://assets/scenes/l_shaped_log.tscn" id="6_c2dqn"]
 [ext_resource type="PackedScene" uid="uid://cs0wo3ek1dsdq" path="res://assets/scenes/frog.tscn" id="7_o1qqy"]
 
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_lgo24"]
-resource_name = "mushroom"
-scenes/1/scene = ExtResource("2_8f7av")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lgo24"]
+texture = ExtResource("2_8f7av")
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/terrain = 0
+0:0/0/terrains_peering_bit/right_side = 0
+0:0/0/terrains_peering_bit/bottom_right_corner = 0
+0:0/0/terrains_peering_bit/bottom_side = 0
+0:0/0/terrains_peering_bit/bottom_left_corner = 0
+0:0/0/terrains_peering_bit/left_side = 0
+0:0/0/terrains_peering_bit/top_left_corner = 0
+0:0/0/terrains_peering_bit/top_side = 0
+0:0/0/terrains_peering_bit/top_right_corner = 0
+0:0/0/custom_data_0 = true
 
 [sub_resource type="TileSet" id="TileSet_o1qqy"]
-custom_data_layer_0/name = "blocks_frog"
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Mushroom"
+terrain_set_0/terrain_0/color = Color(0.7313136, 0, 0.09142936, 1)
+custom_data_layer_0/name = "block_frog"
 custom_data_layer_0/type = 1
-sources/0 = SubResource("TileSetScenesCollectionSource_lgo24")
+sources/1 = SubResource("TileSetAtlasSource_lgo24")
 
 [node name="Level0" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root", "decal_layer")]
 script = ExtResource("1_qnb2k")
@@ -26,7 +40,7 @@ decal_layer = NodePath("DecalLayer")
 
 [node name="DecalLayer" type="TileMapLayer" parent="." unique_id=1601362493]
 z_index = 1
-tile_map_data = PackedByteArray("AAD2////AAAAAAAAAQD1/wAAAAAAAAAAAQA=")
+tile_map_data = PackedByteArray("AAD3/wAAAQAAAAAAAAD2////AQAAAAAAAAA=")
 tile_set = SubResource("TileSet_o1qqy")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1567310552 groups=["LevelTileMap"]]

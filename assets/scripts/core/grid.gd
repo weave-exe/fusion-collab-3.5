@@ -22,7 +22,9 @@ func is_blocking_player(tile: Vector2i) -> bool:
 	return data.get_custom_data("block_player")
 	
 func is_blocking_frog(tile: Vector2i) -> bool:
-	var mush_data := decals.get_cell_tile_data(tile)
-	if mush_data == null:
-		return true
-	return mush_data.get_custom_data("block_frog")
+	if decals == null:
+		return false
+	var decal_data := decals.get_cell_tile_data(tile)
+	if decal_data == null:
+		return false
+	return decal_data.get_custom_data("block_frog")
