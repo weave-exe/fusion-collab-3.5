@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://btswkbfoaeitc"]
+
+[ext_resource type="Texture2D" uid="uid://dtyda284od70l" path="res://assets/sprites/decoration/tutorial_decals.png" id="1_p2mak"]
+
+[node name="Twitter" type="Sprite2D" unique_id=2043718838]
+z_index = 1
+texture = ExtResource("1_p2mak")
+region_enabled = true
+region_rect = Rect2(48, 0, 144, 16)

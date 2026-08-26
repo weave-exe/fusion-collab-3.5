@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://figp5avm0okj"]
+
+[ext_resource type="Texture2D" uid="uid://dtyda284od70l" path="res://assets/sprites/decoration/tutorial_decals.png" id="1_nlif4"]
+
+[node name="Pause" type="Sprite2D" unique_id=2043718838]
+z_index = 1
+texture = ExtResource("1_nlif4")
+region_enabled = true
+region_rect = Rect2(48, 16, 112, 16)

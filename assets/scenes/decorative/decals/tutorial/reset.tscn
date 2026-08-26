@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cwq8lsgwkurxq"]
+
+[ext_resource type="Texture2D" uid="uid://dtyda284od70l" path="res://assets/sprites/decoration/tutorial_decals.png" id="1_w7h51"]
+
+[node name="Reset" type="Sprite2D" unique_id=2043718838]
+z_index = 1
+texture = ExtResource("1_w7h51")
+region_enabled = true
+region_rect = Rect2(48, 48, 112, 16)
