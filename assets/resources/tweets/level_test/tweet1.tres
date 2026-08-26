@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://8yycs43qewqb"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_6y1q6"]
+
+[resource]
+script = ExtResource("1_6y1q6")
+account_name = "gnedwin2"
+text = "gnome"
+avatar = Vector2i(0, 1)

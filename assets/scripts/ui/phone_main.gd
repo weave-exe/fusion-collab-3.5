@@ -3,12 +3,16 @@ extends Node2D
 @export var phone: Node2D
 @export var dark_overlay: CanvasItem
 @export var off_screen: Node2D
-@export var tweet_manager: Node2D
+@export var tweet_manager: Control
 @export var menu_manager: CanvasGroup
 
 # refactoring to just 1 tween for open/close phone
 var _tween: Tween
 func open_twitter():
+	# only allow changing phone state if no current animation is playing
+	if _is_phone_animating():
+		return
+		
 	if not UIG.phone_open:
 		enable_phone()
 	if UIG.menu_open:
@@ -17,12 +21,20 @@ func open_twitter():
 
 		
 func close_twitter():
+	# only allow changing phone state if no current animation is playing
+	if _is_phone_animating():
+		return
+		
 	if UIG.phone_open:
 		disable_phone()
 	disable_twitter_elements()
 
 	
 func open_menu():
+	# only allow changing phone state if no current animation is playing
+	if _is_phone_animating():
+		return
+		
 	if not UIG.phone_open:
 		enable_phone()
 	if UIG.twitter_open:
@@ -31,6 +43,10 @@ func open_menu():
 
 
 func close_menu():
+	# only allow changing phone state if no current animation is playing
+	if _is_phone_animating():
+		return
+		
 	if UIG.phone_open:
 		disable_phone()
 	disable_menu_elements()
@@ -53,7 +69,7 @@ func disable_menu_elements():
 func enable_twitter_elements():
 	tweet_manager.visible=true
 	UIG.twitter_open=true
-
+	tweet_manager.bind_tweets()
 	
 func disable_twitter_elements():
 	tweet_manager.visible=false
@@ -61,10 +77,6 @@ func disable_twitter_elements():
 	
 		
 func enable_phone():
-	# only allow changing phone state if no current animation is playing
-	if _tween and _tween.is_valid():
-		return
-
 	AudioGlobal.update_view("Twitter")
 	UIG.phone_open = true
 	
@@ -80,18 +92,10 @@ func enable_phone():
 	_tween.tween_property(dark_overlay, "modulate:a", 1.0, 1.0).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
 	_tween.tween_property(phone, "position:y", 0.0, 0.8).set_delay(0.3).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BOUNCE)
 	_tween.tween_property(off_screen, "modulate:a", 0, 0.2).set_delay(1.1)
-	
-	# this part is for testing changing avatars
-	tweet_manager.bind_tweets()
-		
+			
 	
 	
-func disable_phone():
-	print ("trying its best")
-	# only allow changing phone state if no current animation is playing
-	if _tween and _tween.is_valid():
-		return
-		
+func disable_phone():		
 	AudioGlobal.update_view("Gameplay")
 	UIG.phone_open = false
 
@@ -105,3 +109,6 @@ func disable_phone():
 	_tween.tween_callback(phone.hide).set_delay(1.2)
 	_tween.tween_callback(dark_overlay.hide).set_delay(1.2)
 	
+func _is_phone_animating() -> bool:
+	# only allow changing phone state if no current animation is playing
+	return _tween and _tween.is_valid()
