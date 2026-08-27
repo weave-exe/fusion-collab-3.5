@@ -1,6 +1,7 @@
 extends Node
 
 signal level_loaded(level: Level, zoom: int)
+signal level_reset()
 
 var container: Node
 var levels: Array[LevelResource] = []
@@ -36,3 +37,4 @@ func load_next() -> void:
 
 func reset_level() -> void:
 	load_level(level_index)
+	level_reset.emit()
