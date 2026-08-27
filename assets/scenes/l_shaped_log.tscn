@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bdm8j4gqeuqbx"]
 
-[ext_resource type="Script" uid="uid://b5qmu3d344sls" path="res://assets/scripts/core/moveable.gd" id="1_ydxwf"]
+[ext_resource type="Script" uid="uid://blc6gx5p11e3h" path="res://assets/scripts/log.gd" id="1_ydxwf"]
 [ext_resource type="Texture2D" uid="uid://c3f8nbn7fvr31" path="res://assets/sprites/placeholder/crate.png" id="2_47pn1"]
 
 [node name="Log" type="Node2D" unique_id=732302422]
