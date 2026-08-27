@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://c1adwhrifqsg5" path="res://assets/scripts/win_condition/log_win_condition.gd" id="3_wqsy8"]
 [ext_resource type="TileSet" uid="uid://7kyid1hvpeoq" path="res://assets/resources/main_tileset.tres" id="4_5h4sy"]
 [ext_resource type="Texture2D" uid="uid://brldu3146fuk4" path="res://assets/sprites/tilesets/gnome_tiles.png" id="5_dh8ne"]
+[ext_resource type="Texture2D" uid="uid://pf2w27thafaq" path="res://assets/sprites/decoration/shrooms.png" id="6_c8sgo"]
 [ext_resource type="PackedScene" uid="uid://djsfa5vta46co" path="res://assets/scenes/player.tscn" id="7_n4nb8"]
 [ext_resource type="PackedScene" uid="uid://cs0wo3ek1dsdq" path="res://assets/scenes/frog.tscn" id="10_4cbl2"]
 [ext_resource type="PackedScene" uid="uid://bp0n0jq3ywcqk" path="res://assets/scenes/logs/2x1_log.tscn" id="10_7p66o"]
@@ -18,6 +19,29 @@
 [sub_resource type="Resource" id="Resource_4kyv5"]
 script = ExtResource("3_wqsy8")
 metadata/_custom_type_script = "uid://c1adwhrifqsg5"
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p1ygr"]
+texture = ExtResource("6_c8sgo")
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/terrain = 0
+0:0/0/terrains_peering_bit/right_side = 0
+0:0/0/terrains_peering_bit/bottom_right_corner = 0
+0:0/0/terrains_peering_bit/bottom_side = 0
+0:0/0/terrains_peering_bit/bottom_left_corner = 0
+0:0/0/terrains_peering_bit/left_side = 0
+0:0/0/terrains_peering_bit/top_left_corner = 0
+0:0/0/terrains_peering_bit/top_side = 0
+0:0/0/terrains_peering_bit/top_right_corner = 0
+0:0/0/custom_data_0 = true
+
+[sub_resource type="TileSet" id="TileSet_nly7g"]
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
+custom_data_layer_0/name = "frog_avoid"
+custom_data_layer_0/type = 1
+sources/0 = SubResource("TileSetAtlasSource_p1ygr")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_21vbr"]
 texture = ExtResource("5_dh8ne")
@@ -76,11 +100,16 @@ texture = ExtResource("5_dh8ne")
 [sub_resource type="TileSet" id="TileSet_xrxaf"]
 sources/0 = SubResource("TileSetAtlasSource_21vbr")
 
-[node name="Level0" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root")]
+[node name="Level0" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root", "decal_layer")]
 script = ExtResource("1_nly7g")
 terrain_layer = NodePath("TileMapLayer")
 moveables_root = NodePath("Moveables")
+decal_layer = NodePath("Mushrooms")
 win_conditions = Array[ExtResource("2_2icp0")]([SubResource("Resource_4kyv5")])
+
+[node name="Mushrooms" type="TileMapLayer" parent="." unique_id=570384271]
+tile_map_data = PackedByteArray("AAAEAPz/AAAAAAAAAAA=")
+tile_set = SubResource("TileSet_nly7g")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1567310552 groups=["LevelTileMap"]]
 z_index = -2
