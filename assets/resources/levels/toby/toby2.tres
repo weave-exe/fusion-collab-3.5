@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="LevelResource" format=3 uid="uid://c8y0x6qhg06fh"]
 
-[ext_resource type="PackedScene" uid="uid://drpkm10wif21y" path="res://assets/scenes/levels/toby/toby1.tscn" id="1_t12dk"]
+[ext_resource type="PackedScene" uid="uid://clrguvtruy1lv" path="res://assets/scenes/levels/toby/toby2.tscn" id="1_t12dk"]
 [ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="2_supq1"]
 [ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="3_2pvnl"]
 [ext_resource type="Resource" uid="uid://yt36b8ov4gfw" path="res://assets/resources/tweets/toby1/tweet10.tres" id="4_dh17k"]
