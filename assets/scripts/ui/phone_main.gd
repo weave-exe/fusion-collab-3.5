@@ -5,6 +5,11 @@ extends Node2D
 @export var off_screen: Node2D
 @export var tweet_manager: Control
 @export var menu_manager: CanvasGroup
+@export var sound_open_phone: AudioStreamOggVorbis
+@export var sound_close_phone: AudioStreamOggVorbis
+@export var sound_ui: AudioStreamOggVorbis
+@export var phone_sounds: AudioStreamPlayer2D
+
 
 # refactoring to just 1 tween for open/close phone
 var _tween: Tween
@@ -15,6 +20,9 @@ func open_twitter():
 		
 	if not UIG.phone_open:
 		enable_phone()
+	else:
+		phone_sounds.stream=sound_ui
+		phone_sounds.play()
 	if UIG.menu_open:
 		disable_menu_elements()
 	enable_twitter_elements()
@@ -37,6 +45,9 @@ func open_menu():
 		
 	if not UIG.phone_open:
 		enable_phone()
+	else:
+		phone_sounds.stream=sound_ui
+		phone_sounds.play()
 	if UIG.twitter_open:
 		disable_twitter_elements()
 	enable_menu_elements()
@@ -79,6 +90,8 @@ func disable_twitter_elements():
 func enable_phone():
 	AudioGlobal.update_view("Twitter")
 	UIG.phone_open = true
+	phone_sounds.stream=sound_open_phone
+	phone_sounds.play()
 	
 	# initial state
 	phone.position.y = 1200
@@ -98,6 +111,8 @@ func enable_phone():
 func disable_phone():		
 	AudioGlobal.update_view("Gameplay")
 	UIG.phone_open = false
+	phone_sounds.stream=sound_close_phone
+	phone_sounds.play()
 
 	# tween animation all handled in one parallel tween
 	_tween = create_tween().set_parallel(true)

@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://6q6bplmm02ny"]
 
 [ext_resource type="Script" uid="uid://cdvh81tablfh1" path="res://assets/scripts/ui/phone_main.gd" id="1_81tah"]
+[ext_resource type="AudioStream" uid="uid://dxjexnbm3c0qw" path="res://assets/audio/sound/open_twitter.ogg" id="2_0lvtj"]
 [ext_resource type="Texture2D" uid="uid://b6yawydnptagc" path="res://assets/sprites/ui/gnomephone.png" id="2_a8th5"]
+[ext_resource type="AudioStream" uid="uid://cxkiomxa70r88" path="res://assets/audio/sound/close_twitter.ogg" id="3_o55ue"]
+[ext_resource type="AudioStream" uid="uid://bun0g0aq0gb0d" path="res://assets/audio/sound/ui_click.ogg" id="4_7ctsv"]
 [ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="4_w8f6f"]
 [ext_resource type="Resource" uid="uid://b7vcrd6c3v386" path="res://assets/resources/tweets/level_test/tweet0.tres" id="5_f4v07"]
 [ext_resource type="PackedScene" uid="uid://68308175gp1s" path="res://assets/scenes/ui/tweet_manager.tscn" id="5_w8f6f"]
@@ -18,7 +21,7 @@
 default_font = ExtResource("9_utfp5")
 default_font_size = 34
 
-[node name="PhoneMain" type="Node2D" unique_id=1809476527 node_paths=PackedStringArray("phone", "dark_overlay", "off_screen", "tweet_manager", "menu_manager")]
+[node name="PhoneMain" type="Node2D" unique_id=1809476527 node_paths=PackedStringArray("phone", "dark_overlay", "off_screen", "tweet_manager", "menu_manager", "phone_sounds")]
 z_index = 41
 script = ExtResource("1_81tah")
 phone = NodePath("Phone")
@@ -26,6 +29,10 @@ dark_overlay = NodePath("DarkOverlay")
 off_screen = NodePath("Phone/OffScreen")
 tweet_manager = NodePath("Phone/OnScreen/TweetManager")
 menu_manager = NodePath("Phone/OnScreen/MenuManager")
+sound_open_phone = ExtResource("2_0lvtj")
+sound_close_phone = ExtResource("3_o55ue")
+sound_ui = ExtResource("4_7ctsv")
+phone_sounds = NodePath("PhoneOpenClose")
 
 [node name="Phone" type="Sprite2D" parent="." unique_id=1471383219]
 z_index = 20
@@ -49,88 +56,102 @@ unique_name_in_owner = true
 visible = false
 z_index = 2
 script = ExtResource("6_f4v07")
-level_buttons = [NodePath("LevelSelectButton"), NodePath("LevelSelectButton2"), NodePath("LevelSelectButton3")]
+level_buttons = [NodePath("LevelSelectButton"), NodePath("LevelSelectButton2"), NodePath("LevelSelectButton3"), NodePath("LevelSelectButton4"), NodePath("LevelSelectButton5")]
 phone = NodePath("../../..")
 sliders = [NodePath("MusicSlider")]
 
 [node name="LevelSelectButton" parent="Phone/OnScreen/MenuManager" unique_id=253036202 instance=ExtResource("7_yr2h1")]
-offset_left = 50.0
-offset_top = 79.0
-offset_right = 130.0
-offset_bottom = 159.0
+offset_left = 37.0
+offset_top = 19.0
+offset_right = 117.0
+offset_bottom = 99.0
 
 [node name="LevelSelectButton2" parent="Phone/OnScreen/MenuManager" unique_id=1730749810 instance=ExtResource("7_yr2h1")]
-offset_left = 156.0
-offset_top = 79.0
-offset_right = 236.0
-offset_bottom = 159.0
+offset_left = 146.0
+offset_top = 21.0
+offset_right = 226.0
+offset_bottom = 101.0
 level_num = 2
 
 [node name="LevelSelectButton3" parent="Phone/OnScreen/MenuManager" unique_id=819824676 instance=ExtResource("7_yr2h1")]
-offset_left = 261.0
-offset_top = 79.0
-offset_right = 341.0
-offset_bottom = 159.0
+offset_left = 252.0
+offset_top = 20.0
+offset_right = 332.0
+offset_bottom = 100.0
 level_num = 3
 
+[node name="LevelSelectButton4" parent="Phone/OnScreen/MenuManager" unique_id=553229102 instance=ExtResource("7_yr2h1")]
+offset_left = 362.0
+offset_top = 19.0
+offset_right = 442.0
+offset_bottom = 99.0
+level_num = 4
+
+[node name="LevelSelectButton5" parent="Phone/OnScreen/MenuManager" unique_id=286389534 instance=ExtResource("7_yr2h1")]
+offset_left = 478.0
+offset_top = 19.0
+offset_right = 558.0
+offset_bottom = 99.0
+level_num = 5
+
 [node name="MusicSlider" parent="Phone/OnScreen/MenuManager" unique_id=1489120698 instance=ExtResource("8_pkm2w")]
-offset_left = 210.0
-offset_top = 624.0
-offset_right = 610.0
-offset_bottom = 654.0
+offset_left = 200.0
+offset_top = 425.0
+offset_right = 513.0
+offset_bottom = 455.0
 bus = "Music"
 
 [node name="SFXSlider" parent="Phone/OnScreen/MenuManager" unique_id=884273659 instance=ExtResource("8_pkm2w")]
-offset_left = 210.0
-offset_top = 666.0
-offset_right = 610.0
-offset_bottom = 696.0
+offset_left = 200.0
+offset_top = 467.0
+offset_right = 513.0
+offset_bottom = 497.0
 bus = "SFX"
 
 [node name="AmbienceSlider" parent="Phone/OnScreen/MenuManager" unique_id=344109943 instance=ExtResource("8_pkm2w")]
-offset_left = 210.0
-offset_top = 708.0
-offset_right = 610.0
-offset_bottom = 738.0
+offset_left = 200.0
+offset_top = 509.0
+offset_right = 513.0
+offset_bottom = 539.0
 bus = "BgSFX"
 
 [node name="VolumeLabel2" type="Label" parent="Phone/OnScreen/MenuManager" unique_id=1943437394]
-offset_left = 60.0
-offset_top = 616.0
-offset_right = 245.0
-offset_bottom = 659.0
+offset_left = 50.0
+offset_top = 417.0
+offset_right = 235.0
+offset_bottom = 460.0
 theme = SubResource("Theme_35ju6")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Music"
 
 [node name="VolumeLabel5" type="Label" parent="Phone/OnScreen/MenuManager" unique_id=1201841318]
-offset_left = 257.0
-offset_top = 575.0
-offset_right = 442.0
-offset_bottom = 618.0
+offset_left = 247.0
+offset_top = 376.0
+offset_right = 432.0
+offset_bottom = 419.0
 theme = SubResource("Theme_35ju6")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Volume"
 
 [node name="VolumeLabel3" type="Label" parent="Phone/OnScreen/MenuManager" unique_id=1787260609]
-offset_left = 59.0
-offset_top = 660.0
-offset_right = 244.0
-offset_bottom = 703.0
+offset_left = 49.0
+offset_top = 461.0
+offset_right = 234.0
+offset_bottom = 504.0
 theme = SubResource("Theme_35ju6")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "SFX"
 
 [node name="VolumeLabel4" type="Label" parent="Phone/OnScreen/MenuManager" unique_id=1958481419]
-offset_left = 57.0
-offset_top = 705.0
-offset_right = 242.0
-offset_bottom = 748.0
+offset_left = 47.0
+offset_top = 506.0
+offset_right = 232.0
+offset_bottom = 549.0
 theme = SubResource("Theme_35ju6")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Ambience"
 
-[node name="Sprite2D" type="Sprite2D" parent="Phone" unique_id=411792099]
+[node name="TwitterSprite" type="Sprite2D" parent="Phone" unique_id=411792099]
 z_index = -3
 texture = ExtResource("12_f4v07")
 
@@ -147,3 +168,7 @@ offset_right = 1958.0
 offset_bottom = 1152.0
 mouse_filter = 2
 color = Color(0.056097224, 0.005824158, 0.09311775, 0.8627451)
+
+[node name="PhoneOpenClose" type="AudioStreamPlayer2D" parent="." unique_id=1548730787]
+max_polyphony = 2
+bus = &"SFX"

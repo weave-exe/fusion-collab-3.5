@@ -3,6 +3,7 @@ extends Button
 @export var level_num: int
 @export var richtext:RichTextLabel
 @onready var menu_manager: CanvasGroup
+@export var sound: AudioStreamPlayer2D
 
 
 func _ready():
@@ -11,7 +12,7 @@ func _ready():
 
 
 func _on_pressed() -> void:
-	# sound could be added here
+	sound.play()
 	pass
 	
 
