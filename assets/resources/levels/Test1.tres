@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Level_Resource" format=3 uid="uid://btiqsvagu6do2"]
+[gd_resource type="Resource" script_class="LevelResource" format=3 uid="uid://btiqsvagu6do2"]
 
 [ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="1_1ko6b"]
 [ext_resource type="PackedScene" uid="uid://bdpisnrmrjf6v" path="res://assets/scenes/levels/level_1test.tscn" id="1_stx55"]
@@ -9,7 +9,6 @@
 [resource]
 script = ExtResource("1_1ko6b")
 scene = ExtResource("1_stx55")
-tweets = Array[Resource]([ExtResource("3_morqe"), ExtResource("4_dhu66"), ExtResource("5_4lggl")])
-layers = Array[bool]([false, false, false])
+tweets = Array[Resource]([ExtResource("3_morqe"), ExtResource("4_dhu66"), ExtResource("5_4lggl"), ExtResource("3_morqe"), ExtResource("3_morqe"), ExtResource("3_morqe"), ExtResource("4_dhu66"), ExtResource("5_4lggl")])
 zoom = 5
 metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"
