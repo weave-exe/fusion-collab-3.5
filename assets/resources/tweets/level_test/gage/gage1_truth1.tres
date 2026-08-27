@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://dkohqj6gn4cpy"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_50ij6"]
+
+[resource]
+script = ExtResource("1_50ij6")
+account_name = "FirstGnome_looks_left_and"
+text = "This frog is looking for a certain bug! Make sure you pick the right one."
+avatar = Vector2i(3, 1)

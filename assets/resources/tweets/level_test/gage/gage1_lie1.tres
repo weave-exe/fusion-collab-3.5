@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://b1sy6a0lwlr23"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_yggwd"]
+
+[resource]
+script = ExtResource("1_yggwd")
+account_name = "living_l0g"
+text = "Hey so my gf (slang for gnome friend (she's still a girl though)) #brokeup with me does anyone wanna start a podcast or something"
+avatar = Vector2i(1, 3)

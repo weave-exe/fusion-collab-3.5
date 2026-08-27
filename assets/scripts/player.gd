@@ -3,6 +3,12 @@ extends Moveable
 @export var player_audiostream: AudioStreamPlayer
 @export var particles: CPUParticles2D
 @export var particle_timer: Timer
+@export var win_timer: Timer
+@export var win_sound: AudioStreamPlayer
+
+
+func _ready() -> void:
+	SignalBus.connect("level_won",win_anim)
 
 func _input(event: InputEvent) -> void:
 	if UIG.phone_open:
@@ -62,6 +68,11 @@ func PlayerParticles(polarity:bool):
 		particle_timer.start()
 	else:
 		particles.emitting=false
+func win_anim() -> void:
+	win_sound.play()
+	$PlayerSprite.animation="win"
+
+	win_timer.start()
 	
 
 func can_push_other_moveable(moveable: Moveable) -> bool:
@@ -70,10 +81,10 @@ func can_push_other_moveable(moveable: Moveable) -> bool:
 func _on_particle_timer_timeout() -> void:
 	PlayerParticles(false)
 	
-func _on_level_0_level_won() -> void:
-	print("test")
 
-
-func _on_level_1_level_won() -> void:
-	print("test")
 	
+
+
+func _on_win_timer_timeout() -> void:
+	LevelManager.load_next()
+	pass # Replace with function body.
