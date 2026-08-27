@@ -21,6 +21,8 @@ func can_move(direction: Vector2i, can_push: bool) -> bool:
 	for moveable in get_blocking_moveables(direction):
 		if not can_push:
 			return false
+		if not can_push_other_moveable(moveable):
+			return false
 		if not moveable.can_move(direction, can_push):
 			return false
 	return true
@@ -56,3 +58,8 @@ func get_blocking_moveables(direction: Vector2i) -> Array[Moveable]:
 		if other != null and other != self and not block.has(other):
 			block.append(other)
 	return block
+	
+# Override this function to allow selectively pushing certain moveables. 
+# i.e. players can push logs, but not frogs.
+func can_push_other_moveable(moveable: Moveable) -> bool:
+	return true
