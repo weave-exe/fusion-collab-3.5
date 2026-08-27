@@ -2,9 +2,21 @@
 
 [ext_resource type="Script" uid="uid://ca8iocmfk2xkf" path="res://assets/scripts/log.gd" id="1_1ii2n"]
 [ext_resource type="AudioStream" uid="uid://beop33c47xn2m" path="res://assets/audio/sound/log_push_1.ogg" id="2_62yqv"]
-[ext_resource type="Texture2D" uid="uid://c3f8nbn7fvr31" path="res://assets/sprites/placeholder/crate.png" id="2_xlfya"]
 [ext_resource type="AudioStream" uid="uid://b8twjuo5uhpli" path="res://assets/audio/sound/log_push_2.ogg" id="3_4bxda"]
 [ext_resource type="AudioStream" uid="uid://d2d8fviscvsa2" path="res://assets/audio/sound/log_push_3.ogg" id="4_cx6kj"]
+[ext_resource type="Texture2D" uid="uid://dl2kaiumaive3" path="res://assets/sprites/tilesets/log_tiles.png" id="5_ylqdd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4k8d"]
+atlas = ExtResource("5_ylqdd")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ylqdd"]
+atlas = ExtResource("5_ylqdd")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ardn"]
+atlas = ExtResource("5_ylqdd")
+region = Rect2(48, 32, 16, 16)
 
 [node name="Log" type="Node2D" unique_id=732302422 node_paths=PackedStringArray("sound_player")]
 script = ExtResource("1_1ii2n")
@@ -14,15 +26,15 @@ shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(0, 1), Vector2i(0, 2)])
 metadata/_custom_type_script = "uid://b5qmu3d344sls"
 
 [node name="Crate" type="Sprite2D" parent="." unique_id=37072259]
-texture = ExtResource("2_xlfya")
+texture = SubResource("AtlasTexture_r4k8d")
 
 [node name="Crate2" type="Sprite2D" parent="." unique_id=1856992070]
 position = Vector2(0, 16)
-texture = ExtResource("2_xlfya")
+texture = SubResource("AtlasTexture_ylqdd")
 
 [node name="Crate3" type="Sprite2D" parent="." unique_id=1242068953]
 position = Vector2(0, 32)
-texture = ExtResource("2_xlfya")
+texture = SubResource("AtlasTexture_6ardn")
 
 [node name="LogSounds" type="AudioStreamPlayer" parent="." unique_id=678521773]
 stream = ExtResource("2_62yqv")

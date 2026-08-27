@@ -4,7 +4,15 @@
 [ext_resource type="AudioStream" uid="uid://beop33c47xn2m" path="res://assets/audio/sound/log_push_1.ogg" id="2_mkyar"]
 [ext_resource type="AudioStream" uid="uid://b8twjuo5uhpli" path="res://assets/audio/sound/log_push_2.ogg" id="3_uu1oc"]
 [ext_resource type="AudioStream" uid="uid://d2d8fviscvsa2" path="res://assets/audio/sound/log_push_3.ogg" id="4_3tue0"]
-[ext_resource type="Texture2D" uid="uid://c3f8nbn7fvr31" path="res://assets/sprites/placeholder/crate.png" id="5_4iyq7"]
+[ext_resource type="Texture2D" uid="uid://dl2kaiumaive3" path="res://assets/sprites/tilesets/log_tiles.png" id="5_8wo3r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mkwsu"]
+atlas = ExtResource("5_8wo3r")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rmqfy"]
+atlas = ExtResource("5_8wo3r")
+region = Rect2(48, 32, 16, 16)
 
 [node name="Log" type="Node2D" unique_id=732302422 node_paths=PackedStringArray("sound_player") groups=["Log"]]
 script = ExtResource("1_p081e")
@@ -14,11 +22,11 @@ shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(0, 1)])
 metadata/_custom_type_script = "uid://b5qmu3d344sls"
 
 [node name="Crate" type="Sprite2D" parent="." unique_id=37072259]
-texture = ExtResource("5_4iyq7")
+texture = SubResource("AtlasTexture_mkwsu")
 
 [node name="Crate2" type="Sprite2D" parent="." unique_id=257722466]
 position = Vector2(0, 16)
-texture = ExtResource("5_4iyq7")
+texture = SubResource("AtlasTexture_rmqfy")
 
 [node name="LogSounds" type="AudioStreamPlayer" parent="." unique_id=356169724]
 stream = ExtResource("2_mkyar")
