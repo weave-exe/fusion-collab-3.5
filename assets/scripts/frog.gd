@@ -34,6 +34,10 @@ func can_move(direction: Vector2i, can_push: bool) -> bool:
 	frog_audiostream.play()
 	return true
 
+func can_hop(direction: Vector2i) -> bool:
+	if level.grid.is_frog_avoiding(tile + direction):
+		return false
+	return can_move(direction, false)
 
 #to be run after player movement is calculated
 func do_frog_movement(direction:Vector2i):

@@ -64,6 +64,8 @@ func PlayerParticles(polarity:bool):
 		particles.emitting=false
 	
 
+func can_push_other_moveable(moveable: Moveable) -> bool:
+	return not (moveable is Frog)
 
 func _on_particle_timer_timeout() -> void:
 	PlayerParticles(false)
@@ -74,3 +76,4 @@ func _on_level_0_level_won() -> void:
 
 func _on_level_1_level_won() -> void:
 	print("test")
+	
