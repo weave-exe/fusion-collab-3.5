@@ -7,8 +7,8 @@ extends Node2D
 @export var menu_manager: CanvasGroup
 @export var sound_open_phone: AudioStreamOggVorbis
 @export var sound_close_phone: AudioStreamOggVorbis
-@export var sound_ui: AudioStreamOggVorbis
 @export var phone_sounds: AudioStreamPlayer2D
+@export var phone_ui_sounds: AudioStreamPlayer2D
 
 
 # refactoring to just 1 tween for open/close phone
@@ -20,9 +20,7 @@ func open_twitter():
 		
 	if not UIG.phone_open:
 		enable_phone()
-	else:
-		phone_sounds.stream=sound_ui
-		phone_sounds.play()
+	phone_ui_sounds.play()
 	if UIG.menu_open:
 		disable_menu_elements()
 	enable_twitter_elements()
@@ -45,9 +43,7 @@ func open_menu():
 		
 	if not UIG.phone_open:
 		enable_phone()
-	else:
-		phone_sounds.stream=sound_ui
-		phone_sounds.play()
+	phone_ui_sounds.play()
 	if UIG.twitter_open:
 		disable_twitter_elements()
 	enable_menu_elements()

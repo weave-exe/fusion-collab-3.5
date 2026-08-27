@@ -1,10 +1,15 @@
 [gd_scene format=3 uid="uid://bdm8j4gqeuqbx"]
 
-[ext_resource type="Script" uid="uid://blc6gx5p11e3h" path="res://assets/scripts/log.gd" id="1_ydxwf"]
+[ext_resource type="Script" uid="uid://ca8iocmfk2xkf" path="res://assets/scripts/log.gd" id="1_ydxwf"]
 [ext_resource type="Texture2D" uid="uid://c3f8nbn7fvr31" path="res://assets/sprites/placeholder/crate.png" id="2_47pn1"]
+[ext_resource type="AudioStream" uid="uid://b8twjuo5uhpli" path="res://assets/audio/sound/log_push_2.ogg" id="2_km4ni"]
+[ext_resource type="AudioStream" uid="uid://beop33c47xn2m" path="res://assets/audio/sound/log_push_1.ogg" id="3_duvvj"]
+[ext_resource type="AudioStream" uid="uid://d2d8fviscvsa2" path="res://assets/audio/sound/log_push_3.ogg" id="4_n2nxj"]
 
-[node name="Log" type="Node2D" unique_id=732302422]
+[node name="Log" type="Node2D" unique_id=732302422 node_paths=PackedStringArray("sound_player")]
 script = ExtResource("1_ydxwf")
+sound_player = NodePath("LogSounds")
+sound_logs = Array[AudioStreamOggVorbis]([ExtResource("2_km4ni"), ExtResource("3_duvvj"), ExtResource("4_n2nxj")])
 shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(0, 1), Vector2i(1, 1)])
 metadata/_custom_type_script = "uid://b5qmu3d344sls"
 
@@ -18,3 +23,9 @@ texture = ExtResource("2_47pn1")
 [node name="Crate3" type="Sprite2D" parent="." unique_id=1242068953]
 position = Vector2(16, 16)
 texture = ExtResource("2_47pn1")
+
+[node name="LogSounds" type="AudioStreamPlayer" parent="." unique_id=42415649]
+stream = ExtResource("3_duvvj")
+volume_db = -13.0
+max_polyphony = 2
+bus = &"SFX"
