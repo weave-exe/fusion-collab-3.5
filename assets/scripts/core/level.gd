@@ -7,7 +7,7 @@ class_name Level
 
 @export var win_conditions: Array[WinCondition] = []
 
-signal level_won
+
 
 var grid: Grid
 var moveables: Array[Moveable] = []
@@ -64,7 +64,14 @@ func _update_history():
 	_history.append(history_snapshot)
 	
 func check_win() -> void:
-	for conditions in win_conditions:
-		if not conditions.is_condition_met(self):
-			return
-	level_won.emit()
+	if win_conditions.size()!=0:
+		for conditions in win_conditions:
+			if not conditions.is_condition_met(self):
+				return
+		SignalBus.level_won.emit()
+
+# for debugging
+func _input(_event):
+	if Input.is_action_just_pressed("debug_win"):
+		SignalBus.level_won.emit()
+		print("emit")
