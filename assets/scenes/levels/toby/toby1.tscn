@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://b0ao6us5lemfe" path="res://assets/scenes/decorative/decals/tutorial/wasd.tscn" id="15_8lodb"]
 [ext_resource type="PackedScene" uid="uid://btswkbfoaeitc" path="res://assets/scenes/decorative/decals/tutorial/opentwitter.tscn" id="16_sqr7n"]
 [ext_resource type="PackedScene" uid="uid://c1j483j6fc4w5" path="res://assets/scenes/decorative/decals/bg/flower_blue.tscn" id="17_8lodb"]
+[ext_resource type="PackedScene" uid="uid://cwq8lsgwkurxq" path="res://assets/scenes/decorative/decals/tutorial/reset.tscn" id="17_44evc"]
 
 [sub_resource type="Resource" id="Resource_4kyv5"]
 script = ExtResource("3_fsprc")
@@ -162,7 +163,10 @@ position = Vector2(155, 25)
 position = Vector2(157, -31)
 
 [node name="Twitter" parent="Decals" unique_id=1579079532 instance=ExtResource("16_sqr7n")]
-position = Vector2(-6, 93)
+position = Vector2(-6, 108)
+
+[node name="Reset" parent="Decals" unique_id=920498866 instance=ExtResource("17_44evc")]
+position = Vector2(-21, 93)
 
 [node name="Flower_Blue" parent="Decals" unique_id=432940703 instance=ExtResource("17_8lodb")]
 position = Vector2(104, -24)
