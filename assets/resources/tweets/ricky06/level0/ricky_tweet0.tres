@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://drxx2l3ww40pa"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_80be0"]
+
+[resource]
+script = ExtResource("1_80be0")
+account_name = "ricky06"
+text = "The biggest most ambitious mod I've ever made with my good friend ABuffZucchini releasing next week August 15 :') I have many feelings and probably even more when it's finally out but in the mean time feel free to check out this trailer! It is quite auraful in my opinion youtu.be/ELbhhq9BVq8?..."
