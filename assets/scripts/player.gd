@@ -31,6 +31,8 @@ func _input(event: InputEvent) -> void:
 	elif event.is_action_pressed("undo"):
 		level.undo()
 		update_player_audio("rewind")
+	elif event.is_action_pressed("reset"):
+		LevelManager.reset_level()
 		return
 	
 	var frog = level.get_moveable_at_tile(tile + Vector2i.UP)
