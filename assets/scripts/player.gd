@@ -65,3 +65,10 @@ func PlayerParticles(polarity:bool):
 
 func _on_particle_timer_timeout() -> void:
 	PlayerParticles(false)
+	
+func _on_level_0_level_won() -> void:
+	print("test")
+
+
+func _on_level_1_level_won() -> void:
+	print("test")

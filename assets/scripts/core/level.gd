@@ -5,6 +5,10 @@ class_name Level
 @export var moveables_root: Node2D
 @export var decal_layer: TileMapLayer
 
+@export var win_conditions: Array[WinCondition] = []
+
+signal level_won
+
 var grid: Grid
 var moveables: Array[Moveable] = []
 # currently just a raw mapping
@@ -36,7 +40,7 @@ func try_move(moveable: Moveable, direction: Vector2i) -> bool:
 	moveable.move(direction)
 	if moveable.is_in_group("Player"):
 		moveable.PlayerParticles(true)
-	# check for completion conditions here
+	check_win()
 	return true
 
 #frogs can't add to the undo stack, or push things
@@ -44,7 +48,7 @@ func try_move_frog(moveable: Frog, direction: Vector2i) -> bool:
 	if not moveable.can_move(direction, false):
 		return false
 	moveable.move(direction)
-	# check for completion conditions here
+	#check_win()
 	return true
 
 func undo() -> void:
@@ -58,3 +62,9 @@ func _update_history():
 	for moveable in moveables:
 		history_snapshot.append({"moveable": moveable, "tile": moveable.tile})
 	_history.append(history_snapshot)
+	
+func check_win() -> void:
+	for conditions in win_conditions:
+		if not conditions.is_condition_met(self):
+			return
+	level_won.emit()
