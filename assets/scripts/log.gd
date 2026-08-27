@@ -8,7 +8,7 @@ func can_move(direction: Vector2i, can_push: bool) -> bool:
 	#this function is mostly reimplemented instead of calling Super()
 	#because I don't want the frog blocked by both player + frog blockers
 	for offset in shape:
-		if level.grid.is_blocking_log(tile + direction):
+		if level.grid.is_blocking_log(tile + offset + direction):
 			return false
 		for moveable in get_blocking_moveables(direction):
 			if not can_push:
