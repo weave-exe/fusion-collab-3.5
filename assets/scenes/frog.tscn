@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://dnikg2jpnwkve" path="res://assets/scripts/frog.gd" id="1_0qo1u"]
 [ext_resource type="Texture2D" uid="uid://tk3ehxeyf3gy" path="res://assets/sprites/characters/frog_idle.png" id="2_0qo1u"]
+[ext_resource type="AudioStream" uid="uid://csg17641kkrcf" path="res://assets/audio/sound/frog_move.ogg" id="2_rakiq"]
+[ext_resource type="AudioStream" uid="uid://3ehkqbaji165" path="res://assets/audio/sound/frog_scared.ogg" id="3_44tor"]
+[ext_resource type="Texture2D" uid="uid://ck32ibiljmu8v" path="res://assets/misc/particles/dust.png" id="5_44tor"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0qo1u"]
 atlas = ExtResource("2_0qo1u")
@@ -82,8 +85,20 @@ animations = [{
 "speed": 2.0
 }]
 
-[node name="Frog" type="Node2D" unique_id=1056201374]
+[sub_resource type="Gradient" id="Gradient_pc2gl"]
+offsets = PackedFloat32Array(0, 0.16049382, 1)
+colors = PackedColorArray(0.1830225, 0.4396897, 0.27802768, 0, 0.5442824, 0.7002584, 0.29459825, 0.79607844, 0.24313726, 0.40784314, 0.19215687, 0)
+
+[sub_resource type="Gradient" id="Gradient_2ohe1"]
+colors = PackedColorArray(0.94251674, 0.8026897, 0.9934979, 1, 1, 1, 1, 1)
+
+[node name="Frog" type="Node2D" unique_id=1056201374 node_paths=PackedStringArray("frog_audiostream", "particle_timer", "particles")]
 script = ExtResource("1_0qo1u")
+frog_audiostream = NodePath("FrogSounds")
+sound_move = ExtResource("2_rakiq")
+sound_scared = ExtResource("3_44tor")
+particle_timer = NodePath("ParticleTimer")
+particles = NodePath("Particles")
 
 [node name="FrogSprite" type="AnimatedSprite2D" parent="." unique_id=776296176]
 position = Vector2(0, -1)
@@ -91,3 +106,34 @@ sprite_frames = SubResource("SpriteFrames_vwph1")
 animation = &"idle_down"
 frame = 1
 frame_progress = 0.4453773
+
+[node name="FrogSounds" type="AudioStreamPlayer" parent="." unique_id=29454598]
+bus = &"SFX"
+
+[node name="Particles" type="CPUParticles2D" parent="." unique_id=1327394477]
+z_index = 1
+position = Vector2(0, 6)
+emitting = false
+amount = 3
+texture = ExtResource("5_44tor")
+lifetime = 0.92
+preprocess = 1.51
+randomness = 0.21
+lifetime_randomness = 0.18
+emission_shape = 3
+emission_rect_extents = Vector2(7, 1)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 5.0
+initial_velocity_max = 10.0
+angle_min = -720.0
+angle_max = 1196.5
+scale_amount_max = 1.2
+color_ramp = SubResource("Gradient_pc2gl")
+color_initial_ramp = SubResource("Gradient_2ohe1")
+
+[node name="ParticleTimer" type="Timer" parent="." unique_id=97959525]
+wait_time = 0.275
+one_shot = true
+
+[connection signal="timeout" from="ParticleTimer" to="." method="_on_particle_timer_timeout"]
