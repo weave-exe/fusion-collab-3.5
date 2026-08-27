@@ -13,7 +13,6 @@ func can_move(direction: Vector2i, can_push: bool) -> bool:
 	#this function is mostly reimplemented instead of calling Super()
 	#because I don't want the frog blocked by both player + frog blockers
 	if level.grid.is_blocking_frog(tile + direction):
-
 		frog_audiostream.stream=sound_scared
 		frog_audiostream.pitch_scale=randf_range(0.9,1.2)
 		frog_audiostream.play()

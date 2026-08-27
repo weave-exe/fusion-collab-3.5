@@ -30,3 +30,6 @@ func load_level(i: int) -> void:
 
 func load_next() -> void:
 	load_level(level_index + 1)
+
+func reset_level() -> void:
+	load_level(level_index)
