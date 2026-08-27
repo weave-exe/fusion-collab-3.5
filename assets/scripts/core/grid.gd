@@ -27,7 +27,8 @@ func is_blocking_frog(tile: Vector2i) -> bool:
 	var data := terrain.get_cell_tile_data(tile)
 	if data == null:
 		return true
-	return data.get_custom_data("block_frog")
+	if data.get_custom_data("block_frog"):
+		return true
 	
 	if decals == null:
 		return false
