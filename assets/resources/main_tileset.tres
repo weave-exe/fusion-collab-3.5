@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://brldu3146fuk4" path="res://assets/sprites/tilesets/gnome_tiles.png" id="5_x2dk5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c6qdn"]
+resource_name = "Main"
 texture = ExtResource("5_x2dk5")
 1:0/0 = 0
 1:0/0/terrain_set = 0
