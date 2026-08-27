@@ -2,6 +2,7 @@
 
 [ext_resource type="FontFile" uid="uid://cvfwspgoivda6" path="res://assets/misc/fonts/Blenda Script.otf" id="1_lbrvy"]
 [ext_resource type="Texture2D" uid="uid://cwdkmrny0e1de" path="res://assets/sprites/ui/button.png" id="2_ka4du"]
+[ext_resource type="Texture2D" uid="uid://bwn6nq0t6ptin" path="res://assets/sprites/ui/button_pressed.png" id="3_0i4uy"]
 [ext_resource type="Script" uid="uid://lerxpbfh5ep1" path="res://assets/scripts/ui/level_select_button.gd" id="3_1i3n6"]
 [ext_resource type="Texture2D" uid="uid://ng7fi0vddd77" path="res://assets/sprites/ui/button_disabled.png" id="3_ndxvu"]
 [ext_resource type="Texture2D" uid="uid://dgiktts6tsinh" path="res://assets/sprites/ui/button_hover.png" id="4_ndxvu"]
@@ -15,10 +16,13 @@ default_font = ExtResource("1_lbrvy")
 texture = ExtResource("2_ka4du")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qjdjr"]
-texture = ExtResource("3_ndxvu")
+texture = ExtResource("3_0i4uy")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wxk3r"]
 texture = ExtResource("4_ndxvu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ndxvu"]
+texture = ExtResource("3_ndxvu")
 
 [sub_resource type="Theme" id="Theme_daniy"]
 default_font = ExtResource("1_lbrvy")
@@ -36,7 +40,7 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_wxk3r")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_wxk3r")
 theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_wxk3r")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_wxk3r")
-theme_override_styles/disabled = SubResource("StyleBoxTexture_qjdjr")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_ndxvu")
 disabled = true
 script = ExtResource("3_1i3n6")
 level_num = 1

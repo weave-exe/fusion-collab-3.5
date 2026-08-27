@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://hhl5q4otf3ml"]
+
+[ext_resource type="Script" uid="uid://ca8iocmfk2xkf" path="res://assets/scripts/log.gd" id="1_u7v33"]
+[ext_resource type="AudioStream" uid="uid://beop33c47xn2m" path="res://assets/audio/sound/log_push_1.ogg" id="2_nk5sf"]
+[ext_resource type="AudioStream" uid="uid://b8twjuo5uhpli" path="res://assets/audio/sound/log_push_2.ogg" id="3_jljwp"]
+[ext_resource type="AudioStream" uid="uid://d2d8fviscvsa2" path="res://assets/audio/sound/log_push_3.ogg" id="4_aw85l"]
+[ext_resource type="Texture2D" uid="uid://dl2kaiumaive3" path="res://assets/sprites/tilesets/log_tiles.png" id="5_1l6eh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0rs4w"]
+atlas = ExtResource("5_1l6eh")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3tqx"]
+atlas = ExtResource("5_1l6eh")
+region = Rect2(32, 0, 16, 16)
+
+[node name="Log" type="Node2D" unique_id=732302422 node_paths=PackedStringArray("sound_player") groups=["Log"]]
+script = ExtResource("1_u7v33")
+sound_player = NodePath("LogSounds")
+sound_logs = Array[AudioStreamOggVorbis]([ExtResource("2_nk5sf"), ExtResource("3_jljwp"), ExtResource("4_aw85l")])
+shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(1, 0), Vector2i(2, 0), Vector2i(3, 0)])
+metadata/_custom_type_script = "uid://b5qmu3d344sls"
+
+[node name="Crate" type="Sprite2D" parent="." unique_id=37072259]
+texture = SubResource("AtlasTexture_0rs4w")
+
+[node name="Crate2" type="Sprite2D" parent="." unique_id=257722466]
+position = Vector2(48, 0)
+texture = SubResource("AtlasTexture_b3tqx")
+
+[node name="Crate4" type="Sprite2D" parent="." unique_id=1986424702]
+position = Vector2(32, 0)
+texture = ExtResource("5_1l6eh")
+region_enabled = true
+region_rect = Rect2(16, 0, 16, 16)
+
+[node name="Crate5" type="Sprite2D" parent="." unique_id=1953838799]
+position = Vector2(16, 0)
+texture = ExtResource("5_1l6eh")
+region_enabled = true
+region_rect = Rect2(16, 0, 16, 16)
+
+[node name="LogSounds" type="AudioStreamPlayer" parent="." unique_id=356169724]
+stream = ExtResource("2_nk5sf")
+volume_db = -13.0
+max_polyphony = 2
+bus = &"SFX"

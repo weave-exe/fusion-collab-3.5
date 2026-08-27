@@ -1,8 +1,6 @@
 [gd_scene format=3 uid="uid://68308175gp1s"]
 
 [ext_resource type="Script" uid="uid://dksriu26pr7hg" path="res://assets/scripts/ui/tweet_manager.gd" id="1_eh0vu"]
-[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="2_hkisf"]
-[ext_resource type="Resource" uid="uid://b7vcrd6c3v386" path="res://assets/resources/tweets/level_test/tweet0.tres" id="3_46bl7"]
 
 [node name="TweetManager" type="Control" unique_id=1358511149 node_paths=PackedStringArray("feed_list")]
 layout_mode = 3
@@ -13,7 +11,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_eh0vu")
 feed_list = NodePath("ScrollContainer/FeedList")
-tweet_data = Array[ExtResource("2_hkisf")]([ExtResource("3_46bl7")])
 
 [node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=637834783]
 layout_mode = 1
