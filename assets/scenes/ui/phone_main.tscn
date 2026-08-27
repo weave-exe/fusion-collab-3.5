@@ -21,7 +21,7 @@
 default_font = ExtResource("9_utfp5")
 default_font_size = 34
 
-[node name="PhoneMain" type="Node2D" unique_id=1809476527 node_paths=PackedStringArray("phone", "dark_overlay", "off_screen", "tweet_manager", "menu_manager", "phone_sounds")]
+[node name="PhoneMain" type="Node2D" unique_id=1809476527 node_paths=PackedStringArray("phone", "dark_overlay", "off_screen", "tweet_manager", "menu_manager", "phone_sounds", "phone_ui_sounds")]
 z_index = 41
 script = ExtResource("1_81tah")
 phone = NodePath("Phone")
@@ -31,8 +31,8 @@ tweet_manager = NodePath("Phone/OnScreen/TweetManager")
 menu_manager = NodePath("Phone/OnScreen/MenuManager")
 sound_open_phone = ExtResource("2_0lvtj")
 sound_close_phone = ExtResource("3_o55ue")
-sound_ui = ExtResource("4_7ctsv")
 phone_sounds = NodePath("PhoneOpenClose")
+phone_ui_sounds = NodePath("PhoneUISound")
 
 [node name="Phone" type="Sprite2D" parent="." unique_id=1471383219]
 z_index = 20
@@ -170,5 +170,10 @@ mouse_filter = 2
 color = Color(0.056097224, 0.005824158, 0.09311775, 0.8627451)
 
 [node name="PhoneOpenClose" type="AudioStreamPlayer2D" parent="." unique_id=1548730787]
+max_polyphony = 2
+bus = &"SFX"
+
+[node name="PhoneUISound" type="AudioStreamPlayer2D" parent="." unique_id=1213519445]
+stream = ExtResource("4_7ctsv")
 max_polyphony = 2
 bus = &"SFX"
