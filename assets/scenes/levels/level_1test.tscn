@@ -103,5 +103,5 @@ position = Vector2(-56, 120)
 [node name="FrameForDesign" type="Sprite2D" parent="." unique_id=1391234675]
 texture = ExtResource("7_wukpp")
 
-[connection signal="level_won" from="." to="Moveables/Player" method="hide"]
 [connection signal="level_won" from="." to="Moveables/Player" method="_on_level_1_level_won"]
+[connection signal="level_won" from="." to="Moveables/Player" method="hide"]

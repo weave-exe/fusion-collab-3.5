@@ -8,6 +8,7 @@
 [ext_resource type="Resource" uid="uid://d31cj112xqul1" path="res://assets/resources/levels/Test2.tres" id="4_h515n"]
 [ext_resource type="AudioStream" uid="uid://dbsgl0y6c7biu" path="res://assets/audio/sound/ForestMorningBirds_SFXB.75.wav" id="4_nd2f5"]
 [ext_resource type="PackedScene" uid="uid://dhw1iqckc8ha7" path="res://assets/scenes/decorative/mist.tscn" id="5_nd2f5"]
+[ext_resource type="Resource" uid="uid://e6uui4c5w0d4" path="res://assets/resources/levels/Level1.tres" id="5_sohnc"]
 
 [sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_3cxim"]
 clip_count = 1
@@ -26,7 +27,7 @@ glow_blend_mode = 0
 
 [node name="GameMain" type="Node2D" unique_id=865138517]
 script = ExtResource("1_mvut7")
-levels = Array[ExtResource("2_mlek0")]([ExtResource("3_h515n"), ExtResource("4_h515n"), ExtResource("3_h515n"), null])
+levels = Array[ExtResource("2_mlek0")]([ExtResource("3_h515n"), ExtResource("4_h515n"), ExtResource("3_h515n"), ExtResource("5_sohnc")])
 
 [node name="LevelContainer" type="Node2D" parent="." unique_id=880857937]
 
