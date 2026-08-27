@@ -5,6 +5,13 @@ extends Button
 @onready var menu_manager: CanvasGroup
 @export var sound: AudioStreamPlayer2D
 
+func initialize(unlocked:bool):
+	if unlocked:
+		richtext.visible=true
+		disabled=false
+	else:
+		richtext.visible=false
+		disabled=true
 
 func _ready():
 	richtext.text="[center]"+str(level_num)+"[/center]"

@@ -1,10 +1,12 @@
 extends Node
 
 signal level_loaded(level: Level, zoom: int)
+signal level_reset()
 
 var container: Node
 var levels: Array[LevelResource] = []
 var level_index := -1
+var furthest_level:int=0
 var current_level: Level
 var current_level_resource: LevelResource
 
@@ -27,9 +29,12 @@ func load_level(i: int) -> void:
 	current_level = current_level_resource.scene.instantiate() as Level
 	container.add_child(current_level)
 	level_loaded.emit(current_level, levels[i].zoom)	
+	if level_index > furthest_level:
+		furthest_level=level_index
 
 func load_next() -> void:
 	load_level(level_index + 1)
 
 func reset_level() -> void:
 	load_level(level_index)
+	level_reset.emit()

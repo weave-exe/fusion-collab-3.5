@@ -63,7 +63,12 @@ func enable_menu_elements():
 	menu_manager.visible=true
 	UIG.menu_open=true
 	for i in menu_manager.level_buttons.size():
-		menu_manager.level_buttons[i].disabled=false
+		if menu_manager.level_buttons[i].level_num<=LevelManager.furthest_level:
+			menu_manager.level_buttons[i].initialize(true)
+		else:
+			menu_manager.level_buttons[i].initialize(false)
+	print(LevelManager.furthest_level)
+			
 	for i in menu_manager.sliders.size():
 		menu_manager.sliders[i].recalc_pos()
 	
