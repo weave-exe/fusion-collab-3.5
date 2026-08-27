@@ -15,11 +15,10 @@
 [ext_resource type="PackedScene" uid="uid://bqjpcxf0ajgn4" path="res://assets/scenes/decorative/decals/fg/fg_plant_c.tscn" id="12_4kyv5"]
 [ext_resource type="PackedScene" uid="uid://bosy4gmmyvvnf" path="res://assets/scenes/decorative/decals/bg/the_bug.tscn" id="14_b7axw"]
 
-[node name="Level0" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root", "decal_layer")]
+[node name="Level0" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root")]
 script = ExtResource("1_qnb2k")
 terrain_layer = NodePath("TileMapLayer")
 moveables_root = NodePath("Moveables")
-decal_layer = NodePath("")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1567310552 groups=["LevelTileMap"]]
 z_index = -2

@@ -3,9 +3,10 @@
 [ext_resource type="FontFile" uid="uid://cvfwspgoivda6" path="res://assets/misc/fonts/Blenda Script.otf" id="1_lbrvy"]
 [ext_resource type="Texture2D" uid="uid://cwdkmrny0e1de" path="res://assets/sprites/ui/button.png" id="2_ka4du"]
 [ext_resource type="Script" uid="uid://lerxpbfh5ep1" path="res://assets/scripts/ui/level_select_button.gd" id="3_1i3n6"]
-[ext_resource type="Texture2D" uid="uid://bwn6nq0t6ptin" path="res://assets/sprites/ui/button_pressed.png" id="3_mvto1"]
+[ext_resource type="Texture2D" uid="uid://ng7fi0vddd77" path="res://assets/sprites/ui/button_disabled.png" id="3_ndxvu"]
 [ext_resource type="Texture2D" uid="uid://dgiktts6tsinh" path="res://assets/sprites/ui/button_hover.png" id="4_ndxvu"]
 [ext_resource type="Texture2D" uid="uid://csha5wpgok2xt" path="res://assets/sprites/ui/button_shadow.png" id="6_mvto1"]
+[ext_resource type="AudioStream" uid="uid://bun0g0aq0gb0d" path="res://assets/audio/sound/ui_click.ogg" id="7_0i4uy"]
 
 [sub_resource type="Theme" id="Theme_35ju6"]
 default_font = ExtResource("1_lbrvy")
@@ -14,7 +15,7 @@ default_font = ExtResource("1_lbrvy")
 texture = ExtResource("2_ka4du")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qjdjr"]
-texture = ExtResource("3_mvto1")
+texture = ExtResource("3_ndxvu")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wxk3r"]
 texture = ExtResource("4_ndxvu")
@@ -23,7 +24,7 @@ texture = ExtResource("4_ndxvu")
 default_font = ExtResource("1_lbrvy")
 default_font_size = 35
 
-[node name="LevelSelectButton" type="Button" unique_id=253036202 node_paths=PackedStringArray("richtext")]
+[node name="LevelSelectButton" type="Button" unique_id=253036202 node_paths=PackedStringArray("richtext", "sound")]
 offset_right = 80.0
 offset_bottom = 80.0
 theme = SubResource("Theme_35ju6")
@@ -40,6 +41,7 @@ disabled = true
 script = ExtResource("3_1i3n6")
 level_num = 1
 richtext = NodePath("LevelNumber")
+sound = NodePath("Sound")
 
 [node name="ButtonShadow" type="Sprite2D" parent="." unique_id=2006348356]
 z_index = -1
@@ -57,6 +59,10 @@ theme = SubResource("Theme_daniy")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
 text = "[center]#[/center]"
+
+[node name="Sound" type="AudioStreamPlayer2D" parent="." unique_id=1426967279]
+stream = ExtResource("7_0i4uy")
+bus = &"SFX"
 
 [connection signal="button_up" from="." to="." method="_on_button_up"]
 [connection signal="pressed" from="." to="." method="_on_pressed"]
