@@ -5,4 +5,4 @@
 [resource]
 script = ExtResource("1_gtdwb")
 account_name = "gnome1"
-text = "Bugs belong under logs. It's like tucking someone in under a blanket"
+text = "I'm gnome1, I'm here to help! \\nPush the log on the left twice!"
