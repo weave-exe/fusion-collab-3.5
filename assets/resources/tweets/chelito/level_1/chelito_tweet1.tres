@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_1gb0r")
 account_name = "TheTruthfulGnome"
-text = "My roomate is a frog and he told me he loves living with ants, I feel like that is kinda problematic"
+text = "\"Frogs and ants seem to get along strangely well, has anyone else noticed that?"
 avatar = Vector2i(4, 2)
 metadata/_custom_type_script = "uid://cgh8yoy761vx4"
