@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://kqwhplmd410i"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_0qptq"]
+
+[resource]
+script = ExtResource("1_0qptq")
+account_name = "gnome_(1+8)*22/30"
+text = "It is completely impossible to go back to previous levels"
+avatar = Vector2i(0, 3)

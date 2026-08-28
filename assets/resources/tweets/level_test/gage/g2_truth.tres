@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://b06hvjt3u7bwu"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_jp2tb"]
+
+[resource]
+script = ExtResource("1_jp2tb")
+account_name = "gnome_1_997752006"
+text = "Do you think a frog can find love?"
+avatar = Vector2i(1, 1)

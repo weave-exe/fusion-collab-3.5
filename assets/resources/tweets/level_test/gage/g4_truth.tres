@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://cp0w75gkuu8px"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_y5pu2"]
+
+[resource]
+script = ExtResource("1_y5pu2")
+account_name = "gnome_1"
+text = "Some frogs are extra greedy! They will need the biggest lily pad in the pond, or their lust for power will not be satiated"
+avatar = Vector2i(3, 2)
