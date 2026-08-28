@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://c6p866h58hbr1"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_ijut7"]
+
+[resource]
+script = ExtResource("1_ijut7")
+account_name = "TheOneAndGnomely"
+text = "everyone keeps telling me you cant force a friendship. but me and my brother are best mates now. i feel like tough love is sometimes necessary"
+avatar = Vector2i(2, 0)
