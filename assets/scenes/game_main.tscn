@@ -50,7 +50,7 @@ glow_blend_mode = 0
 
 [node name="GameMain" type="Node2D" unique_id=865138517]
 script = ExtResource("1_mvut7")
-levels = Array[ExtResource("2_mlek0")]([ExtResource("3_lw8wq"), ExtResource("4_5japu"), ExtResource("5_hxf26"), ExtResource("6_etbrm"), ExtResource("7_lxstn"), ExtResource("8_jq754"), ExtResource("9_ntvo3"), ExtResource("10_kq3nb"), ExtResource("11_b3r0y"), ExtResource("12_bpgni"), ExtResource("13_7i5io"), ExtResource("14_1m8ah"), ExtResource("15_oc32e"), ExtResource("16_k7kjd"), ExtResource("17_3i1qb"), ExtResource("18_srql8"), ExtResource("4_hrpjq"), ExtResource("6_s7csj"), ExtResource("5_03gwc"), ExtResource("22_x65a4"), ExtResource("23_uj6ii"), ExtResource("3_sohnc")])
+levels = Array[ExtResource("2_mlek0")]([ExtResource("3_lw8wq"), ExtResource("4_5japu"), ExtResource("5_hxf26"), ExtResource("6_etbrm"), ExtResource("7_lxstn"), ExtResource("8_jq754"), ExtResource("9_ntvo3"), ExtResource("18_srql8"), ExtResource("10_kq3nb"), ExtResource("11_b3r0y"), ExtResource("12_bpgni"), ExtResource("13_7i5io"), ExtResource("14_1m8ah"), ExtResource("4_hrpjq"), ExtResource("17_3i1qb"), ExtResource("16_k7kjd"), ExtResource("6_s7csj"), ExtResource("15_oc32e"), ExtResource("5_03gwc"), ExtResource("22_x65a4"), ExtResource("23_uj6ii"), ExtResource("3_sohnc")])
 
 [node name="LevelContainer" type="Node2D" parent="." unique_id=880857937]
 
