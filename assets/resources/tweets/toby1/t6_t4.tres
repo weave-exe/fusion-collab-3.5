@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://bebhlq0556nlk"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_sawey"]
+
+[resource]
+script = ExtResource("1_sawey")
+account_name = "gnome \"where\""
+text = "At most 1 frog is on the right of its pen"

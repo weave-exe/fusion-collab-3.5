@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LevelResource" format=3 uid="uid://bkk4tdwdxu2i2"]
+
+[ext_resource type="PackedScene" uid="uid://dwlybo4dbltii" path="res://assets/scenes/levels/toby/toby7.tscn" id="1_oys8m"]
+[ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="2_lfats"]
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="3_iri6c"]
+
+[resource]
+script = ExtResource("2_lfats")
+scene = ExtResource("1_oys8m")
+zoom = 4
+metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"

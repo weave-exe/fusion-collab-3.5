@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://csn5nkmwjd60j" path="res://assets/scripts/core/level.gd" id="1_u5ypv"]
 [ext_resource type="Script" uid="uid://c7ql1u5xlj4ip" path="res://assets/scripts/win_condition/win_condition.gd" id="2_4wr8x"]
 [ext_resource type="Script" uid="uid://c1adwhrifqsg5" path="res://assets/scripts/win_condition/log_win_condition.gd" id="3_5raer"]
+[ext_resource type="Texture2D" uid="uid://bbe4nywciv1uy" path="res://assets/sprites/decoration/gnome_decals.png" id="4_4wr8x"]
 [ext_resource type="TileSet" uid="uid://7kyid1hvpeoq" path="res://assets/resources/main_tileset.tres" id="4_b4ykt"]
 [ext_resource type="Texture2D" uid="uid://brldu3146fuk4" path="res://assets/sprites/tilesets/gnome_tiles.png" id="5_kf2cj"]
 [ext_resource type="PackedScene" uid="uid://cwsceq1vaacnb" path="res://assets/scenes/logs/log.tscn" id="6_aaj5f"]
@@ -13,10 +14,35 @@
 [ext_resource type="PackedScene" uid="uid://bqjpcxf0ajgn4" path="res://assets/scenes/decorative/decals/fg/fg_plant_c.tscn" id="11_21j7p"]
 [ext_resource type="PackedScene" uid="uid://itsdrmfp47ft" path="res://assets/scenes/decorative/decals/bg/rocks_normal.tscn" id="12_4bhen"]
 [ext_resource type="PackedScene" uid="uid://bosy4gmmyvvnf" path="res://assets/scenes/decorative/decals/bg/the_bug.tscn" id="13_udtqd"]
+[ext_resource type="PackedScene" uid="uid://f5u04egtixuo" path="res://assets/scenes/decorative/decals/tutorial/undo.tscn" id="15_b4ykt"]
+[ext_resource type="PackedScene" uid="uid://figp5avm0okj" path="res://assets/scenes/decorative/decals/tutorial/pause.tscn" id="16_kf2cj"]
 
 [sub_resource type="Resource" id="Resource_4kyv5"]
 script = ExtResource("3_5raer")
 metadata/_custom_type_script = "uid://c1adwhrifqsg5"
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5raer"]
+texture = ExtResource("4_4wr8x")
+3:1/0 = 0
+3:1/0/terrain_set = 0
+3:1/0/terrain = 0
+3:1/0/terrains_peering_bit/right_side = 0
+3:1/0/terrains_peering_bit/bottom_right_corner = 0
+3:1/0/terrains_peering_bit/bottom_side = 0
+3:1/0/terrains_peering_bit/bottom_left_corner = 0
+3:1/0/terrains_peering_bit/left_side = 0
+3:1/0/terrains_peering_bit/top_left_corner = 0
+3:1/0/terrains_peering_bit/top_side = 0
+3:1/0/terrains_peering_bit/top_right_corner = 0
+3:1/0/custom_data_0 = true
+
+[sub_resource type="TileSet" id="TileSet_b4ykt"]
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
+custom_data_layer_0/name = "frog_avoid"
+custom_data_layer_0/type = 1
+sources/0 = SubResource("TileSetAtlasSource_5raer")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b7axw"]
 texture = ExtResource("5_kf2cj")
@@ -80,6 +106,10 @@ script = ExtResource("1_u5ypv")
 terrain_layer = NodePath("TileMapLayer")
 moveables_root = NodePath("Moveables")
 win_conditions = Array[ExtResource("2_4wr8x")]([SubResource("Resource_4kyv5")])
+
+[node name="Mushrooms" type="TileMapLayer" parent="." unique_id=257332178]
+tile_map_data = PackedByteArray("AAD8//3/AAADAAEAAAD+/wMAAAADAAEAAAD9/wMAAAADAAEAAAD7/wIAAAADAAEAAAA=")
+tile_set = SubResource("TileSet_b4ykt")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1567310552 groups=["LevelTileMap"]]
 z_index = -2
@@ -169,3 +199,9 @@ position = Vector2(56, 56)
 [node name="The_Bug3" parent="Decals" unique_id=647719367 instance=ExtResource("13_udtqd")]
 position = Vector2(71, 56)
 flip_h = true
+
+[node name="Undo" parent="." unique_id=222314105 instance=ExtResource("15_b4ykt")]
+position = Vector2(-54, 93)
+
+[node name="Pause" parent="." unique_id=1796305941 instance=ExtResource("16_kf2cj")]
+position = Vector2(-52, 111)
