@@ -3,11 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://dedj10x1omg3d" path="res://assets/scenes/levels/gage/gage7.tscn" id="1_qoyyf"]
 [ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="2_uelhx"]
 [ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="3_tr2tm"]
-[ext_resource type="Resource" uid="uid://dgrp5jmfs8ywr" path="res://assets/resources/tweets/level_test/gage/g6_truth.tres" id="5_5mvxu"]
+[ext_resource type="Resource" uid="uid://xhto2p5y266p" path="res://assets/resources/tweets/level_test/gage/g7_lie1.tres" id="5_uelhx"]
+[ext_resource type="Resource" uid="uid://dsogbu1qgsfay" path="res://assets/resources/tweets/level_test/gage/g7_truth.tres" id="6_tr2tm"]
 
 [resource]
 script = ExtResource("2_uelhx")
 scene = ExtResource("1_qoyyf")
-tweets = Array[ExtResource("3_tr2tm")]([ExtResource("5_5mvxu")])
+tweets = Array[ExtResource("3_tr2tm")]([ExtResource("5_uelhx"), ExtResource("6_tr2tm")])
 zoom = 4
 metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"

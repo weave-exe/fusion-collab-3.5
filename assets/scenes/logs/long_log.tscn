@@ -19,6 +19,7 @@ atlas = ExtResource("5_ylqdd")
 region = Rect2(48, 32, 16, 16)
 
 [node name="Log" type="Node2D" unique_id=732302422 node_paths=PackedStringArray("sound_player")]
+z_index = 3
 script = ExtResource("1_1ii2n")
 sound_player = NodePath("LogSounds")
 sound_logs = Array[AudioStreamOggVorbis]([ExtResource("2_62yqv"), ExtResource("3_4bxda"), ExtResource("4_cx6kj")])
