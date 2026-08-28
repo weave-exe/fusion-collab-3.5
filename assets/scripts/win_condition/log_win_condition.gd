@@ -1,5 +1,5 @@
 extends WinCondition
-class_name LogWin
+class_name ObjectWin
  
 @export var group := "Log"
 @export var win_tiles_group := "WinTiles"
