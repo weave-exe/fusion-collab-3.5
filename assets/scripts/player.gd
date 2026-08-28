@@ -4,6 +4,7 @@ extends Moveable
 @export var particles: CPUParticles2D
 @export var particle_timer: Timer
 @export var win_timer: Timer
+@export var anim_timer: Timer
 
 
 func _ready() -> void:
@@ -71,8 +72,7 @@ func PlayerParticles(polarity:bool):
 		particles.emitting=false
 func win_anim() -> void:
 	LevelManager.level_completed=true
-	$PlayerSprite.animation="win"
-
+	anim_timer.start()
 	win_timer.start()
 	
 
@@ -89,4 +89,9 @@ func _on_particle_timer_timeout() -> void:
 func _on_win_timer_timeout() -> void:
 	LevelManager.load_next()
 	LevelManager.level_completed=false
-	pass # Replace with function body.
+	
+
+
+func _on_anim_timer_timeout() -> void:
+	$PlayerSprite.animation="win"
+	
