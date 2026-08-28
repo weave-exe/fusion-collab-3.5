@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://brgnkcsx1pevy"]
+
+[ext_resource type="Script" uid="uid://4fuwtdfhy0nr" path="res://assets/scripts/ui/deathwipe.gd" id="1_1munn"]
+
+[node name="Deathwipe" type="Node2D" unique_id=322943306 node_paths=PackedStringArray("right", "left")]
+script = ExtResource("1_1munn")
+right = NodePath("Right")
+left = NodePath("Left")
+
+[node name="Right" type="ColorRect" parent="." unique_id=1711765258]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 4000.0
+offset_top = -2000.0
+offset_right = 8000.0
+offset_bottom = 2000.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.5235988
+color = Color(0, 0, 0, 1)
+
+[node name="Left" type="ColorRect" parent="." unique_id=321260518]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4000.0
+offset_top = -2000.0
+offset_bottom = 2000.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.5235988
+color = Color(0, 0, 0, 1)
