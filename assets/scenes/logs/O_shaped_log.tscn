@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://dgv85l2psd8we"]
+
+[ext_resource type="Script" uid="uid://ca8iocmfk2xkf" path="res://assets/scripts/log.gd" id="1_p8a10"]
+[ext_resource type="AudioStream" uid="uid://beop33c47xn2m" path="res://assets/audio/sound/log_push_1.ogg" id="2_kpbqa"]
+[ext_resource type="AudioStream" uid="uid://b8twjuo5uhpli" path="res://assets/audio/sound/log_push_2.ogg" id="3_q2vtc"]
+[ext_resource type="AudioStream" uid="uid://d2d8fviscvsa2" path="res://assets/audio/sound/log_push_3.ogg" id="4_umyxd"]
+[ext_resource type="Texture2D" uid="uid://dl2kaiumaive3" path="res://assets/sprites/tilesets/log_tiles.png" id="5_j46wq"]
+
+[node name="Log" type="Node2D" unique_id=732302422 node_paths=PackedStringArray("sound_player") groups=["Log"]]
+z_index = 2
+script = ExtResource("1_p8a10")
+sound_player = NodePath("LogSounds")
+sound_logs = Array[AudioStreamOggVorbis]([ExtResource("2_kpbqa"), ExtResource("3_q2vtc"), ExtResource("4_umyxd")])
+shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(1, 0), Vector2i(0, 1), Vector2i(0, 2), Vector2i(1, 0), Vector2i(2, 0), Vector2i(2, 1), Vector2i(2, 2)])
+metadata/_custom_type_script = "uid://b5qmu3d344sls"
+
+[node name="Crate3" type="Sprite2D" parent="." unique_id=191170877]
+texture = ExtResource("5_j46wq")
+region_enabled = true
+region_rect = Rect2(0, 16, 16, 16)
+
+[node name="Crate4" type="Sprite2D" parent="." unique_id=2109536084]
+position = Vector2(0, 32)
+texture = ExtResource("5_j46wq")
+region_enabled = true
+region_rect = Rect2(0, 32, 16, 16)
+
+[node name="Crate5" type="Sprite2D" parent="." unique_id=11916743]
+position = Vector2(0, 16)
+texture = ExtResource("5_j46wq")
+region_enabled = true
+region_rect = Rect2(48, 16, 16, 16)
+
+[node name="Crate6" type="Sprite2D" parent="." unique_id=1780647087]
+position = Vector2(32, 0)
+texture = ExtResource("5_j46wq")
+region_enabled = true
+region_rect = Rect2(16, 16, 16, 16)
+
+[node name="Crate7" type="Sprite2D" parent="." unique_id=1244843888]
+position = Vector2(32, 32)
+texture = ExtResource("5_j46wq")
+region_enabled = true
+region_rect = Rect2(16, 32, 16, 16)
+
+[node name="Crate8" type="Sprite2D" parent="." unique_id=193475359]
+position = Vector2(32, 16)
+texture = ExtResource("5_j46wq")
+region_enabled = true
+region_rect = Rect2(48, 16, 16, 16)
+
+[node name="Crate9" type="Sprite2D" parent="." unique_id=1693046936]
+position = Vector2(16, 0)
+texture = ExtResource("5_j46wq")
+region_enabled = true
+region_rect = Rect2(16, 0, 16, 16)
+
+[node name="Crate10" type="Sprite2D" parent="." unique_id=1776265151]
+position = Vector2(16, 32)
+texture = ExtResource("5_j46wq")
+region_enabled = true
+region_rect = Rect2(16, 0, 16, 16)
+
+[node name="LogSounds" type="AudioStreamPlayer" parent="." unique_id=356169724]
+stream = ExtResource("2_kpbqa")
+volume_db = -13.0
+max_polyphony = 2
+bus = &"SFX"
