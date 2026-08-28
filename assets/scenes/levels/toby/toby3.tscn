@@ -84,6 +84,7 @@ tile_set = ExtResource("4_qk7ij")
 
 [node name="TileMapLayerWin" type="TileMapLayer" parent="." unique_id=1666982416 groups=["WinTiles"]]
 z_index = -3
+tile_map_data = PackedByteArray("AAD//wQAAAAIAAEAAAD//wUAAAAIAAIAAAD//wYAAAAIAAMAAAD//wEAAAAHAAEAAAD//wIAAAAHAAIAAAD//wMAAAAHAAMAAAD///7/AAAGAAEAAAD/////AAAGAAIAAAD//wAAAAAGAAMAAAA=")
 tile_set = SubResource("TileSet_xrxaf")
 
 [node name="Moveables" type="Node2D" parent="." unique_id=1616387951]
