@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="LevelResource" format=3 uid="uid://c55d4h8qfgj5i"]
+
+[ext_resource type="PackedScene" uid="uid://btyuaax1l7rhf" path="res://assets/scenes/levels/toby/toby5_riddle.tscn" id="1_rdddc"]
+[ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="2_cecwl"]
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="3_rdddc"]
+[ext_resource type="Resource" uid="uid://dl1joukumvfe7" path="res://assets/resources/tweets/toby1/tweet50.tres" id="4_f46wl"]
+[ext_resource type="Resource" uid="uid://bjmv673vipuib" path="res://assets/resources/tweets/toby1/tweet51.tres" id="5_3xehv"]
+[ext_resource type="Resource" uid="uid://b3yads7m137lt" path="res://assets/resources/tweets/toby1/tweet52.tres" id="6_vuw8o"]
+[ext_resource type="Resource" uid="uid://dpij8lu562ray" path="res://assets/resources/tweets/toby1/tweet53.tres" id="7_e3nr4"]
+[ext_resource type="Resource" uid="uid://bw3hjvgoplqpc" path="res://assets/resources/tweets/toby1/tweet54.tres" id="8_ua3de"]
+
+[resource]
+script = ExtResource("2_cecwl")
+scene = ExtResource("1_rdddc")
+tweets = Array[ExtResource("3_rdddc")]([ExtResource("4_f46wl"), ExtResource("5_3xehv"), ExtResource("6_vuw8o"), ExtResource("7_e3nr4"), ExtResource("8_ua3de")])
+zoom = 3
+metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"
