@@ -9,6 +9,9 @@ extends Node2D
 @export var sound_close_phone: AudioStreamOggVorbis
 @export var phone_sounds: AudioStreamPlayer2D
 @export var phone_ui_sounds: AudioStreamPlayer2D
+@export var twitter_sprite: Sprite2D
+@export var gnome_twitter_ui: CompressedTexture2D
+@export var gnome_twitter_ui_pause: CompressedTexture2D
 
 # refactoring to just 1 tween for open/close phone
 var _tween: Tween
@@ -60,6 +63,7 @@ func close_menu():
 # breaking ui up into smaller chunks basically
 func enable_menu_elements():
 	menu_manager.visible=true
+	twitter_sprite.texture=gnome_twitter_ui_pause
 	UIG.menu_open=true
 	for i in menu_manager.level_buttons.size():
 		if menu_manager.level_buttons[i].level_num<=LevelManager.furthest_level:
@@ -79,6 +83,7 @@ func disable_menu_elements():
 	
 func enable_twitter_elements():
 	tweet_manager.visible=true
+	twitter_sprite.texture=gnome_twitter_ui
 	UIG.twitter_open=true
 	tweet_manager.bind_tweets()
 	
