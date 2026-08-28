@@ -9,6 +9,14 @@
 [ext_resource type="Texture2D" uid="uid://byc6g6qkn2n11" path="res://assets/sprites/decoration/frame_for_design.png" id="8_iq6rr"]
 [ext_resource type="PackedScene" uid="uid://bceu0kbt2wv2q" path="res://assets/scenes/logs/long_log.tscn" id="8_qedth"]
 [ext_resource type="PackedScene" uid="uid://ohk2hk5tww2m" path="res://assets/scenes/decorative/decals/bg/flower_pot.tscn" id="9_qedth"]
+[ext_resource type="PackedScene" uid="uid://cv88xepjuy7ab" path="res://assets/scenes/decorative/decals/fg/fg_plant_b.tscn" id="10_inhny"]
+[ext_resource type="PackedScene" uid="uid://bqjpcxf0ajgn4" path="res://assets/scenes/decorative/decals/fg/fg_plant_c.tscn" id="11_3bw4e"]
+[ext_resource type="PackedScene" uid="uid://bxthxmrub33hm" path="res://assets/scenes/decorative/decals/fg/fg_plant_d.tscn" id="12_l4tp0"]
+[ext_resource type="PackedScene" uid="uid://itsdrmfp47ft" path="res://assets/scenes/decorative/decals/bg/rocks_normal.tscn" id="13_iq6rr"]
+[ext_resource type="PackedScene" uid="uid://tsu1ixi6fvdf" path="res://assets/scenes/decorative/decals/bg/flower_red.tscn" id="14_pcuab"]
+[ext_resource type="PackedScene" uid="uid://cka2vp1lacpod" path="res://assets/scenes/decorative/decals/bg/flower_white.tscn" id="15_pkes0"]
+[ext_resource type="PackedScene" uid="uid://c1j483j6fc4w5" path="res://assets/scenes/decorative/decals/bg/flower_blue.tscn" id="16_pudco"]
+[ext_resource type="PackedScene" uid="uid://dodwwgb5und32" path="res://assets/scenes/decorative/decals/bg/flower_yellow.tscn" id="17_ebjjm"]
 
 [sub_resource type="Resource" id="Resource_4kyv5"]
 script = ExtResource("3_orhsq")
@@ -108,3 +116,58 @@ texture = ExtResource("8_iq6rr")
 
 [node name="Flower_Pot" parent="Decals" unique_id=146636199 instance=ExtResource("9_qedth")]
 position = Vector2(104, 104)
+
+[node name="Fg_Plant_B" parent="Decals" unique_id=2043718838 instance=ExtResource("10_inhny")]
+position = Vector2(110, 53)
+
+[node name="Fg_Plant_B2" parent="Decals" unique_id=1368686091 instance=ExtResource("10_inhny")]
+position = Vector2(40, 104)
+
+[node name="Fg_Plant_B3" parent="Decals" unique_id=902228556 instance=ExtResource("10_inhny")]
+position = Vector2(49, 136)
+
+[node name="Fg_Plant_B4" parent="Decals" unique_id=1622259042 instance=ExtResource("10_inhny")]
+position = Vector2(158, 120)
+
+[node name="Fg_Plant_C" parent="Decals" unique_id=186171496 instance=ExtResource("11_3bw4e")]
+position = Vector2(109, -50)
+
+[node name="Fg_Plant_C2" parent="Decals" unique_id=1396802098 instance=ExtResource("11_3bw4e")]
+position = Vector2(-76, -27)
+
+[node name="Fg_Plant_C3" parent="Decals" unique_id=1228796331 instance=ExtResource("11_3bw4e")]
+position = Vector2(-42, 73)
+
+[node name="Fg_Plant_D" parent="Decals" unique_id=860447265 instance=ExtResource("12_l4tp0")]
+position = Vector2(-65, 42)
+
+[node name="Fg_Plant_D2" parent="Decals" unique_id=1733884052 instance=ExtResource("12_l4tp0")]
+position = Vector2(138, 57)
+
+[node name="Rocks_Normal" parent="Decals" unique_id=1720116049 instance=ExtResource("13_iq6rr")]
+position = Vector2(-40, 8)
+
+[node name="Flower_Red" parent="Decals" unique_id=2023209951 instance=ExtResource("14_pcuab")]
+position = Vector2(72, 40)
+
+[node name="Flower_White" parent="Decals" unique_id=1667100831 instance=ExtResource("15_pkes0")]
+position = Vector2(8, 104)
+
+[node name="Flower_White2" parent="Decals" unique_id=180022065 instance=ExtResource("15_pkes0")]
+position = Vector2(-24, 40)
+flip_h = true
+
+[node name="Flower_Blue" parent="Decals" unique_id=463051594 instance=ExtResource("16_pudco")]
+position = Vector2(-40, -40)
+
+[node name="Flower_Blue2" parent="Decals" unique_id=1303832710 instance=ExtResource("16_pudco")]
+position = Vector2(-40, -24)
+
+[node name="Flower_White3" parent="Decals" unique_id=987634866 instance=ExtResource("15_pkes0")]
+position = Vector2(72, -40)
+
+[node name="Flower_Yellow" parent="Decals" unique_id=1583321788 instance=ExtResource("17_ebjjm")]
+position = Vector2(56, -40)
+
+[node name="Flower_Yellow2" parent="Decals" unique_id=1954211667 instance=ExtResource("17_ebjjm")]
+position = Vector2(-9, 88)

@@ -9,6 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://cwsceq1vaacnb" path="res://assets/scenes/logs/log.tscn" id="7_xji0c"]
 [ext_resource type="Texture2D" uid="uid://byc6g6qkn2n11" path="res://assets/sprites/decoration/frame_for_design.png" id="8_52xqs"]
 [ext_resource type="PackedScene" uid="uid://tsu1ixi6fvdf" path="res://assets/scenes/decorative/decals/bg/flower_red.tscn" id="9_qc4jx"]
+[ext_resource type="PackedScene" uid="uid://bqjpcxf0ajgn4" path="res://assets/scenes/decorative/decals/fg/fg_plant_c.tscn" id="11_5jx12"]
+[ext_resource type="PackedScene" uid="uid://cv88xepjuy7ab" path="res://assets/scenes/decorative/decals/fg/fg_plant_b.tscn" id="12_fob3s"]
+[ext_resource type="PackedScene" uid="uid://dym3o6h6mglps" path="res://assets/scenes/decorative/decals/fg/fg_plant_a.tscn" id="13_4ob1f"]
 [ext_resource type="PackedScene" uid="uid://itsdrmfp47ft" path="res://assets/scenes/decorative/decals/bg/rocks_normal.tscn" id="15_usory"]
 
 [sub_resource type="Resource" id="Resource_4kyv5"]
@@ -217,3 +220,32 @@ position = Vector2(8, -40)
 
 [node name="Rocks_Normal5" parent="Decals" unique_id=1649915697 instance=ExtResource("15_usory")]
 position = Vector2(8, -8)
+
+[node name="Fg_Plant_C" parent="Decals" unique_id=2043718838 instance=ExtResource("11_5jx12")]
+position = Vector2(107, -59)
+
+[node name="Fg_Plant_B" parent="Decals" unique_id=402918140 instance=ExtResource("12_fob3s")]
+position = Vector2(124, 108)
+
+[node name="Fg_Plant_B2" parent="Decals" unique_id=301112744 instance=ExtResource("12_fob3s")]
+position = Vector2(-97, -58)
+
+[node name="Fg_Plant_C2" parent="Decals" unique_id=518973204 instance=ExtResource("11_5jx12")]
+position = Vector2(-106, 107)
+
+[node name="Fg_Plant_C3" parent="Decals" unique_id=739598148 instance=ExtResource("11_5jx12")]
+position = Vector2(105, 123)
+
+[node name="Fg_Plant_A" parent="Decals" unique_id=56936184 instance=ExtResource("13_4ob1f")]
+position = Vector2(-129, 106)
+
+[node name="Fg_Plant_A2" parent="Decals" unique_id=1580253976 instance=ExtResource("13_4ob1f")]
+position = Vector2(-81, -93)
+
+[node name="Fg_Plant_A3" parent="Decals" unique_id=37963423 instance=ExtResource("13_4ob1f")]
+position = Vector2(162, 9)
+flip_h = true
+
+[node name="Fg_Plant_A4" parent="Decals" unique_id=1348291915 instance=ExtResource("13_4ob1f")]
+position = Vector2(163, 18)
+flip_h = true
