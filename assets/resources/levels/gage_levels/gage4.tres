@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="LevelResource" format=3 uid="uid://bfgl2s3ypbtwi"]
 
-[ext_resource type="PackedScene" uid="uid://1yjywa410ve3" path="res://assets/scenes/levels/gage4.tscn" id="1_6u7t1"]
+[ext_resource type="PackedScene" uid="uid://1yjywa410ve3" path="res://assets/scenes/levels/gage/gage4.tscn" id="1_6u7t1"]
 [ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="2_vat7s"]
 [ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="3_e35p2"]
 [ext_resource type="Resource" uid="uid://ckwcq0bgd11db" path="res://assets/resources/tweets/level_test/gage/g4_lie1.tres" id="4_6u7t1"]

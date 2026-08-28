@@ -11,6 +11,7 @@
 [ext_resource type="Resource" uid="uid://d31cj112xqul1" path="res://assets/resources/levels/Test2.tres" id="6_jxp1l"]
 [ext_resource type="AudioStream" uid="uid://0yq41ly6l7vm" path="res://assets/audio/sound/reset.ogg" id="10_k57sx"]
 [ext_resource type="Script" uid="uid://gpwondiqjt7y" path="res://assets/scripts/ui/reset_sound.gd" id="11_hb0f8"]
+[ext_resource type="Script" uid="uid://bki10dp861dw1" path="res://assets/scripts/ui/win_sound.gd" id="12_hb0f8"]
 
 [sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_3cxim"]
 clip_count = 1
@@ -55,3 +56,9 @@ stream = ExtResource("10_k57sx")
 max_polyphony = 3
 bus = &"SFX"
 script = ExtResource("11_hb0f8")
+
+[node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=712101643]
+stream = ExtResource("10_k57sx")
+max_polyphony = 3
+bus = &"SFX"
+script = ExtResource("12_hb0f8")

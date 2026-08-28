@@ -4,7 +4,7 @@ extends Moveable
 @export var particles: CPUParticles2D
 @export var particle_timer: Timer
 @export var win_timer: Timer
-@export var win_sound: AudioStreamPlayer
+@export var anim_timer: Timer
 
 
 func _ready() -> void:
@@ -12,6 +12,8 @@ func _ready() -> void:
 
 func _input(event: InputEvent) -> void:
 	if UIG.phone_open:
+		return
+	if LevelManager.level_completed:
 		return
 	if !event.is_pressed():
 		return
@@ -69,9 +71,8 @@ func PlayerParticles(polarity:bool):
 	else:
 		particles.emitting=false
 func win_anim() -> void:
-	win_sound.play()
-	$PlayerSprite.animation="win"
-
+	LevelManager.level_completed=true
+	anim_timer.start()
 	win_timer.start()
 	
 
@@ -87,4 +88,10 @@ func _on_particle_timer_timeout() -> void:
 
 func _on_win_timer_timeout() -> void:
 	LevelManager.load_next()
-	pass # Replace with function body.
+	LevelManager.level_completed=false
+	
+
+
+func _on_anim_timer_timeout() -> void:
+	$PlayerSprite.animation="win"
+	
