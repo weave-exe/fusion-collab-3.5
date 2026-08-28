@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://cpy0ts37cwwtd"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_1gb0r"]
+
+[resource]
+script = ExtResource("1_1gb0r")
+account_name = "TheTruthfulGnome"
+text = "My roomate is a frog and he told me he loves living with ants, I feel like that is kinda problematic"
+avatar = Vector2i(4, 2)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"

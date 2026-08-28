@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://boj4ugupmg3jy"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_qsafg"]
+
+[resource]
+script = ExtResource("1_qsafg")
+account_name = "DefinitelyNotGnome1"
+text = "I really like when logs fit perfectly in small spaces, more people should do that"
+avatar = Vector2i(3, 1)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"
