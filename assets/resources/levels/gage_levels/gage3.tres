@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="LevelResource" format=3 uid="uid://dlorpcdlugeyu"]
+
+[ext_resource type="PackedScene" uid="uid://cu5cqegnp2h13" path="res://assets/scenes/levels/gage3.tscn" id="1_bv15e"]
+[ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="2_u02jq"]
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="3_2i6v6"]
+[ext_resource type="Resource" uid="uid://dxt2gk4tl0v3n" path="res://assets/resources/tweets/level_test/gage/g3_lie2.tres" id="4_2i6v6"]
+[ext_resource type="Resource" uid="uid://b4j68lrqnrpwu" path="res://assets/resources/tweets/level_test/gage/g3_truth.tres" id="5_132b4"]
+[ext_resource type="Resource" uid="uid://dyo4af2tgpj4k" path="res://assets/resources/tweets/level_test/gage/g3_lie1.tres" id="6_lk3jo"]
+
+[resource]
+script = ExtResource("2_u02jq")
+scene = ExtResource("1_bv15e")
+tweets = Array[ExtResource("3_2i6v6")]([ExtResource("4_2i6v6"), ExtResource("5_132b4"), ExtResource("6_lk3jo")])
+zoom = 6
+metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"

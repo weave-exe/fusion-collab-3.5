@@ -23,7 +23,7 @@
 script = ExtResource("3_qnog2")
 metadata/_custom_type_script = "uid://c1adwhrifqsg5"
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p1ygr"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ss5vb"]
 texture = ExtResource("4_mcxl8")
 3:1/0 = 0
 3:1/0/terrain_set = 0
@@ -44,7 +44,7 @@ terrain_set_0/terrain_0/name = "Terrain 0"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
 custom_data_layer_0/name = "frog_avoid"
 custom_data_layer_0/type = 1
-sources/0 = SubResource("TileSetAtlasSource_p1ygr")
+sources/0 = SubResource("TileSetAtlasSource_ss5vb")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_21vbr"]
 texture = ExtResource("5_30dgo")
@@ -169,7 +169,11 @@ position = Vector2(-160, -48)
 flip_h = true
 
 [node name="The_Bug" parent="." unique_id=949799559 instance=ExtResource("16_6cjnq")]
-position = Vector2(168, 40)
+position = Vector2(152, 24)
+flip_h = true
+
+[node name="The_Bug2" parent="." unique_id=217146424 instance=ExtResource("16_6cjnq")]
+position = Vector2(152, 56)
 flip_h = true
 
 [node name="Fg_Plant_C" parent="." unique_id=1062336057 instance=ExtResource("17_7jgms")]

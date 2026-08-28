@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://bhgxuitecl3or"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_d5hlq"]
+
+[resource]
+script = ExtResource("1_d5hlq")
+account_name = "living_in_a_mushroom"
+text = "forget everything you know"
+avatar = Vector2i(4, 0)
