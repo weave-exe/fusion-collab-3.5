@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://bxor2vbycpf3y"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_gtdwb"]
+
+[resource]
+script = ExtResource("1_gtdwb")
+account_name = "gnome1"
+text = "I'm gnome1, I'm here to help! \\nPush the log on the left twice!"

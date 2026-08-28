@@ -22,7 +22,7 @@
 script = ExtResource("3_b7axw")
 metadata/_custom_type_script = "uid://c1adwhrifqsg5"
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_21vbr"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b7axw"]
 texture = ExtResource("5_b7axw")
 0:0/0 = 0
 1:0/0 = 0
@@ -77,7 +77,7 @@ texture = ExtResource("5_b7axw")
 9:5/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_xrxaf"]
-sources/0 = SubResource("TileSetAtlasSource_21vbr")
+sources/0 = SubResource("TileSetAtlasSource_b7axw")
 
 [node name="Level0" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root")]
 script = ExtResource("1_qnb2k")
