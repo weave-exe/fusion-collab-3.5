@@ -9,6 +9,7 @@
 [ext_resource type="Resource" uid="uid://dlorpcdlugeyu" path="res://assets/resources/levels/gage_levels/gage3.tres" id="5_03gwc"]
 [ext_resource type="PackedScene" uid="uid://dhw1iqckc8ha7" path="res://assets/scenes/decorative/mist.tscn" id="5_nd2f5"]
 [ext_resource type="Resource" uid="uid://bfgl2s3ypbtwi" path="res://assets/resources/levels/gage_levels/gage4.tres" id="6_s7csj"]
+[ext_resource type="Resource" uid="uid://f6lrnbu0kjj5" path="res://assets/resources/levels/chelito/chel1.tres" id="7_03gwc"]
 [ext_resource type="AudioStream" uid="uid://ccw2xynojeglh" path="res://assets/audio/sound/ForestMorningBirds_SFXB.75.ogg" id="8_hb0f8"]
 [ext_resource type="AudioStream" uid="uid://0yq41ly6l7vm" path="res://assets/audio/sound/reset.ogg" id="10_k57sx"]
 [ext_resource type="Script" uid="uid://gpwondiqjt7y" path="res://assets/scripts/ui/reset_sound.gd" id="11_hb0f8"]
@@ -32,7 +33,7 @@ glow_blend_mode = 0
 
 [node name="GameMain" type="Node2D" unique_id=865138517]
 script = ExtResource("1_mvut7")
-levels = Array[ExtResource("2_mlek0")]([ExtResource("3_sohnc"), ExtResource("4_hrpjq"), ExtResource("5_03gwc"), ExtResource("6_s7csj")])
+levels = Array[ExtResource("2_mlek0")]([ExtResource("7_03gwc"), ExtResource("3_sohnc"), ExtResource("4_hrpjq"), ExtResource("5_03gwc"), ExtResource("6_s7csj")])
 
 [node name="LevelContainer" type="Node2D" parent="." unique_id=880857937]
 
