@@ -32,7 +32,7 @@ group = "Frog"
 win_tiles_group = "WinTilesFrog"
 metadata/_custom_type_script = "uid://c1adwhrifqsg5"
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rn20g"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qgtx5"]
 texture = ExtResource("5_6o71q")
 3:1/0 = 0
 3:1/0/terrain_set = 0
@@ -53,7 +53,7 @@ terrain_set_0/terrain_0/name = "Terrain 0"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
 custom_data_layer_0/name = "frog_avoid"
 custom_data_layer_0/type = 1
-sources/0 = SubResource("TileSetAtlasSource_rn20g")
+sources/0 = SubResource("TileSetAtlasSource_qgtx5")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b7axw"]
 texture = ExtResource("6_rhpv8")
@@ -188,6 +188,7 @@ tile_map_data = PackedByteArray("AAAVAAwABAAAAAMAAAAVAAsABAACAAIAAAAVAAoABAACAAI
 tile_set = ExtResource("4_fr5hw")
 
 [node name="Mushrooms" type="TileMapLayer" parent="." unique_id=520905384]
+tile_map_data = PackedByteArray("AAD5//v/AAADAAEAAAD6//v/AAADAAEAAAACAAQAAAADAAEAAAADAAQAAAADAAEAAAAHAP7/AAADAAEAAAD5/wAAAAADAAEAAAD5/wEAAAADAAEAAAA=")
 tile_set = SubResource("TileSet_gy5n5")
 
 [node name="TileMapLayerWin" type="TileMapLayer" parent="." unique_id=1666982416 groups=["WinTiles"]]

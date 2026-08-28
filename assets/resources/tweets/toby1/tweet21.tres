@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://e5mx6ge06mqy"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_cb7tb"]
+
+[resource]
+script = ExtResource("1_cb7tb")
+account_name = "red_herring"
+text = "PLEEEEEAAASE"

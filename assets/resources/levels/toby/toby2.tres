@@ -4,10 +4,12 @@
 [ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="2_supq1"]
 [ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="3_2pvnl"]
 [ext_resource type="Resource" uid="uid://ck2lb76o82vy8" path="res://assets/resources/tweets/toby1/tweet20.tres" id="4_h8sr8"]
+[ext_resource type="Resource" uid="uid://e5mx6ge06mqy" path="res://assets/resources/tweets/toby1/tweet21.tres" id="4_t12dk"]
+[ext_resource type="Resource" uid="uid://3hha05m1tag8" path="res://assets/resources/tweets/toby1/tweet22.tres" id="6_supq1"]
 
 [resource]
 script = ExtResource("2_supq1")
 scene = ExtResource("1_t12dk")
-tweets = Array[ExtResource("3_2pvnl")]([ExtResource("4_h8sr8")])
+tweets = Array[ExtResource("3_2pvnl")]([ExtResource("6_supq1"), ExtResource("4_h8sr8"), ExtResource("4_t12dk")])
 zoom = 3
 metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"
