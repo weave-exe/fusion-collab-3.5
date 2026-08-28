@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://g841ixgijl34"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_2pict"]
+
+[resource]
+script = ExtResource("1_2pict")
+account_name = "TheOneAndGnomely"
+text = "anyone know how to bend a log? need it. for reasons"
+avatar = Vector2i(2, 0)

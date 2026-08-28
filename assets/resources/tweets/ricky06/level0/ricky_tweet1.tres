@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://b8agpgl1lnccc"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_qnunl"]
+
+[resource]
+script = ExtResource("1_qnunl")
+account_name = "TheOneAndGnomely"
+text = "growing up me and my brother couldnt stand each other. mum used to shut us in the garden shed for an afternoon"
+avatar = Vector2i(2, 0)

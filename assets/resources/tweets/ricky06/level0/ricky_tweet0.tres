@@ -4,5 +4,6 @@
 
 [resource]
 script = ExtResource("1_80be0")
-account_name = "ricky06"
-text = "The biggest most ambitious mod I've ever made with my good friend ABuffZucchini releasing next week August 15 :') I have many feelings and probably even more when it's finally out but in the mean time feel free to check out this trailer! It is quite auraful in my opinion youtu.be/ELbhhq9BVq8?..."
+account_name = "TheOneAndGnomely"
+text = "update on my frog/bug situation. they are still not speaking. i've tried everything except brute force"
+avatar = Vector2i(2, 0)
