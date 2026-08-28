@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dmrju2rubywke"
+path="res://.godot/imported/drums-track-twt.ogg-7b1710aae9016aea2a6ab519d43f90cd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/music/twitter oggs/drums-track-twt.ogg"
+dest_files=["res://.godot/imported/drums-track-twt.ogg-7b1710aae9016aea2a6ab519d43f90cd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

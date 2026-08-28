@@ -1,6 +1,7 @@
 extends Node
 
 signal level_loaded(level: Level, zoom: int)
+signal layer_array(layers)
 signal level_reset()
 
 var container: Node
@@ -10,6 +11,7 @@ var furthest_level:int=0
 var current_level: Level
 var current_level_resource: LevelResource
 var level_completed:bool=false
+var layers: Array
 
 func setup(_container: Node, _levels: Array[LevelResource]) -> void:
 	container = _container
@@ -29,7 +31,11 @@ func load_level(i: int) -> void:
 	current_level_resource = levels[i]
 	current_level = current_level_resource.scene.instantiate() as Level
 	container.add_child(current_level)
-	level_loaded.emit(current_level, levels[i].zoom)	
+	level_loaded.emit(current_level, levels[i].zoom)
+	layers.clear()
+	for j in levels[i].music_layers.size():
+		layers.append(levels[i].music_layers[j])
+	layer_array.emit(layers)
 	if level_index > furthest_level:
 		furthest_level=level_index
 

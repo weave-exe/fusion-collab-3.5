@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dmbbc4ksc5c7b"
+path="res://.godot/imported/harmony-track-twt.ogg-a305d4f676d669cc56a4c73079c2c45a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/music/twitter oggs/harmony-track-twt.ogg"
+dest_files=["res://.godot/imported/harmony-track-twt.ogg-a305d4f676d669cc56a4c73079c2c45a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

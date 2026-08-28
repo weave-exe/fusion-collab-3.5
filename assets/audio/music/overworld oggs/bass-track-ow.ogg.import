@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b0i5sp6lebd34"
+path="res://.godot/imported/bass-track-ow.ogg-13fe35254a79450110fc43f23e00d9a0.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/music/overworld oggs/bass-track-ow.ogg"
+dest_files=["res://.godot/imported/bass-track-ow.ogg-13fe35254a79450110fc43f23e00d9a0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
