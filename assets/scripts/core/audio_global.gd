@@ -10,8 +10,3 @@ func _ready():
 
 func update_view(view):
 	current_view = view
-	print(current_view)
-	
-func sfx_handle(name):
-	#can be used later if we decide on a different means of sfx handling
-	pass

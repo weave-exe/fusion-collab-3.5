@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cax7gsial1f0m"
+path="res://.godot/imported/melody-track-twt.ogg-d1a1a46d675652460d117725e8647fbc.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/music/twitter oggs/melody-track-twt.ogg"
+dest_files=["res://.godot/imported/melody-track-twt.ogg-d1a1a46d675652460d117725e8647fbc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
