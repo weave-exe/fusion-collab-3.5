@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://jd8y6ohn587l"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_gq1pg"]
+
+[resource]
+script = ExtResource("1_gq1pg")
+account_name = "5899383463nome"
+text = "MY_GARDEN_IN_BIO"

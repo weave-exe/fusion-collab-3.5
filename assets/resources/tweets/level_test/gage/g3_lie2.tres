@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://dxt2gk4tl0v3n"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_yyhht"]
+
+[resource]
+script = ExtResource("1_yyhht")
+account_name = "big_g_nome"
+text = "I have slain many a beast, and travelled far, and also wide to bring you digital gnomecoin (check bio for savings)"
+avatar = Vector2i(4, 2)

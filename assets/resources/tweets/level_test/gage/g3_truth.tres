@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://b4j68lrqnrpwu"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_dkude"]
+
+[resource]
+script = ExtResource("1_dkude")
+account_name = "one_lonely_gnome"
+text = "The Frog Must Make Peace With The Mushroom."
+avatar = Vector2i(2, 2)

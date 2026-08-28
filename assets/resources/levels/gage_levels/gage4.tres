@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="LevelResource" format=3 uid="uid://bfgl2s3ypbtwi"]
+
+[ext_resource type="PackedScene" uid="uid://1yjywa410ve3" path="res://assets/scenes/levels/gage4.tscn" id="1_6u7t1"]
+[ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="2_vat7s"]
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="3_e35p2"]
+[ext_resource type="Resource" uid="uid://ckwcq0bgd11db" path="res://assets/resources/tweets/level_test/gage/g4_lie1.tres" id="4_6u7t1"]
+[ext_resource type="Resource" uid="uid://cp0w75gkuu8px" path="res://assets/resources/tweets/level_test/gage/g4_truth.tres" id="5_4ky1w"]
+[ext_resource type="Resource" uid="uid://hrug4ag66ucl" path="res://assets/resources/tweets/level_test/gage/g4_lie2.tres" id="6_w0fjc"]
+[ext_resource type="Resource" uid="uid://cqd8anx0mf1v1" path="res://assets/resources/tweets/level_test/gage/g4_lie3.tres" id="7_turck"]
+[ext_resource type="Resource" uid="uid://jd8y6ohn587l" path="res://assets/resources/tweets/level_test/gage/g4_lie4.tres" id="8_jafaa"]
+[ext_resource type="Resource" uid="uid://bixvqj4rqtf8n" path="res://assets/resources/tweets/level_test/gage/g4_lie5.tres" id="9_6rqn0"]
+[ext_resource type="Resource" uid="uid://ddhkh2ik08vfl" path="res://assets/resources/tweets/level_test/gage/g4_lie6.tres" id="10_kmj81"]
+
+[resource]
+script = ExtResource("2_vat7s")
+scene = ExtResource("1_6u7t1")
+tweets = Array[ExtResource("3_e35p2")]([ExtResource("4_6u7t1"), ExtResource("5_4ky1w"), ExtResource("6_w0fjc"), ExtResource("7_turck"), ExtResource("8_jafaa"), ExtResource("9_6rqn0"), ExtResource("10_kmj81")])
+zoom = 3
+metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"

@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://wr6xfs6iufpu"]
+
+[ext_resource type="Script" uid="uid://ca8iocmfk2xkf" path="res://assets/scripts/log.gd" id="1_egs20"]
+[ext_resource type="AudioStream" uid="uid://beop33c47xn2m" path="res://assets/audio/sound/log_push_1.ogg" id="2_dosdk"]
+[ext_resource type="AudioStream" uid="uid://b8twjuo5uhpli" path="res://assets/audio/sound/log_push_2.ogg" id="3_pqqsc"]
+[ext_resource type="AudioStream" uid="uid://d2d8fviscvsa2" path="res://assets/audio/sound/log_push_3.ogg" id="4_mi1ga"]
+[ext_resource type="Texture2D" uid="uid://dl2kaiumaive3" path="res://assets/sprites/tilesets/log_tiles.png" id="5_g17na"]
+
+[node name="Log" type="Node2D" unique_id=732302422 node_paths=PackedStringArray("sound_player") groups=["Log"]]
+script = ExtResource("1_egs20")
+sound_player = NodePath("LogSounds")
+sound_logs = Array[AudioStreamOggVorbis]([ExtResource("2_dosdk"), ExtResource("3_pqqsc"), ExtResource("4_mi1ga")])
+shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(0, -1), Vector2i(0, -2), Vector2i(0, -3), Vector2i(0, -4)])
+metadata/_custom_type_script = "uid://b5qmu3d344sls"
+
+[node name="Crate5" type="Sprite2D" parent="." unique_id=1953838799]
+position = Vector2(0, -16)
+texture = ExtResource("5_g17na")
+region_enabled = true
+region_rect = Rect2(48, 16, 16, 16)
+
+[node name="Crate6" type="Sprite2D" parent="." unique_id=1296648035]
+position = Vector2(0, -32)
+texture = ExtResource("5_g17na")
+region_enabled = true
+region_rect = Rect2(48, 16, 16, 16)
+
+[node name="Crate7" type="Sprite2D" parent="." unique_id=1573878188]
+position = Vector2(0, -48)
+texture = ExtResource("5_g17na")
+region_enabled = true
+region_rect = Rect2(48, 16, 16, 16)
+
+[node name="Crate8" type="Sprite2D" parent="." unique_id=666181375]
+position = Vector2(0, -64)
+texture = ExtResource("5_g17na")
+region_enabled = true
+region_rect = Rect2(48, 0, 16, 16)
+
+[node name="Crate9" type="Sprite2D" parent="." unique_id=2101372045]
+texture = ExtResource("5_g17na")
+region_enabled = true
+region_rect = Rect2(48, 32, 16, 16)
+
+[node name="LogSounds" type="AudioStreamPlayer" parent="." unique_id=356169724]
+stream = ExtResource("2_dosdk")
+volume_db = -13.0
+max_polyphony = 2
+bus = &"SFX"

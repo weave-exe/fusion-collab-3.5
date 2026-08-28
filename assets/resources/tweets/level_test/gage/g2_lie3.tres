@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://bqomfdleaa4ii"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_7lm1a"]
+
+[resource]
+script = ExtResource("1_7lm1a")
+account_name = "coda_pointyredhat"
+text = "this game is connected to gnome twitter. as you walk around, you can leave gnotes. all gnotes you see were left by other players"
+avatar = Vector2i(2, 3)
