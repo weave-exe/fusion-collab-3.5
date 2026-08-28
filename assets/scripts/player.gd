@@ -5,15 +5,19 @@ extends Moveable
 @export var particle_timer: Timer
 @export var win_timer: Timer
 @export var anim_timer: Timer
+@export var reset_timer: Timer
 
 
 func _ready() -> void:
 	SignalBus.connect("level_won",win_anim)
+	LevelManager.connect("level_loaded",appear_anim)
 
 func _input(event: InputEvent) -> void:
 	if UIG.phone_open:
 		return
 	if LevelManager.level_completed:
+		return
+	if LevelManager.level_resetting:
 		return
 	if !event.is_pressed():
 		return
@@ -40,7 +44,7 @@ func _input(event: InputEvent) -> void:
 		level.undo()
 		update_player_audio("rewind")
 	elif event.is_action_pressed("reset"):
-		LevelManager.reset_level()
+		reset_anim()
 		return
 	
 	var frog = level.get_moveable_at_tile(tile + Vector2i.UP)
@@ -74,6 +78,15 @@ func win_anim() -> void:
 	LevelManager.level_completed=true
 	anim_timer.start()
 	win_timer.start()
+func appear_anim(_1,_2) -> void:
+	$PlayerSprite.animation="appear"
+
+	
+func reset_anim() -> void:
+	LevelManager.level_resetting=true
+	$PlayerSprite.animation="win_fast"
+	reset_timer.start()
+	SignalBus.level_resetting.emit()
 	
 
 func can_push_other_moveable(moveable: Moveable) -> bool:
@@ -83,7 +96,6 @@ func _on_particle_timer_timeout() -> void:
 	PlayerParticles(false)
 	
 
-	
 
 
 func _on_win_timer_timeout() -> void:
@@ -95,3 +107,19 @@ func _on_win_timer_timeout() -> void:
 func _on_anim_timer_timeout() -> void:
 	$PlayerSprite.animation="win"
 	
+	
+	
+
+
+func _on_reset_timer_timeout() -> void:
+	LevelManager.reset_level()
+
+
+
+
+
+
+func _on_player_sprite_animation_looped() -> void:
+# this is stupid but for some reason if i dont make appear loopable it causes all the other animations to only have one frame??
+	if $PlayerSprite.animation=="appear":
+		$PlayerSprite.animation="idle_down"

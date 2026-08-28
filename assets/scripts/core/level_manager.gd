@@ -4,6 +4,7 @@ signal level_loaded(level: Level, zoom: int)
 signal layer_array(layers)
 signal level_reset()
 
+
 var container: Node
 var levels: Array[LevelResource] = []
 var level_index := -1
@@ -11,6 +12,7 @@ var furthest_level:int=0
 var current_level: Level
 var current_level_resource: LevelResource
 var level_completed:bool=false
+var level_resetting:bool=false
 var layers: Array
 
 func setup(_container: Node, _levels: Array[LevelResource]) -> void:
@@ -45,3 +47,4 @@ func load_next() -> void:
 func reset_level() -> void:
 	load_level(level_index)
 	level_reset.emit()
+	level_resetting=false

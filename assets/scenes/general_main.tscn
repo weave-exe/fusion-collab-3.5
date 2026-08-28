@@ -15,6 +15,7 @@
 [ext_resource type="AudioStream" uid="uid://dmrju2rubywke" path="res://assets/audio/music/twitter oggs/drums-track-twt.ogg" id="9_3di84"]
 [ext_resource type="AudioStream" uid="uid://cffd3kee7aoku" path="res://assets/audio/music/twitter oggs/bass-track-twt.ogg" id="10_qi1ok"]
 [ext_resource type="Script" uid="uid://bd6jnxbukrubl" path="res://assets/scripts/core/background_music_player.gd" id="12_3di84"]
+[ext_resource type="PackedScene" uid="uid://brgnkcsx1pevy" path="res://assets/scenes/decorative/deathwipe.tscn" id="16_qi1ok"]
 
 [sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_2cuwm"]
 stream_count = 5
@@ -110,3 +111,5 @@ render_target_update_mode = 4
 
 [node name="UIMain" parent="GameCanvas" unique_id=1401640239 instance=ExtResource("2_cpnpi")]
 position = Vector2(1000, 527)
+
+[node name="Deathwipe" parent="GameCanvas" unique_id=322943306 instance=ExtResource("16_qi1ok")]
