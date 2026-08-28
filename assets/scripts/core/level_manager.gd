@@ -9,6 +9,7 @@ var level_index := -1
 var furthest_level:int=0
 var current_level: Level
 var current_level_resource: LevelResource
+var level_completed:bool=false
 
 func setup(_container: Node, _levels: Array[LevelResource]) -> void:
 	container = _container

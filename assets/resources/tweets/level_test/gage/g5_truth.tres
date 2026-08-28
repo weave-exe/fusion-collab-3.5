@@ -5,4 +5,4 @@
 [resource]
 script = ExtResource("1_7tqqt")
 account_name = "this_gnome_has_won"
-text = "This frog is not very picky! The closest potted plant will surely do!"
+text = "This frog is not very picky! The closest potted plant to him will surely do!"

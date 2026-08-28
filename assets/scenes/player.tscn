@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://dyurxiywrbo5r" path="res://assets/sprites/characters/gnome_diesandgoestoheaven.png" id="3_0hrit"]
 [ext_resource type="Texture2D" uid="uid://ck32ibiljmu8v" path="res://assets/misc/particles/dust.png" id="5_8sknh"]
 [ext_resource type="AudioStream" uid="uid://dbfsxmv0wfxy" path="res://assets/audio/sound/rewind.wav" id="6_tc801"]
-[ext_resource type="AudioStream" uid="uid://c71k5viy7qp1i" path="res://assets/audio/sound/win.ogg" id="7_0hrit"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0gfpk"]
 atlas = ExtResource("2_8sknh")
@@ -259,14 +258,13 @@ colors = PackedColorArray(0, 0, 0, 0, 0.9098039, 0.7882353, 0.7529412, 0.7960784
 [sub_resource type="Gradient" id="Gradient_0gfpk"]
 colors = PackedColorArray(0.94251674, 0.8026897, 0.9934979, 1, 1, 1, 1, 1)
 
-[node name="Player" type="Node2D" unique_id=781662428 node_paths=PackedStringArray("player_audiostream", "particles", "particle_timer", "win_timer", "win_sound") groups=["Player"]]
+[node name="Player" type="Node2D" unique_id=781662428 node_paths=PackedStringArray("player_audiostream", "particles", "particle_timer", "win_timer") groups=["Player"]]
 z_index = 10
 script = ExtResource("1_s027a")
 player_audiostream = NodePath("PlayerAudioStream")
 particles = NodePath("Particles")
 particle_timer = NodePath("ParticleTimer")
 win_timer = NodePath("WinLoseTimer")
-win_sound = NodePath("WinSound")
 metadata/_custom_type_script = "uid://b5qmu3d344sls"
 
 [node name="PlayerSprite" type="AnimatedSprite2D" parent="." unique_id=591099488]
@@ -310,10 +308,6 @@ one_shot = true
 [node name="WinLoseTimer" type="Timer" parent="." unique_id=530317260]
 wait_time = 1.5
 one_shot = true
-
-[node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=577681602]
-stream = ExtResource("7_0hrit")
-bus = &"SFX"
 
 [connection signal="timeout" from="ParticleTimer" to="." method="_on_particle_timer_timeout"]
 [connection signal="timeout" from="WinLoseTimer" to="." method="_on_win_timer_timeout"]
