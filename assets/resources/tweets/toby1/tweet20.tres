@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://ck2lb76o82vy8"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_xjvgx"]
+
+[resource]
+script = ExtResource("1_xjvgx")
+account_name = "gnome1"
+text = "stack the logs up above the tree"

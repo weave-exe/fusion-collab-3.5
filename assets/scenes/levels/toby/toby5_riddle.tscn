@@ -169,13 +169,13 @@ position = Vector2(24, 40)
 position = Vector2(24, 24)
 
 [node name="Log4" parent="Moveables" unique_id=771215777 instance=ExtResource("7_xji0c")]
-position = Vector2(104, 40)
+position = Vector2(56, 8)
 
 [node name="Log3" parent="Moveables" unique_id=1675522596 instance=ExtResource("7_xji0c")]
 position = Vector2(-8, 40)
 
 [node name="Log6" parent="Moveables" unique_id=584660999 instance=ExtResource("7_xji0c")]
-position = Vector2(-88, 40)
+position = Vector2(-40, 8)
 
 [node name="Log" parent="Moveables" unique_id=475399462 instance=ExtResource("7_xji0c")]
 position = Vector2(-8, 24)
@@ -217,6 +217,3 @@ position = Vector2(8, -40)
 
 [node name="Rocks_Normal5" parent="Decals" unique_id=1649915697 instance=ExtResource("15_usory")]
 position = Vector2(8, -8)
-
-[node name="Rocks_Normal6" parent="Decals" unique_id=422367319 instance=ExtResource("15_usory")]
-position = Vector2(56, 40)

@@ -3,13 +3,11 @@
 [ext_resource type="PackedScene" uid="uid://cj0b6rbf388eq" path="res://assets/scenes/levels/toby/toby3.tscn" id="1_bykxm"]
 [ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="2_wgte0"]
 [ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="3_y7gf6"]
-[ext_resource type="Resource" uid="uid://yt36b8ov4gfw" path="res://assets/resources/tweets/toby1/tweet10.tres" id="4_uxnqp"]
-[ext_resource type="Resource" uid="uid://bxor2vbycpf3y" path="res://assets/resources/tweets/toby1/tweet11.tres" id="5_1ehcp"]
-[ext_resource type="Resource" uid="uid://bea7djtdsyop8" path="res://assets/resources/tweets/toby1/tweet12.tres" id="6_pbg6i"]
+[ext_resource type="Resource" uid="uid://1a67p8kd4763" path="res://assets/resources/tweets/toby1/tweet30.tres" id="4_xdvfb"]
 
 [resource]
 script = ExtResource("2_wgte0")
 scene = ExtResource("1_bykxm")
-tweets = Array[ExtResource("3_y7gf6")]([ExtResource("4_uxnqp"), ExtResource("5_1ehcp"), ExtResource("6_pbg6i")])
+tweets = Array[ExtResource("3_y7gf6")]([ExtResource("4_xdvfb")])
 zoom = 3
 metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"
