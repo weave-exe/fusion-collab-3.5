@@ -5,12 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://b6yawydnptagc" path="res://assets/sprites/ui/gnomephone.png" id="2_a8th5"]
 [ext_resource type="AudioStream" uid="uid://cxkiomxa70r88" path="res://assets/audio/sound/close_twitter.ogg" id="3_o55ue"]
 [ext_resource type="AudioStream" uid="uid://bun0g0aq0gb0d" path="res://assets/audio/sound/ui_click.ogg" id="4_7ctsv"]
-[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="4_w8f6f"]
-[ext_resource type="Resource" uid="uid://b7vcrd6c3v386" path="res://assets/resources/tweets/level_test/tweet0.tres" id="5_f4v07"]
 [ext_resource type="PackedScene" uid="uid://68308175gp1s" path="res://assets/scenes/ui/tweet_manager.tscn" id="5_w8f6f"]
 [ext_resource type="Script" uid="uid://djs2mw0aabaqp" path="res://assets/scripts/ui/menu_manager.gd" id="6_f4v07"]
-[ext_resource type="Resource" uid="uid://8yycs43qewqb" path="res://assets/resources/tweets/level_test/tweet1.tres" id="6_yr2h1"]
-[ext_resource type="Resource" uid="uid://dn18sseaoaht7" path="res://assets/resources/tweets/level_test/tweet2.tres" id="7_d7eer"]
 [ext_resource type="PackedScene" uid="uid://c8i3vqljexcf7" path="res://assets/scenes/ui/level_select_button.tscn" id="7_yr2h1"]
 [ext_resource type="Texture2D" uid="uid://dw66ev17lm5g0" path="res://assets/sprites/ui/phonescreen.png" id="8_d7eer"]
 [ext_resource type="PackedScene" uid="uid://cw2t6xvco1abk" path="res://assets/scenes/ui/volume_slider.tscn" id="8_pkm2w"]
@@ -46,10 +42,10 @@ offset_top = -216.0
 offset_right = 325.0
 offset_bottom = 394.0
 
-[node name="TweetManager" parent="Phone/OnScreen" unique_id=43676563 instance=ExtResource("5_w8f6f")]
+[node name="TweetManager" parent="Phone/OnScreen" unique_id=43676563 node_paths=PackedStringArray("focus_layer") instance=ExtResource("5_w8f6f")]
 visible = false
 layout_mode = 1
-tweet_data = Array[ExtResource("4_w8f6f")]([ExtResource("5_f4v07"), ExtResource("6_yr2h1"), ExtResource("7_d7eer"), ExtResource("6_yr2h1"), ExtResource("5_f4v07"), ExtResource("5_f4v07"), ExtResource("7_d7eer"), ExtResource("6_yr2h1"), ExtResource("7_d7eer")])
+focus_layer = NodePath("../../FocusLayer")
 
 [node name="MenuManager" type="CanvasGroup" parent="Phone/OnScreen" unique_id=2143955468 node_paths=PackedStringArray("level_buttons", "phone", "sliders")]
 unique_name_in_owner = true
@@ -150,6 +146,17 @@ offset_bottom = 549.0
 theme = SubResource("Theme_35ju6")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Ambience"
+
+[node name="FocusLayer" type="Control" parent="Phone" unique_id=432822484]
+unique_name_in_owner = true
+z_index = 5
+layout_mode = 3
+anchors_preset = 0
+offset_left = -312.0
+offset_top = -216.0
+offset_right = 325.0
+offset_bottom = 394.0
+mouse_filter = 2
 
 [node name="TwitterSprite" type="Sprite2D" parent="Phone" unique_id=411792099]
 z_index = -3

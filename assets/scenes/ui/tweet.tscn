@@ -4,6 +4,16 @@
 [ext_resource type="Script" uid="uid://eo5qiola3yms" path="res://assets/scripts/ui/tweet.gd" id="1_gc8bq"]
 [ext_resource type="Texture2D" uid="uid://dek62trq5vsii" path="res://assets/sprites/ui/gnome_avatars.png" id="2_gc8bq"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rw2yd"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0, 0, 0, 0.41568628)
+shadow_size = 8
+shadow_offset = Vector2(0, 8)
+
 [sub_resource type="Theme" id="Theme_35ju6"]
 default_font = ExtResource("1_3gre5")
 default_font_size = 24
@@ -13,12 +23,23 @@ custom_minimum_size = Vector2(350, 130)
 layout_mode = 3
 anchors_preset = 0
 offset_right = 350.0
-offset_bottom = 130.0
+offset_bottom = 165.0
 focus_mode = 2
 script = ExtResource("1_gc8bq")
 text = NodePath("Text")
 account_name = NodePath("AccountName")
 avatar = NodePath("Avatar")
+
+[node name="Panel" type="Panel" parent="." unique_id=995548374]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rw2yd")
 
 [node name="Text" type="Label" parent="." unique_id=1727114105]
 layout_mode = 1
@@ -32,6 +53,8 @@ grow_horizontal = 2
 theme = SubResource("Theme_35ju6")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 autowrap_mode = 3
+text_overrun_behavior = 5
+max_lines_visible = 2
 
 [node name="AccountName" type="Label" parent="." unique_id=1314114179]
 layout_mode = 1

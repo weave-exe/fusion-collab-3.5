@@ -10,7 +10,6 @@ extends Node2D
 @export var phone_sounds: AudioStreamPlayer2D
 @export var phone_ui_sounds: AudioStreamPlayer2D
 
-
 # refactoring to just 1 tween for open/close phone
 var _tween: Tween
 func open_twitter():
@@ -106,6 +105,8 @@ func enable_phone():
 	_tween.tween_property(dark_overlay, "modulate:a", 1.0, 1.0).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
 	_tween.tween_property(phone, "position:y", 0.0, 0.8).set_delay(0.3).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BOUNCE)
 	_tween.tween_property(off_screen, "modulate:a", 0, 0.2).set_delay(1.1)
+	await _tween.finished
+	tweet_manager.focus_tweet(0)
 			
 	
 	

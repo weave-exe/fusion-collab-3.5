@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dksriu26pr7hg" path="res://assets/scripts/ui/tweet_manager.gd" id="1_eh0vu"]
 
-[node name="TweetManager" type="Control" unique_id=1358511149 node_paths=PackedStringArray("feed_list")]
+[node name="TweetManager" type="Control" unique_id=1358511149 node_paths=PackedStringArray("feed_list", "scroll_container")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,6 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_eh0vu")
 feed_list = NodePath("ScrollContainer/FeedList")
+scroll_container = NodePath("ScrollContainer")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=637834783]
 layout_mode = 1
@@ -26,4 +27,4 @@ horizontal_scroll_mode = 0
 [node name="FeedList" type="VBoxContainer" parent="ScrollContainer" unique_id=1311053974]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_constants/separation = 4
+theme_override_constants/separation = 0

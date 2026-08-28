@@ -3,6 +3,13 @@ extends Control
 const tweet_scene = preload("res://assets/scenes/ui/tweet.tscn")
 
 @export var feed_list: VBoxContainer
+@export var focus_layer: Control
+@export var scroll_container: ScrollContainer
+
+var current_focus_index: int
+
+func _ready() -> void:
+	focus_layer = %FocusLayer
 
 func bind_tweets():
 	for tweet in feed_list.get_children():
@@ -14,5 +21,26 @@ func bind_tweets():
 	for data in level_resource.tweets:
 		var tweet := tweet_scene.instantiate() as Tweet
 		feed_list.add_child(tweet)
-		tweet.bind(data)
-	feed_list.get_child(0).grab_focus()
+		tweet.bind(data, focus_layer)
+
+func focus_tweet(index: int):
+	feed_list.get_child(index).grab_focus()
+	current_focus_index = index
+	print(current_focus_index)
+	
+func _input(event: InputEvent) -> void:
+	if not UIG.twitter_open:
+		return
+	if !event.is_pressed():
+		return
+	if event.is_action_pressed("move_up"):
+		_move_focus(-1)
+		get_viewport().set_input_as_handled()
+	if event.is_action_pressed("move_down"):
+		_move_focus(1)
+		get_viewport().set_input_as_handled()
+
+func _move_focus(move: int) -> void:
+	var index = clampi(current_focus_index + move, 0, feed_list.get_child_count() - 1)
+	focus_tweet(index)
+		

@@ -36,7 +36,7 @@ func _input(event: InputEvent) -> void:
 		level.try_move(self, Vector2i.DOWN)
 		$PlayerSprite.animation = "idle_down"
 		update_player_audio("walking")
-	elif event.is_action_pressed("undo"):
+	elif event.is_action_pressed("undo", true):
 		level.undo()
 		update_player_audio("rewind")
 	elif event.is_action_pressed("reset"):
