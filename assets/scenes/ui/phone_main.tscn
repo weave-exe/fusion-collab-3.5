@@ -41,9 +41,11 @@ offset_left = -312.0
 offset_top = -216.0
 offset_right = 325.0
 offset_bottom = 394.0
+color = Color(1, 1, 1, 0)
 
 [node name="TweetManager" parent="Phone/OnScreen" unique_id=43676563 node_paths=PackedStringArray("focus_layer") instance=ExtResource("5_w8f6f")]
 visible = false
+z_index = -10
 layout_mode = 1
 focus_layer = NodePath("../../FocusLayer")
 
@@ -146,6 +148,13 @@ offset_bottom = 549.0
 theme = SubResource("Theme_35ju6")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Ambience"
+
+[node name="OnScreen2" type="ColorRect" parent="Phone" unique_id=853013156]
+z_index = -20
+offset_left = -312.0
+offset_top = -216.0
+offset_right = 325.0
+offset_bottom = 394.0
 
 [node name="FocusLayer" type="Control" parent="Phone" unique_id=432822484]
 unique_name_in_owner = true

@@ -26,7 +26,6 @@ func bind_tweets():
 func focus_tweet(index: int):
 	feed_list.get_child(index).grab_focus()
 	current_focus_index = index
-	print(current_focus_index)
 	
 func _input(event: InputEvent) -> void:
 	if not UIG.twitter_open:
