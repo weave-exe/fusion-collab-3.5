@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cs0wo3ek1dsdq" path="res://assets/scenes/frog.tscn" id="8_85bxe"]
 [ext_resource type="PackedScene" uid="uid://hhl5q4otf3ml" path="res://assets/scenes/logs/4x1_log.tscn" id="8_q7cyu"]
 [ext_resource type="Texture2D" uid="uid://byc6g6qkn2n11" path="res://assets/sprites/decoration/frame_for_design.png" id="9_vx0m6"]
+[ext_resource type="PackedScene" uid="uid://d2gmgime7utoh" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_b.tscn" id="12_h0whg"]
 
 [sub_resource type="Resource" id="Resource_4kyv5"]
 script = ExtResource("3_tinil")
@@ -241,3 +242,20 @@ position = Vector2(-72, -64)
 
 [node name="Fg_Plant_B8" parent="." unique_id=106797493 instance=ExtResource("7_q7cyu")]
 position = Vector2(120, -32)
+
+[node name="Fg_Plant_B9" parent="." unique_id=40482359 instance=ExtResource("12_h0whg")]
+position = Vector2(-80, -40)
+
+[node name="Fg_Plant_B10" parent="." unique_id=549991389 instance=ExtResource("12_h0whg")]
+position = Vector2(95, 85)
+flip_h = true
+
+[node name="Fg_Plant_B11" parent="." unique_id=1798793852 instance=ExtResource("12_h0whg")]
+position = Vector2(153, -11)
+
+[node name="Fg_Plant_B12" parent="." unique_id=731092267 instance=ExtResource("12_h0whg")]
+position = Vector2(-121, -22)
+flip_h = true
+
+[node name="Fg_Plant_B13" parent="." unique_id=1297916590 instance=ExtResource("12_h0whg")]
+position = Vector2(16, 74)

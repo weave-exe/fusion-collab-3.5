@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cp3ni7umc80wp" path="res://assets/sprites/decoration/gnome_oob_decals.png" id="1_2thsf"]
 
 [node name="Fg_Plant_A" type="Sprite2D" unique_id=2043718838]
-z_index = 1
+z_index = 2
 texture = ExtResource("1_2thsf")
 region_enabled = true
 region_rect = Rect2(0, 0, 32, 32)

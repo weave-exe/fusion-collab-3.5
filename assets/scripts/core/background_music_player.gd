@@ -19,14 +19,33 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+var tween: Tween
+
 func set_levels(layers: Array):
 	if not sync_stream:
 		return
 		
+	_kill_tween()
+	tween = create_tween().set_parallel(true)
 	for j in layers.size():
 		if layers[j] == true:
-			sync_stream.set_sync_stream_volume(j, 0)
+			tween.tween_method( 
+				func(volume): sync_stream.set_sync_stream_volume(j, volume), 
+				sync_stream.get_sync_stream_volume(j), 
+				0, 
+				2
+			)
 		else:
-			sync_stream.set_sync_stream_volume(j, -80)
+			tween.tween_method( 
+				func(volume): sync_stream.set_sync_stream_volume(j, volume), 
+				sync_stream.get_sync_stream_volume(j), 
+				-80, 
+				2
+			)
+
+func _kill_tween():
+	if tween and tween.is_valid():
+		tween.kill()
+	
 
 		
