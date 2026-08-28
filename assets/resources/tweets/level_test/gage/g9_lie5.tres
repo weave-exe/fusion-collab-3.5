@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://c5fgvxb2w4uvl"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_yxolx"]
+
+[resource]
+script = ExtResource("1_yxolx")
+account_name = "the_riddle_gnome"
+text = "Try paying attention to the orientation of the valley lily, and everything else will fall into place! "
+avatar = Vector2i(4, 1)

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://d4g3cjbwsku51"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_0wcrc"]
+
+[resource]
+script = ExtResource("1_0wcrc")
+account_name = "gnome_1"
+text = "You just gotta get the thingy (frog) in the thingy (water) should be easy probably "
+avatar = Vector2i(2, 0)

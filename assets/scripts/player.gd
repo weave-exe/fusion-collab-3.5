@@ -79,7 +79,7 @@ func win_anim() -> void:
 	anim_timer.start()
 	win_timer.start()
 func appear_anim(_1,_2) -> void:
-	$PlayerSprite.animation="appear"
+	$PlayerSprite.animation="zz_appear"
 
 	
 func reset_anim() -> void:
@@ -121,5 +121,5 @@ func _on_reset_timer_timeout() -> void:
 
 func _on_player_sprite_animation_looped() -> void:
 # this is stupid but for some reason if i dont make appear loopable it causes all the other animations to only have one frame??
-	if $PlayerSprite.animation=="appear":
+	if $PlayerSprite.animation=="zz_appear":
 		$PlayerSprite.animation="idle_down"

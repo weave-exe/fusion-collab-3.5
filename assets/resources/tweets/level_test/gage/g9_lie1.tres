@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://el48a1jd26tj"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_ujkx0"]
+
+[resource]
+script = ExtResource("1_ujkx0")
+account_name = "listen_listen_listen"
+text = "I have a head, a shoulder, a knees and toes. Yellow blue purple orange. What am I?"
+avatar = Vector2i(2, 3)

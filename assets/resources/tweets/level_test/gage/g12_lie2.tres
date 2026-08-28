@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://qotk8ua0737l"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_54pv2"]
+
+[resource]
+script = ExtResource("1_54pv2")
+account_name = "a_frog_of_many"
+text = "ribbit ribbit ribbit! haha just joking around have a wonderful friday everyone. You're gonna be seeing a lot more of me from now on"
+avatar = Vector2i(3, 2)

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://l4r52q104ayb"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_kqq0k"]
+
+[resource]
+script = ExtResource("1_kqq0k")
+account_name = "gnomesauce_"
+text = "My favorite flower is the wonderful rose! It is yellow and filled with pollen"
+avatar = Vector2i(3, 2)

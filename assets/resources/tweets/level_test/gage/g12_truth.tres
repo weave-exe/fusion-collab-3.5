@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://co0fhukm5bpwa"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_juamj"]
+
+[resource]
+script = ExtResource("1_juamj")
+account_name = "gnome_1_spamacc"
+text = "Oh there's a lot more of them now. The thing you did before should still probably work though! sorry im scrolling like crazy rn"
+avatar = Vector2i(2, 0)
