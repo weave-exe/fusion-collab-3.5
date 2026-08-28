@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://cagp3viyn767w"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_xso2a"]
+
+[resource]
+script = ExtResource("1_xso2a")
+account_name = "gn_____1"
+text = "Eek!!! I'm so scared of lily pads, and I can see far too many of them, I dont know what to do????"
+avatar = Vector2i(2, 3)
