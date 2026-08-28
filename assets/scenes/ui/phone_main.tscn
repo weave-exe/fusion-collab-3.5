@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b6yawydnptagc" path="res://assets/sprites/ui/gnomephone.png" id="2_a8th5"]
 [ext_resource type="AudioStream" uid="uid://cxkiomxa70r88" path="res://assets/audio/sound/close_twitter.ogg" id="3_o55ue"]
 [ext_resource type="AudioStream" uid="uid://bun0g0aq0gb0d" path="res://assets/audio/sound/ui_click.ogg" id="4_7ctsv"]
+[ext_resource type="Texture2D" uid="uid://dywx145u11vb1" path="res://assets/sprites/ui/gnomeTwitterUI_pause.png" id="5_f4v07"]
 [ext_resource type="PackedScene" uid="uid://68308175gp1s" path="res://assets/scenes/ui/tweet_manager.tscn" id="5_w8f6f"]
 [ext_resource type="Script" uid="uid://djs2mw0aabaqp" path="res://assets/scripts/ui/menu_manager.gd" id="6_f4v07"]
 [ext_resource type="PackedScene" uid="uid://c8i3vqljexcf7" path="res://assets/scenes/ui/level_select_button.tscn" id="7_yr2h1"]
@@ -17,7 +18,7 @@
 default_font = ExtResource("9_utfp5")
 default_font_size = 34
 
-[node name="PhoneMain" type="Node2D" unique_id=1809476527 node_paths=PackedStringArray("phone", "dark_overlay", "off_screen", "tweet_manager", "menu_manager", "phone_sounds", "phone_ui_sounds")]
+[node name="PhoneMain" type="Node2D" unique_id=1809476527 node_paths=PackedStringArray("phone", "dark_overlay", "off_screen", "tweet_manager", "menu_manager", "phone_sounds", "phone_ui_sounds", "twitter_sprite")]
 z_index = 41
 script = ExtResource("1_81tah")
 phone = NodePath("Phone")
@@ -29,6 +30,9 @@ sound_open_phone = ExtResource("2_0lvtj")
 sound_close_phone = ExtResource("3_o55ue")
 phone_sounds = NodePath("PhoneOpenClose")
 phone_ui_sounds = NodePath("PhoneUISound")
+twitter_sprite = NodePath("Phone/TwitterSprite")
+gnome_twitter_ui = ExtResource("12_f4v07")
+gnome_twitter_ui_pause = ExtResource("5_f4v07")
 
 [node name="Phone" type="Sprite2D" parent="." unique_id=1471383219]
 z_index = 20
@@ -54,62 +58,237 @@ unique_name_in_owner = true
 visible = false
 z_index = 2
 script = ExtResource("6_f4v07")
-level_buttons = [NodePath("LevelSelectButton"), NodePath("LevelSelectButton2"), NodePath("LevelSelectButton3"), NodePath("LevelSelectButton4"), NodePath("LevelSelectButton5")]
+level_buttons = [NodePath("lv1"), NodePath("lv2"), NodePath("lv3"), NodePath("lv4"), NodePath("lv5"), NodePath("lv6"), NodePath("lv7"), NodePath("lv8"), NodePath("lv9"), NodePath("lv10"), NodePath("lv11"), NodePath("lv12"), NodePath("lv13"), NodePath("lv14"), NodePath("lv15"), NodePath("lv16"), NodePath("lv17"), NodePath("lv18"), NodePath("lv19"), NodePath("lv20"), NodePath("lv21"), NodePath("lv22"), NodePath("lv23"), NodePath("lv24"), NodePath("lv25"), NodePath("lv26"), NodePath("lv27"), NodePath("lv28"), NodePath("lv29"), NodePath("lv30")]
 phone = NodePath("../../..")
 sliders = [NodePath("MusicSlider")]
 
-[node name="LevelSelectButton" parent="Phone/OnScreen/MenuManager" unique_id=253036202 instance=ExtResource("7_yr2h1")]
-offset_left = 37.0
-offset_top = 19.0
-offset_right = 117.0
-offset_bottom = 99.0
+[node name="lv1" parent="Phone/OnScreen/MenuManager" unique_id=760891759 instance=ExtResource("7_yr2h1")]
+offset_left = 35.0
+offset_top = -76.0
+offset_right = 115.0
+offset_bottom = 4.0
+level_num = 0
 
-[node name="LevelSelectButton2" parent="Phone/OnScreen/MenuManager" unique_id=1730749810 instance=ExtResource("7_yr2h1")]
-offset_left = 146.0
-offset_top = 21.0
-offset_right = 226.0
-offset_bottom = 101.0
+[node name="lv2" parent="Phone/OnScreen/MenuManager" unique_id=419442005 instance=ExtResource("7_yr2h1")]
+offset_left = 131.0
+offset_top = -76.0
+offset_right = 211.0
+offset_bottom = 4.0
+
+[node name="lv3" parent="Phone/OnScreen/MenuManager" unique_id=1694535506 instance=ExtResource("7_yr2h1")]
+offset_left = 227.0
+offset_top = -76.0
+offset_right = 307.0
+offset_bottom = 4.0
 level_num = 2
 
-[node name="LevelSelectButton3" parent="Phone/OnScreen/MenuManager" unique_id=819824676 instance=ExtResource("7_yr2h1")]
-offset_left = 252.0
-offset_top = 20.0
-offset_right = 332.0
-offset_bottom = 100.0
+[node name="lv4" parent="Phone/OnScreen/MenuManager" unique_id=406163166 instance=ExtResource("7_yr2h1")]
+offset_left = 323.0
+offset_top = -76.0
+offset_right = 403.0
+offset_bottom = 4.0
 level_num = 3
 
-[node name="LevelSelectButton4" parent="Phone/OnScreen/MenuManager" unique_id=553229102 instance=ExtResource("7_yr2h1")]
-offset_left = 362.0
-offset_top = 19.0
-offset_right = 442.0
-offset_bottom = 99.0
+[node name="lv5" parent="Phone/OnScreen/MenuManager" unique_id=1692411684 instance=ExtResource("7_yr2h1")]
+offset_left = 419.0
+offset_top = -76.0
+offset_right = 499.0
+offset_bottom = 4.0
 level_num = 4
 
-[node name="LevelSelectButton5" parent="Phone/OnScreen/MenuManager" unique_id=286389534 instance=ExtResource("7_yr2h1")]
-offset_left = 478.0
-offset_top = 19.0
-offset_right = 558.0
-offset_bottom = 99.0
+[node name="lv6" parent="Phone/OnScreen/MenuManager" unique_id=253036202 instance=ExtResource("7_yr2h1")]
+offset_left = 515.0
+offset_top = -76.0
+offset_right = 595.0
+offset_bottom = 4.0
 level_num = 5
+
+[node name="lv7" parent="Phone/OnScreen/MenuManager" unique_id=841242899 instance=ExtResource("7_yr2h1")]
+offset_left = 35.0
+offset_top = 20.0
+offset_right = 115.0
+offset_bottom = 100.0
+level_num = 6
+
+[node name="lv8" parent="Phone/OnScreen/MenuManager" unique_id=1389976118 instance=ExtResource("7_yr2h1")]
+offset_left = 131.0
+offset_top = 20.0
+offset_right = 211.0
+offset_bottom = 100.0
+level_num = 7
+
+[node name="lv9" parent="Phone/OnScreen/MenuManager" unique_id=1231790714 instance=ExtResource("7_yr2h1")]
+offset_left = 227.0
+offset_top = 20.0
+offset_right = 307.0
+offset_bottom = 100.0
+level_num = 8
+
+[node name="lv10" parent="Phone/OnScreen/MenuManager" unique_id=954371519 instance=ExtResource("7_yr2h1")]
+offset_left = 323.0
+offset_top = 20.0
+offset_right = 403.0
+offset_bottom = 100.0
+level_num = 9
+
+[node name="lv11" parent="Phone/OnScreen/MenuManager" unique_id=633734967 instance=ExtResource("7_yr2h1")]
+offset_left = 419.0
+offset_top = 20.0
+offset_right = 499.0
+offset_bottom = 100.0
+level_num = 10
+
+[node name="lv12" parent="Phone/OnScreen/MenuManager" unique_id=884942987 instance=ExtResource("7_yr2h1")]
+offset_left = 515.0
+offset_top = 20.0
+offset_right = 595.0
+offset_bottom = 100.0
+level_num = 11
+
+[node name="lv13" parent="Phone/OnScreen/MenuManager" unique_id=1066350488 instance=ExtResource("7_yr2h1")]
+offset_left = 35.0
+offset_top = 116.0
+offset_right = 115.0
+offset_bottom = 196.0
+level_num = 12
+
+[node name="lv14" parent="Phone/OnScreen/MenuManager" unique_id=643316327 instance=ExtResource("7_yr2h1")]
+offset_left = 131.0
+offset_top = 116.0
+offset_right = 211.0
+offset_bottom = 196.0
+level_num = 13
+
+[node name="lv15" parent="Phone/OnScreen/MenuManager" unique_id=973438647 instance=ExtResource("7_yr2h1")]
+offset_left = 227.0
+offset_top = 116.0
+offset_right = 307.0
+offset_bottom = 196.0
+level_num = 14
+
+[node name="lv16" parent="Phone/OnScreen/MenuManager" unique_id=665885261 instance=ExtResource("7_yr2h1")]
+offset_left = 323.0
+offset_top = 119.0
+offset_right = 403.0
+offset_bottom = 199.0
+level_num = 15
+
+[node name="lv17" parent="Phone/OnScreen/MenuManager" unique_id=1484094096 instance=ExtResource("7_yr2h1")]
+offset_left = 419.0
+offset_top = 116.0
+offset_right = 499.0
+offset_bottom = 196.0
+level_num = 16
+
+[node name="lv18" parent="Phone/OnScreen/MenuManager" unique_id=1096231587 instance=ExtResource("7_yr2h1")]
+offset_left = 515.0
+offset_top = 116.0
+offset_right = 595.0
+offset_bottom = 196.0
+level_num = 17
+
+[node name="lv19" parent="Phone/OnScreen/MenuManager" unique_id=1160650574 instance=ExtResource("7_yr2h1")]
+offset_left = 35.0
+offset_top = 212.0
+offset_right = 115.0
+offset_bottom = 292.0
+level_num = 18
+
+[node name="lv20" parent="Phone/OnScreen/MenuManager" unique_id=1501635086 instance=ExtResource("7_yr2h1")]
+offset_left = 131.0
+offset_top = 212.0
+offset_right = 211.0
+offset_bottom = 292.0
+level_num = 19
+
+[node name="lv21" parent="Phone/OnScreen/MenuManager" unique_id=470383620 instance=ExtResource("7_yr2h1")]
+offset_left = 227.0
+offset_top = 212.0
+offset_right = 307.0
+offset_bottom = 292.0
+level_num = 20
+
+[node name="lv22" parent="Phone/OnScreen/MenuManager" unique_id=921194565 instance=ExtResource("7_yr2h1")]
+offset_left = 323.0
+offset_top = 212.0
+offset_right = 403.0
+offset_bottom = 292.0
+level_num = 21
+
+[node name="lv23" parent="Phone/OnScreen/MenuManager" unique_id=930511352 instance=ExtResource("7_yr2h1")]
+offset_left = 419.0
+offset_top = 212.0
+offset_right = 499.0
+offset_bottom = 292.0
+level_num = 22
+
+[node name="lv24" parent="Phone/OnScreen/MenuManager" unique_id=1630063089 instance=ExtResource("7_yr2h1")]
+offset_left = 515.0
+offset_top = 212.0
+offset_right = 595.0
+offset_bottom = 292.0
+level_num = 23
+
+[node name="lv25" parent="Phone/OnScreen/MenuManager" unique_id=187178218 instance=ExtResource("7_yr2h1")]
+offset_left = 35.0
+offset_top = 308.0
+offset_right = 115.0
+offset_bottom = 388.0
+level_num = 24
+
+[node name="lv26" parent="Phone/OnScreen/MenuManager" unique_id=908795517 instance=ExtResource("7_yr2h1")]
+offset_left = 131.0
+offset_top = 308.0
+offset_right = 211.0
+offset_bottom = 388.0
+level_num = 25
+
+[node name="lv27" parent="Phone/OnScreen/MenuManager" unique_id=1013379362 instance=ExtResource("7_yr2h1")]
+offset_left = 227.0
+offset_top = 308.0
+offset_right = 307.0
+offset_bottom = 388.0
+level_num = 26
+
+[node name="lv28" parent="Phone/OnScreen/MenuManager" unique_id=279552345 instance=ExtResource("7_yr2h1")]
+offset_left = 323.0
+offset_top = 308.0
+offset_right = 403.0
+offset_bottom = 388.0
+level_num = 27
+
+[node name="lv29" parent="Phone/OnScreen/MenuManager" unique_id=1358711074 instance=ExtResource("7_yr2h1")]
+offset_left = 419.0
+offset_top = 308.0
+offset_right = 499.0
+offset_bottom = 388.0
+level_num = 28
+
+[node name="lv30" parent="Phone/OnScreen/MenuManager" unique_id=1858118384 instance=ExtResource("7_yr2h1")]
+offset_left = 515.0
+offset_top = 308.0
+offset_right = 595.0
+offset_bottom = 388.0
+level_num = 29
 
 [node name="MusicSlider" parent="Phone/OnScreen/MenuManager" unique_id=1489120698 instance=ExtResource("8_pkm2w")]
 offset_left = 200.0
 offset_top = 425.0
-offset_right = 513.0
+offset_right = 590.0
 offset_bottom = 455.0
 bus = "Music"
 
 [node name="SFXSlider" parent="Phone/OnScreen/MenuManager" unique_id=884273659 instance=ExtResource("8_pkm2w")]
 offset_left = 200.0
 offset_top = 467.0
-offset_right = 513.0
+offset_right = 590.0
 offset_bottom = 497.0
 bus = "SFX"
 
 [node name="AmbienceSlider" parent="Phone/OnScreen/MenuManager" unique_id=344109943 instance=ExtResource("8_pkm2w")]
 offset_left = 200.0
 offset_top = 509.0
-offset_right = 513.0
+offset_right = 590.0
 offset_bottom = 539.0
 bus = "BgSFX"
 
@@ -123,10 +302,10 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Music"
 
 [node name="VolumeLabel5" type="Label" parent="Phone/OnScreen/MenuManager" unique_id=1201841318]
-offset_left = 247.0
-offset_top = 376.0
-offset_right = 432.0
-offset_bottom = 419.0
+offset_left = 248.0
+offset_top = 392.0
+offset_right = 433.0
+offset_bottom = 435.0
 theme = SubResource("Theme_35ju6")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Volume"
@@ -152,7 +331,7 @@ text = "Ambience"
 [node name="OnScreen2" type="ColorRect" parent="Phone" unique_id=853013156]
 z_index = -20
 offset_left = -312.0
-offset_top = -216.0
+offset_top = -421.0
 offset_right = 325.0
 offset_bottom = 394.0
 
@@ -169,7 +348,7 @@ mouse_filter = 2
 
 [node name="TwitterSprite" type="Sprite2D" parent="Phone" unique_id=411792099]
 z_index = -3
-texture = ExtResource("12_f4v07")
+texture = ExtResource("5_f4v07")
 
 [node name="OffScreen" type="Sprite2D" parent="Phone" unique_id=928368999]
 z_index = -1
