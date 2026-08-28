@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://cw3wnityyfpym"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_dcdxj"]
+
+[resource]
+script = ExtResource("1_dcdxj")
+account_name = "gnome \"where\""
+text = "The top-left pen has a frog in the same place as one of its neighboring pens"

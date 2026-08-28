@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://cfott4dgwjus2"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_mf140"]
+
+[resource]
+script = ExtResource("1_mf140")
+account_name = "gnome \"where\""
+text = "At least one frog is vertically aligned with a frog below it"

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="LevelResource" format=3 uid="uid://be8e7c5iq03oq"]
+
+[ext_resource type="PackedScene" uid="uid://bmnmokyas4cbi" path="res://assets/scenes/levels/toby/toby6_riddle.tscn" id="1_p1pc3"]
+[ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="2_m5q0w"]
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="3_p1pc3"]
+[ext_resource type="Resource" uid="uid://gemh02l8kyw6" path="res://assets/resources/tweets/toby1/t6_l1.tres" id="4_hmlry"]
+[ext_resource type="Resource" uid="uid://dqxmquw7pqgh5" path="res://assets/resources/tweets/toby1/t6_l2.tres" id="5_yl3rp"]
+[ext_resource type="Resource" uid="uid://btm1uc6ph5xrj" path="res://assets/resources/tweets/toby1/t6_l3.tres" id="6_7rkrk"]
+[ext_resource type="Resource" uid="uid://cfott4dgwjus2" path="res://assets/resources/tweets/toby1/t6_t1.tres" id="7_gpewq"]
+[ext_resource type="Resource" uid="uid://cw3wnityyfpym" path="res://assets/resources/tweets/toby1/t6_t2.tres" id="8_jksui"]
+[ext_resource type="Resource" uid="uid://b5sltarlptte" path="res://assets/resources/tweets/toby1/t6_t3.tres" id="9_gb04f"]
+[ext_resource type="Resource" uid="uid://bebhlq0556nlk" path="res://assets/resources/tweets/toby1/t6_t4.tres" id="10_3siao"]
+
+[resource]
+script = ExtResource("2_m5q0w")
+scene = ExtResource("1_p1pc3")
+tweets = Array[ExtResource("3_p1pc3")]([ExtResource("4_hmlry"), ExtResource("5_yl3rp"), ExtResource("6_7rkrk"), ExtResource("7_gpewq"), ExtResource("8_jksui"), ExtResource("9_gb04f"), ExtResource("10_3siao")])
+zoom = 3
+metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"
