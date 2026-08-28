@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://b8h3roq6wrpip"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_ojpwa"]
+
+[resource]
+script = ExtResource("1_ojpwa")
+account_name = "gnertrude_left_bumper"
+text = "G is a button on your keyboard which . when pressed in this level does not do anything at all"
+avatar = Vector2i(4, 3)

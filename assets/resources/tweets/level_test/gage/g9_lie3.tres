@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://oct73m4wk5lh"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_4r16w"]
+
+[resource]
+script = ExtResource("1_4r16w")
+account_name = "frightened_by_scary_owls"
+text = "Pressing down in the twitter menu is bugged.. please fix.. its all i have left @moderators"
+avatar = Vector2i(1, 1)

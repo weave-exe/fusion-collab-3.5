@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://ccqvtgou2er0o"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_xyujk"]
+
+[resource]
+script = ExtResource("1_xyujk")
+account_name = "youGOTTAlisten"
+text = "The smallest log, must cover the yellow flower, to complete the level."
+avatar = Vector2i(2, 4)

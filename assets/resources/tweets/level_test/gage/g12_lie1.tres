@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://danaxx76wu4mn"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_ed6s2"]
+
+[resource]
+script = ExtResource("1_ed6s2")
+account_name = "sad_and_solemn__"
+text = "dodged another puddle again! I'm really starting to get the hang of this :]"
+avatar = Vector2i(2, 2)
