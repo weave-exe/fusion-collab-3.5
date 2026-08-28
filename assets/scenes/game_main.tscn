@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dfss7a7mv0k4f" path="res://assets/scenes/decorative/background_water.tscn" id="2_jtx3k"]
 [ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="2_mlek0"]
 [ext_resource type="Resource" uid="uid://btiqsvagu6do2" path="res://assets/resources/levels/Test1.tres" id="3_h515n"]
+[ext_resource type="Resource" uid="uid://dm3a8r0xyi0xy" path="res://assets/resources/levels/gage_levels/gage8.tres" id="3_hrpjq"]
 [ext_resource type="Resource" uid="uid://8j3uy6whhp8v" path="res://assets/resources/levels/gage_levels/gage1.tres" id="3_sohnc"]
 [ext_resource type="PackedScene" uid="uid://gm6k6yjpbjlx" path="res://assets/scenes/decorative/mist2.tscn" id="4_5rqp6"]
 [ext_resource type="AudioStream" uid="uid://dbsgl0y6c7biu" path="res://assets/audio/sound/ForestMorningBirds_SFXB.75.wav" id="4_nd2f5"]
@@ -12,6 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://0yq41ly6l7vm" path="res://assets/audio/sound/reset.ogg" id="10_k57sx"]
 [ext_resource type="Script" uid="uid://gpwondiqjt7y" path="res://assets/scripts/ui/reset_sound.gd" id="11_hb0f8"]
 [ext_resource type="Script" uid="uid://bki10dp861dw1" path="res://assets/scripts/ui/win_sound.gd" id="12_hb0f8"]
+[ext_resource type="AudioStream" uid="uid://c71k5viy7qp1i" path="res://assets/audio/sound/win.ogg" id="13_hrpjq"]
 
 [sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_3cxim"]
 clip_count = 1
@@ -30,7 +32,7 @@ glow_blend_mode = 0
 
 [node name="GameMain" type="Node2D" unique_id=865138517]
 script = ExtResource("1_mvut7")
-levels = Array[ExtResource("2_mlek0")]([ExtResource("3_sohnc"), ExtResource("3_sohnc"), ExtResource("3_h515n"), ExtResource("6_jxp1l")])
+levels = Array[ExtResource("2_mlek0")]([ExtResource("3_hrpjq"), ExtResource("3_sohnc"), ExtResource("3_h515n"), ExtResource("6_jxp1l")])
 
 [node name="LevelContainer" type="Node2D" parent="." unique_id=880857937]
 
@@ -58,7 +60,7 @@ bus = &"SFX"
 script = ExtResource("11_hb0f8")
 
 [node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=712101643]
-stream = ExtResource("10_k57sx")
+stream = ExtResource("13_hrpjq")
 max_polyphony = 3
 bus = &"SFX"
 script = ExtResource("12_hb0f8")
