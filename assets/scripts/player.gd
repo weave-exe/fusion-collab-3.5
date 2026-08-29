@@ -7,46 +7,79 @@ extends Moveable
 @export var anim_timer: Timer
 @export var reset_timer: Timer
 
+const ALLOWED_ACTIONS := ["move_up", "move_left", "move_right", "move_down", "undo"]
+const FIRST_HOLD_TIMER := 0.4
+const REPEAT_RATE := 0.1
+var _repeat_timer := 0.0
+var _current_action := ""
 
 func _ready() -> void:
 	SignalBus.connect("level_won",win_anim)
 	LevelManager.connect("level_loaded",appear_anim)
 
-func _input(event: InputEvent) -> void:
+func _block_input_if_needed() -> bool:
 	if UIG.phone_open:
-		return
+		return true
 	if LevelManager.level_completed:
-		return
+		return true
 	if LevelManager.level_resetting:
+		return true
+	return false
+
+func _input(event: InputEvent) -> void:
+	if _block_input_if_needed():
 		return
+
 	if !event.is_pressed():
 		return
-	var _direction := Vector2i.ZERO
-	
-	if event.is_action_pressed("move_up"):
-		level.try_move(self, Vector2i.UP)
-		$PlayerSprite.animation = "idle_up"
-		
-		update_player_audio("walking")
-	elif event.is_action_pressed("move_left"):
-		level.try_move(self, Vector2i.LEFT)
-		$PlayerSprite.animation = "idle_left"
-		update_player_audio("walking")
-	elif event.is_action_pressed("move_right"):
-		level.try_move(self, Vector2i.RIGHT)
-		$PlayerSprite.animation = "idle_right"
-		update_player_audio("walking")
-	elif event.is_action_pressed("move_down"):
-		level.try_move(self, Vector2i.DOWN)
-		$PlayerSprite.animation = "idle_down"
-		update_player_audio("walking")
-	elif event.is_action_pressed("undo", true):
-		level.undo()
-		update_player_audio("rewind")
-	elif event.is_action_pressed("reset"):
+	if event.is_action_pressed("reset"):
 		reset_anim()
 		return
 	
+	for action in ALLOWED_ACTIONS:
+		if event.is_action_pressed(action):
+			_do_action(action)
+			_repeat_timer = FIRST_HOLD_TIMER
+
+			_current_action = action
+			return
+
+func _process(delta: float) -> void:
+	if _block_input_if_needed():
+		return
+	if _current_action == "":
+		return
+	if not Input.is_action_pressed(_current_action):
+		_current_action = ""
+		return
+	
+	_repeat_timer -= delta
+	if _repeat_timer <= 0.0:
+		_do_action(_current_action)
+		_repeat_timer = REPEAT_RATE
+	
+func _do_action(action: String) -> void:
+	match action:
+		"move_up":
+			level.try_move(self, Vector2i.UP)
+			$PlayerSprite.animation = "idle_up"
+			update_player_audio("walking")
+		"move_left":
+			level.try_move(self, Vector2i.LEFT)
+			$PlayerSprite.animation = "idle_left"
+			update_player_audio("walking")
+		"move_right":
+			level.try_move(self, Vector2i.RIGHT)
+			$PlayerSprite.animation = "idle_right"
+			update_player_audio("walking")
+		"move_down":
+			level.try_move(self, Vector2i.DOWN)
+			$PlayerSprite.animation = "idle_down"
+			update_player_audio("walking")
+		"undo":
+			level.undo()
+			update_player_audio("rewind")
+			
 	var frog = level.get_moveable_at_tile(tile + Vector2i.UP)
 	if frog as Frog != null:
 		frog.do_frog_movement(Vector2i.UP)
@@ -59,6 +92,7 @@ func _input(event: InputEvent) -> void:
 	frog = level.get_moveable_at_tile(tile + Vector2i.RIGHT)
 	if frog as Frog != null:
 		frog.do_frog_movement(Vector2i.RIGHT)
+		
 	
 func update_player_audio(audio_name: String):
 	if audio_name == "none":
