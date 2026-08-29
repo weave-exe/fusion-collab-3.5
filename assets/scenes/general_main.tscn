@@ -20,12 +20,35 @@
 [ext_resource type="Resource" uid="uid://57hnk25ihl6s" path="res://assets/resources/levels/ricky06/ricky1.tres" id="16_cikn5"]
 [ext_resource type="PackedScene" uid="uid://brgnkcsx1pevy" path="res://assets/scenes/decorative/deathwipe.tscn" id="16_qi1ok"]
 [ext_resource type="Resource" uid="uid://kbxx668f5420" path="res://assets/resources/levels/ricky06/ricky3.tres" id="17_4dk0s"]
-[ext_resource type="Resource" uid="uid://4v5tap0hyu70" path="res://assets/resources/levels/gage_levels/gage7_bad.tres" id="17_617bi"]
-[ext_resource type="Resource" uid="uid://dfkfox2okcphx" path="res://assets/resources/levels/gage_levels/gage14.tres" id="17_ke02j"]
+[ext_resource type="Resource" uid="uid://18jo15g41o0t" path="res://assets/resources/levels/gage_levels/gage16_start.tres" id="17_uhvr4"]
+[ext_resource type="Resource" uid="uid://e6uui4c5w0d4" path="res://assets/resources/levels/toby/toby1.tres" id="18_2d7kn"]
 [ext_resource type="Resource" uid="uid://8j3uy6whhp8v" path="res://assets/resources/levels/gage_levels/gage1.tres" id="18_ke02j"]
+[ext_resource type="Resource" uid="uid://c8y0x6qhg06fh" path="res://assets/resources/levels/toby/toby2.tres" id="19_1da20"]
 [ext_resource type="Resource" uid="uid://bvucpb0owl6gx" path="res://assets/resources/levels/gage_levels/gage2.tres" id="19_4dk0s"]
+[ext_resource type="Resource" uid="uid://dmf1428n3wooi" path="res://assets/resources/levels/toby/toby3.tres" id="20_3onol"]
 [ext_resource type="Resource" uid="uid://dlorpcdlugeyu" path="res://assets/resources/levels/gage_levels/gage3.tres" id="20_segdw"]
 [ext_resource type="Resource" uid="uid://bfgl2s3ypbtwi" path="res://assets/resources/levels/gage_levels/gage4.tres" id="21_0bn8m"]
+[ext_resource type="Resource" uid="uid://bwobq20tieqo7" path="res://assets/resources/levels/chelito/chel2.tres" id="22_x1n05"]
+[ext_resource type="Resource" uid="uid://c55d4h8qfgj5i" path="res://assets/resources/levels/toby/toby5.tres" id="23_s3djr"]
+[ext_resource type="Resource" uid="uid://dvv4sbsjr7ipn" path="res://assets/resources/levels/toby/toby4.tres" id="24_u6rea"]
+[ext_resource type="Resource" uid="uid://f6lrnbu0kjj5" path="res://assets/resources/levels/chelito/chel1.tres" id="25_yt5dq"]
+[ext_resource type="Resource" uid="uid://dm3a8r0xyi0xy" path="res://assets/resources/levels/gage_levels/gage9.tres" id="26_wb732"]
+[ext_resource type="Resource" uid="uid://bghbitgbc6x33" path="res://assets/resources/levels/gage_levels/gage10.tres" id="27_bhwki"]
+[ext_resource type="Resource" uid="uid://cxmff1lp0pj1p" path="res://assets/resources/levels/gage_levels/gage5.tres" id="28_l0v08"]
+[ext_resource type="Resource" uid="uid://wcj01elnqbnd" path="res://assets/resources/levels/gage_levels/gage6.tres" id="29_d5apa"]
+[ext_resource type="Resource" uid="uid://dm4swk7401jla" path="res://assets/resources/levels/gage_levels/gage8.tres" id="30_kqopq"]
+[ext_resource type="Resource" uid="uid://da8dj6lg26a1l" path="res://assets/resources/levels/chelito/chel3.tres" id="31_c3d0w"]
+[ext_resource type="Resource" uid="uid://eln08y041gqo" path="res://assets/resources/levels/gage_levels/gage11.tres" id="32_8pkqe"]
+[ext_resource type="Resource" uid="uid://ddh8i7qgaotjv" path="res://assets/resources/levels/gage_levels/gage12.tres" id="33_2y1al"]
+[ext_resource type="Resource" uid="uid://13gwfykrs5bh" path="res://assets/resources/levels/gage_levels/gage15.tres" id="37_g08y4"]
+[ext_resource type="Resource" uid="uid://cuuc6pi7u3cef" path="res://assets/resources/levels/estes/e_lr_1.tres" id="38_4vnlp"]
+[ext_resource type="Resource" uid="uid://c4ssgevqs7irq" path="res://assets/resources/levels/ricky06/ricky2.tres" id="39_35tij"]
+[ext_resource type="Resource" uid="uid://bkk4tdwdxu2i2" path="res://assets/resources/levels/toby/toby7.tres" id="40_7sdq5"]
+[ext_resource type="Resource" uid="uid://dk8y1evy8unip" path="res://assets/resources/levels/chelito/chel4.tres" id="42_qagxl"]
+[ext_resource type="Resource" uid="uid://c3jrct8f40v18" path="res://assets/resources/levels/gage_levels/gage13.tres" id="43_wysgg"]
+[ext_resource type="Resource" uid="uid://injm48bwfxl5" path="res://assets/resources/levels/ricky06/ricky0.tres" id="44_xa58s"]
+[ext_resource type="Resource" uid="uid://je6mon3uy0au" path="res://assets/resources/levels/gage_levels/gage17.tres" id="45_o2ihp"]
+[ext_resource type="Resource" uid="uid://be8e7c5iq03oq" path="res://assets/resources/levels/toby/toby6.tres" id="46_k4jva"]
 
 [sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_2cuwm"]
 stream_count = 6
@@ -109,18 +132,18 @@ offset_bottom = 1080.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 stretch = true
-stretch_shrink = 3
+stretch_shrink = 8
 script = ExtResource("4_oxucs")
 
 [node name="SubViewport" type="SubViewport" parent="GameCanvas/SubViewportContainer" unique_id=411041924]
 handle_input_locally = false
 snap_2d_transforms_to_pixel = true
 canvas_item_default_texture_filter = 0
-size = Vector2i(640, 360)
+size = Vector2i(240, 135)
 render_target_update_mode = 4
 
 [node name="GameMain" parent="GameCanvas/SubViewportContainer/SubViewport" unique_id=865138517 instance=ExtResource("1_rgwe6")]
-levels = Array[ExtResource("15_yotbe")]([ExtResource("17_4dk0s"), ExtResource("17_ke02j"), ExtResource("16_cikn5"), ExtResource("17_617bi"), ExtResource("18_ke02j"), ExtResource("19_4dk0s"), ExtResource("20_segdw"), ExtResource("21_0bn8m")])
+levels = Array[ExtResource("15_yotbe")]([ExtResource("17_uhvr4"), ExtResource("18_2d7kn"), ExtResource("19_1da20"), ExtResource("20_3onol"), ExtResource("17_4dk0s"), ExtResource("22_x1n05"), ExtResource("23_s3djr"), ExtResource("24_u6rea"), ExtResource("25_yt5dq"), ExtResource("26_wb732"), ExtResource("27_bhwki"), ExtResource("28_l0v08"), ExtResource("29_d5apa"), ExtResource("30_kqopq"), ExtResource("31_c3d0w"), ExtResource("32_8pkqe"), ExtResource("33_2y1al"), ExtResource("16_cikn5"), ExtResource("20_segdw"), ExtResource("37_g08y4"), ExtResource("18_ke02j"), ExtResource("38_4vnlp"), ExtResource("42_qagxl"), ExtResource("40_7sdq5"), ExtResource("21_0bn8m"), ExtResource("39_35tij"), ExtResource("43_wysgg"), ExtResource("44_xa58s"), ExtResource("45_o2ihp"), ExtResource("46_k4jva"), ExtResource("19_4dk0s")])
 
 [node name="UIMain" parent="GameCanvas" unique_id=1401640239 instance=ExtResource("2_cpnpi")]
 position = Vector2(1000, 527)
