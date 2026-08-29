@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://c8uhbgedgwx0j"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_gw7pp"]
+
+[resource]
+script = ExtResource("1_gw7pp")
+account_name = "gnome1"
+text = "\"The wise frog does not seek the lily. The wise frog clears its mind, and seeks the peace at where the lily is not.\" -Gnome Tzu, The Art of Wart"
+avatar = Vector2i(0, 4)

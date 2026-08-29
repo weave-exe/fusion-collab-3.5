@@ -21,15 +21,15 @@
 [ext_resource type="PackedScene" uid="uid://tsu1ixi6fvdf" path="res://assets/scenes/decorative/decals/bg/flower_red.tscn" id="15_woa6b"]
 [ext_resource type="PackedScene" uid="uid://u6baj7lvvmr" path="res://assets/scenes/decorative/decals/bg/water_plants.tscn" id="16_ec2h0"]
 
-[sub_resource type="Resource" id="Resource_2cuwm"]
-script = ExtResource("3_mnpek")
-win_tiles_group = "WinTilesLog"
-metadata/_custom_type_script = "uid://c1adwhrifqsg5"
-
 [sub_resource type="Resource" id="Resource_re801"]
 script = ExtResource("3_mnpek")
 group = "Frog"
 win_tiles_group = "WinTilesFrog"
+metadata/_custom_type_script = "uid://c1adwhrifqsg5"
+
+[sub_resource type="Resource" id="Resource_2cuwm"]
+script = ExtResource("3_mnpek")
+win_tiles_group = "WinTilesLog"
 metadata/_custom_type_script = "uid://c1adwhrifqsg5"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_465qy"]
@@ -158,7 +158,7 @@ position = Vector2(8, 40)
 script = ExtResource("1_by7e6")
 terrain_layer = NodePath("TileMapLayer")
 moveables_root = NodePath("Moveables")
-win_conditions = Array[ExtResource("2_465qy")]([SubResource("Resource_2cuwm"), SubResource("Resource_re801")])
+win_conditions = Array[ExtResource("2_465qy")]([SubResource("Resource_re801"), SubResource("Resource_2cuwm")])
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1567310552 groups=["LevelTileMap"]]
 z_index = -2
