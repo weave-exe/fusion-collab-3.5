@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://76aks7fwulr0"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_nt0v0"]
+
+[resource]
+script = ExtResource("1_nt0v0")
+account_name = "one_gnome_alone"
+text = "anyone heard of this new virus called \"gnomeid-19\"? sounds dangerous. i better shut my front door... wouldn't want to end up the same as my uncle eric."
+avatar = Vector2i(2, 2)
