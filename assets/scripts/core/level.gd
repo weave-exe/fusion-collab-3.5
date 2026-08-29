@@ -48,7 +48,7 @@ func try_move_frog(moveable: Frog, direction: Vector2i) -> bool:
 	if not moveable.can_hop(direction):
 		return false
 	moveable.move(direction)
-	#check_win()
+	check_win()
 	return true
 
 func undo() -> void:
