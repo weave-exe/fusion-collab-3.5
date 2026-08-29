@@ -18,6 +18,10 @@
 [ext_resource type="PackedScene" uid="uid://bosy4gmmyvvnf" path="res://assets/scenes/decorative/decals/bg/the_bug.tscn" id="16_6cjnq"]
 [ext_resource type="PackedScene" uid="uid://bqjpcxf0ajgn4" path="res://assets/scenes/decorative/decals/fg/fg_plant_c.tscn" id="17_7jgms"]
 [ext_resource type="PackedScene" uid="uid://bxthxmrub33hm" path="res://assets/scenes/decorative/decals/fg/fg_plant_d.tscn" id="18_34wku"]
+[ext_resource type="PackedScene" uid="uid://d2gmgime7utoh" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_b.tscn" id="19_wt5n7"]
+[ext_resource type="PackedScene" uid="uid://fn6udnhstcuw" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_c.tscn" id="20_srjkd"]
+[ext_resource type="PackedScene" uid="uid://crkcpihkr6rid" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_d.tscn" id="21_pyvei"]
+[ext_resource type="PackedScene" uid="uid://earb6t16uu2a" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_a.tscn" id="22_n1b0p"]
 
 [sub_resource type="Resource" id="Resource_4kyv5"]
 script = ExtResource("3_qnog2")
@@ -211,7 +215,7 @@ position = Vector2(56, 56)
 position = Vector2(56, 24)
 
 [node name="Flower_Red" parent="Moveables" unique_id=146636199 instance=ExtResource("11_1r65d")]
-position = Vector2(-152, 24)
+position = Vector2(-144, 24)
 
 [node name="Rocks_Normal" parent="Moveables" unique_id=1858212734 instance=ExtResource("12_ss5vb")]
 position = Vector2(24, 8)
@@ -231,9 +235,6 @@ flip_h = true
 [node name="FrameForDesign" type="Sprite2D" parent="." unique_id=57165250]
 texture = ExtResource("9_coqd8")
 
-[node name="Lily_Pad" parent="." unique_id=1816600671 instance=ExtResource("15_8d07h")]
-position = Vector2(24, 80)
-
 [node name="Lily_Pad2" parent="." unique_id=1865416312 instance=ExtResource("15_8d07h")]
 position = Vector2(-160, -48)
 flip_h = true
@@ -246,9 +247,6 @@ flip_h = true
 position = Vector2(152, 56)
 flip_h = true
 
-[node name="Fg_Plant_C" parent="." unique_id=1062336057 instance=ExtResource("17_7jgms")]
-position = Vector2(80, -24)
-
 [node name="Fg_Plant_C2" parent="." unique_id=1840327303 instance=ExtResource("17_7jgms")]
 position = Vector2(-64, -88)
 
@@ -257,10 +255,6 @@ position = Vector2(48, 120)
 
 [node name="Fg_Plant_C4" parent="." unique_id=609379090 instance=ExtResource("17_7jgms")]
 position = Vector2(120, -48)
-flip_h = true
-
-[node name="Fg_Plant_C5" parent="." unique_id=1717809480 instance=ExtResource("17_7jgms")]
-position = Vector2(-112, 56)
 flip_h = true
 
 [node name="Fg_Plant_C6" parent="." unique_id=823711746 instance=ExtResource("17_7jgms")]
@@ -273,3 +267,15 @@ position = Vector2(-120, 80)
 [node name="Fg_Plant_D2" parent="." unique_id=243045524 instance=ExtResource("18_34wku")]
 position = Vector2(24, -88)
 flip_h = true
+
+[node name="Fg_Plant_B" parent="." unique_id=2115646556 instance=ExtResource("19_wt5n7")]
+position = Vector2(80, -24)
+
+[node name="Fg_Plant_C" parent="." unique_id=1681433146 instance=ExtResource("20_srjkd")]
+position = Vector2(-104, 56)
+
+[node name="Fg_Plant_D3" parent="." unique_id=1050681574 instance=ExtResource("21_pyvei")]
+position = Vector2(168, -24)
+
+[node name="Fg_Plant_A" parent="." unique_id=466566135 instance=ExtResource("22_n1b0p")]
+position = Vector2(-88, -48)

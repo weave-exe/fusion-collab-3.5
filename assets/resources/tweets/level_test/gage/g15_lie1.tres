@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://da3w8wnh43cds"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_4p52i"]
+
+[resource]
+script = ExtResource("1_4p52i")
+account_name = "the_bugs_r_here"
+text = "we're gonna be building a really big anthill right here if that's chill w y'all"

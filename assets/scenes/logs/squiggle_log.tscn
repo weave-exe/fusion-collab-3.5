@@ -8,7 +8,7 @@
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b3tqx"]
 atlas = ExtResource("5_wttsj")
-region = Rect2(32, 0, 16, 16)
+region = Rect2(80, 0, 16, 16)
 
 [node name="Log" type="Node2D" unique_id=732302422 node_paths=PackedStringArray("sound_player") groups=["Log"]]
 z_index = 2

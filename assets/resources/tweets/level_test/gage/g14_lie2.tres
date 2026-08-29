@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://dfkl6urmqwo7t"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_vbe4q"]
+
+[resource]
+script = ExtResource("1_vbe4q")
+account_name = "d1zzy_mnstr4"
+text = "All frogs must not be horizontally aligned with a cattail"
+avatar = Vector2i(0, 3)
