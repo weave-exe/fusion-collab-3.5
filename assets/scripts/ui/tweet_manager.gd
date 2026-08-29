@@ -34,14 +34,19 @@ func _input(event: InputEvent) -> void:
 		return
 	if !event.is_pressed():
 		return
+	if not (event.is_action("move_up") or event.is_action("move_down")):
+		return
+		
+	get_viewport().set_input_as_handled()
+	if event.is_echo():
+		return
+	
 	if event.is_action_pressed("move_up"):
 		_move_focus(-1)
 		$UIClicker.play()
-		get_viewport().set_input_as_handled()
 	if event.is_action_pressed("move_down"):
 		_move_focus(1)
 		$UIClicker.play()
-		get_viewport().set_input_as_handled()
 
 func _move_focus(move: int) -> void:
 	var index = clampi(current_focus_index + move, 0, feed_list.get_child_count() - 1)

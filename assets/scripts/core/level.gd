@@ -12,7 +12,7 @@ class_name Level
 var grid: Grid
 var moveables: Array[Moveable] = []
 # currently just a raw mapping
-# ["moveable": moveable, "tile": Vector2i]
+# ["moveable": moveable, "tile": Vector2i, "animation": String]
 var _history: Array[Array] = []
 
 func _ready() -> void:
@@ -40,7 +40,6 @@ func try_move(moveable: Moveable, direction: Vector2i) -> bool:
 	moveable.move(direction)
 	if moveable.is_in_group("Player"):
 		moveable.PlayerParticles(true)
-	check_win()
 	return true
 
 #frogs can't add to the undo stack, or push things
@@ -48,7 +47,6 @@ func try_move_frog(moveable: Frog, direction: Vector2i) -> bool:
 	if not moveable.can_hop(direction):
 		return false
 	moveable.move(direction)
-	check_win()
 	return true
 
 func undo() -> void:
@@ -56,11 +54,16 @@ func undo() -> void:
 		return
 	for record in _history.pop_back():
 		record["moveable"].force_move(record["tile"])
+		var recorded_animation = record["animation"]
+		if record["moveable"].sprite and recorded_animation != "":
+			record["moveable"].sprite.animation = recorded_animation
+			record["moveable"].sprite.play() 
 
 func _update_history():
 	var history_snapshot := []
 	for moveable in moveables:
-		history_snapshot.append({"moveable": moveable, "tile": moveable.tile})
+		var curr_animation = moveable.sprite.animation if moveable.sprite else ""
+		history_snapshot.append({"moveable": moveable, "tile": moveable.tile, "animation": curr_animation})
 	_history.append(history_snapshot)
 	
 func check_win() -> void:

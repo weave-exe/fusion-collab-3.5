@@ -14,6 +14,7 @@ var _repeat_timer := 0.0
 var _current_action := ""
 
 func _ready() -> void:
+	sprite = $PlayerSprite
 	SignalBus.connect("level_won",win_anim)
 	LevelManager.connect("level_loaded",appear_anim)
 
@@ -24,7 +25,7 @@ func _block_input_if_needed() -> bool:
 		return true
 	if LevelManager.level_resetting:
 		return true
-	return false
+	return LevelManager.is_input_blocked()
 
 func _input(event: InputEvent) -> void:
 	if _block_input_if_needed():
@@ -92,6 +93,9 @@ func _do_action(action: String) -> void:
 	frog = level.get_moveable_at_tile(tile + Vector2i.RIGHT)
 	if frog as Frog != null:
 		frog.do_frog_movement(Vector2i.RIGHT)
+	
+	# check win here after all movement code has run
+	level.check_win()
 		
 	
 func update_player_audio(audio_name: String):

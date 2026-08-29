@@ -7,6 +7,7 @@ class_name Frog
 @export var particles: CPUParticles2D
 
 func _ready() -> void:
+	sprite = $FrogSprite
 	$FrogSprite.play("idle_down")
 	
 func can_move(direction: Vector2i, can_push: bool) -> bool:

@@ -15,6 +15,8 @@ var level_completed:bool=false
 var level_resetting:bool=false
 var layers: Array
 
+var _block_transition_inputs = false
+
 func setup(_container: Node, _levels: Array[LevelResource]) -> void:
 	container = _container
 	levels = _levels
@@ -22,7 +24,7 @@ func setup(_container: Node, _levels: Array[LevelResource]) -> void:
 func load_level(i: int) -> void:
 	if i < 0 or i >= levels.size():
 		return
-		
+	_block_transition_inputs = true
 	# remove level
 	if current_level:
 		container.remove_child(current_level)
@@ -40,6 +42,10 @@ func load_level(i: int) -> void:
 	layer_array.emit(layers)
 	if level_index > furthest_level:
 		furthest_level=level_index
+	
+	get_tree().create_timer(1.0).timeout.connect(
+		func(): _block_transition_inputs = false
+	)
 
 func load_next() -> void:
 	load_level(level_index + 1)
@@ -48,3 +54,6 @@ func reset_level() -> void:
 	load_level(level_index)
 	level_reset.emit()
 	level_resetting=false
+
+func is_input_blocked() -> bool:
+	return _block_transition_inputs or level_completed or level_resetting

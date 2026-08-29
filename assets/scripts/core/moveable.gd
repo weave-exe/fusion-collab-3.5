@@ -7,6 +7,7 @@ class_name Moveable
 var level: Level
 var tile := Vector2i.ZERO
 var tween: Tween
+var sprite: AnimatedSprite2D
 
 func setup(_level: Level, _tile: Vector2i) -> void:
 	level = _level
