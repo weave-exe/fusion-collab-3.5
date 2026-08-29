@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://tt0q8pvpi2jq"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_qsxdw"]
+
+[resource]
+script = ExtResource("1_qsxdw")
+account_name = "rebecca_mushr00m"
+text = "last month, i planted 3 mushrooms in the garden. NOW THERE ARE SO MANY!!! gunning to win the shroom festival this year for sure. #shrooms"
+avatar = Vector2i(4, 0)
