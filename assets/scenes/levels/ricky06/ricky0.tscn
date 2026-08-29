@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://drpkm10wif21y"]
+[gd_scene format=4 uid="uid://b3kx7q2wnv8ma"]
 
 [ext_resource type="Script" uid="uid://csn5nkmwjd60j" path="res://assets/scripts/core/level.gd" id="1_by7e6"]
 [ext_resource type="Script" uid="uid://c7ql1u5xlj4ip" path="res://assets/scripts/win_condition/win_condition.gd" id="2_465qy"]
