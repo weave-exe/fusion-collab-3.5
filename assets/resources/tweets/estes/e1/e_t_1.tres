@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://byn5vbdoaqp5q"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_axlsy"]
+
+[resource]
+script = ExtResource("1_axlsy")
+account_name = "boulder_lover_1204"
+text = "there's just something about those rocks that i find delightful..."
+avatar = Vector2i(3, 1)

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://d24ofpx8uvqvs"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_fxuw1"]
+
+[resource]
+script = ExtResource("1_fxuw1")
+account_name = "gnomiocci_una"
+text = "that frog looks PERTURBED by that frowny face. turn it upside down, and don't bug the poor thing anymore!"
+avatar = Vector2i(3, 3)
