@@ -4,6 +4,7 @@ signal level_loaded(level: Level, zoom: int)
 signal layer_array(layers)
 signal level_reset()
 
+const save_path := "user://savedata.cfg"
 
 var container: Node
 var levels: Array[LevelResource] = []
@@ -42,6 +43,8 @@ func load_level(i: int) -> void:
 	layer_array.emit(layers)
 	if level_index > furthest_level:
 		furthest_level=level_index
+		
+	save_progress()
 	
 	get_tree().create_timer(1.0).timeout.connect(
 		func(): _block_transition_inputs = false
@@ -57,3 +60,15 @@ func reset_level() -> void:
 
 func is_input_blocked() -> bool:
 	return _block_transition_inputs or level_completed or level_resetting
+
+func save_progress() -> void:
+	var config := ConfigFile.new()
+	config.set_value("progress", "furthest_level", furthest_level)
+	config.save(save_path)
+	
+func load_saved_progress() -> void:
+	var config := ConfigFile.new()
+	var err := config.load(save_path)
+	if err != OK:
+		return
+	furthest_level = config.get_value("progress", "furthest_level", 0)
