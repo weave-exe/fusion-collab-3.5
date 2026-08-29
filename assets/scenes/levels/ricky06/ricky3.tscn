@@ -87,12 +87,11 @@ texture = ExtResource("4_psrx5")
 [sub_resource type="TileSet" id="TileSet_p1ygr"]
 sources/0 = SubResource("TileSetAtlasSource_c8sgo")
 
-[node name="Ricky3" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root", "decal_layer")]
+[node name="Ricky3" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root")]
 position = Vector2(40, 72)
 script = ExtResource("1_6bscq")
 terrain_layer = NodePath("TileMapLayer")
 moveables_root = NodePath("Moveables")
-decal_layer = NodePath("")
 win_conditions = Array[ExtResource("2_5eqth")]([SubResource("Resource_2cuwm")])
 
 [node name="TileMapLayerWinLog" type="TileMapLayer" parent="." unique_id=1054413193 groups=["WinTilesLog"]]

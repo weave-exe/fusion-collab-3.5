@@ -11,6 +11,6 @@
 script = ExtResource("2_oejfx")
 scene = ExtResource("1_rkbkg")
 tweets = Array[ExtResource("3_g3m1t")]([ExtResource("6_p7oej"), ExtResource("5_onx8g"), ExtResource("4_b65la")])
-music_layers = Array[bool]([false, true, true, false, false, true])
+music_layers = Array[bool]([false, true, true, false, false, true, false])
 zoom = 4
 metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"
