@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_l63c5")
-account_name = "gn0me__"
-text = "This one's a thinker!"
+account_name = "gn0me__1"
+text = "You can do this!"
 avatar = Vector2i(0, 1)

@@ -16,7 +16,7 @@ region = Rect2(0, 32, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nynie"]
 atlas = ExtResource("5_sylkw")
-region = Rect2(32, 0, 16, 16)
+region = Rect2(80, 0, 16, 16)
 
 [node name="Log" type="Node2D" unique_id=732302422 node_paths=PackedStringArray("sound_player")]
 z_index = 3

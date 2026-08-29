@@ -100,6 +100,7 @@ position = Vector2(56, 136)
 position = Vector2(88, 104)
 
 [node name="Gnome1" parent="Moveables" unique_id=821040263 instance=ExtResource("22_axfp6")]
+z_index = 5
 position = Vector2(24, 72)
 
 [node name="Flower_White" parent="." unique_id=497399535 instance=ExtResource("11_abvol")]
@@ -193,7 +194,7 @@ position = Vector2(-88, -72)
 position = Vector2(-72, -40)
 
 [node name="Flower_Yellow6" parent="." unique_id=774153881 instance=ExtResource("12_v1dp8")]
-position = Vector2(-88, -48)
+position = Vector2(-88, -40)
 
 [node name="The_Bug" parent="." unique_id=949799559 instance=ExtResource("17_wmgv6")]
 position = Vector2(-104, -56)

@@ -33,9 +33,11 @@ z_index = 3
 script = ExtResource("1_v6hcn")
 sound_player = NodePath("LogSounds")
 sound_logs = Array[AudioStreamOggVorbis]([ExtResource("2_qkh8j"), ExtResource("3_gexk7"), ExtResource("4_44x4e")])
+shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(0, -1)])
 metadata/_custom_type_script = "uid://b5qmu3d344sls"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=387132250]
+z_index = 4
 position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_khtlt")
 autoplay = "default"

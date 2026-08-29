@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://cqgrn7iapr574"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_w0of7"]
+
+[resource]
+script = ExtResource("1_w0of7")
+account_name = "tobyaaa_loves_gnomes"
+text = "Hi!"
+avatar = Vector2i(5, 4)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"

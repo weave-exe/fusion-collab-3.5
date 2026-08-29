@@ -17,6 +17,10 @@
 [ext_resource type="PackedScene" uid="uid://cka2vp1lacpod" path="res://assets/scenes/decorative/decals/bg/flower_white.tscn" id="15_pkes0"]
 [ext_resource type="PackedScene" uid="uid://c1j483j6fc4w5" path="res://assets/scenes/decorative/decals/bg/flower_blue.tscn" id="16_pudco"]
 [ext_resource type="PackedScene" uid="uid://dodwwgb5und32" path="res://assets/scenes/decorative/decals/bg/flower_yellow.tscn" id="17_ebjjm"]
+[ext_resource type="PackedScene" uid="uid://earb6t16uu2a" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_a.tscn" id="18_pcuab"]
+[ext_resource type="PackedScene" uid="uid://crkcpihkr6rid" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_d.tscn" id="19_pkes0"]
+[ext_resource type="PackedScene" uid="uid://fn6udnhstcuw" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_c.tscn" id="20_pudco"]
+[ext_resource type="PackedScene" uid="uid://d2gmgime7utoh" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_b.tscn" id="21_ebjjm"]
 
 [sub_resource type="Resource" id="Resource_4kyv5"]
 script = ExtResource("3_orhsq")
@@ -134,6 +138,7 @@ position = Vector2(109, -50)
 
 [node name="Fg_Plant_C2" parent="Decals" unique_id=1396802098 instance=ExtResource("11_3bw4e")]
 position = Vector2(-76, -27)
+flip_h = true
 
 [node name="Fg_Plant_C3" parent="Decals" unique_id=1228796331 instance=ExtResource("11_3bw4e")]
 position = Vector2(-42, 73)
@@ -171,3 +176,22 @@ position = Vector2(56, -40)
 
 [node name="Flower_Yellow2" parent="Decals" unique_id=1954211667 instance=ExtResource("17_ebjjm")]
 position = Vector2(-9, 88)
+
+[node name="Fg_Plant_A" parent="Decals" unique_id=2100749844 instance=ExtResource("18_pcuab")]
+position = Vector2(-75, 14)
+
+[node name="Fg_Plant_A2" parent="Decals" unique_id=277933944 instance=ExtResource("18_pcuab")]
+position = Vector2(155, 87)
+flip_h = true
+
+[node name="Fg_Plant_D3" parent="Decals" unique_id=1833316923 instance=ExtResource("19_pkes0")]
+position = Vector2(-51, 93)
+flip_h = true
+
+[node name="Fg_Plant_C" parent="." unique_id=1447560302 instance=ExtResource("20_pudco")]
+position = Vector2(111, -3)
+flip_h = true
+
+[node name="Fg_Plant_B" parent="." unique_id=136805777 instance=ExtResource("21_ebjjm")]
+position = Vector2(56, 93)
+flip_h = true

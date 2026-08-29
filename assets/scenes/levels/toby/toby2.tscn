@@ -16,6 +16,9 @@
 [ext_resource type="PackedScene" uid="uid://bosy4gmmyvvnf" path="res://assets/scenes/decorative/decals/bg/the_bug.tscn" id="13_udtqd"]
 [ext_resource type="PackedScene" uid="uid://f5u04egtixuo" path="res://assets/scenes/decorative/decals/tutorial/undo.tscn" id="15_b4ykt"]
 [ext_resource type="PackedScene" uid="uid://figp5avm0okj" path="res://assets/scenes/decorative/decals/tutorial/pause.tscn" id="16_kf2cj"]
+[ext_resource type="PackedScene" uid="uid://d2gmgime7utoh" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_b.tscn" id="17_nynua"]
+[ext_resource type="PackedScene" uid="uid://crkcpihkr6rid" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_d.tscn" id="18_lwh1r"]
+[ext_resource type="PackedScene" uid="uid://earb6t16uu2a" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_a.tscn" id="19_4h7t6"]
 
 [sub_resource type="Resource" id="Resource_4kyv5"]
 script = ExtResource("3_5raer")
@@ -205,3 +208,18 @@ position = Vector2(-54, 93)
 
 [node name="Pause" parent="." unique_id=1796305941 instance=ExtResource("16_kf2cj")]
 position = Vector2(-52, 111)
+
+[node name="Fg_Plant_B" parent="." unique_id=732346460 instance=ExtResource("17_nynua")]
+position = Vector2(-111, 16)
+flip_h = true
+
+[node name="Fg_Plant_B2" parent="." unique_id=181554868 instance=ExtResource("17_nynua")]
+position = Vector2(71, -39)
+flip_h = true
+
+[node name="Fg_Plant_D" parent="." unique_id=1167812034 instance=ExtResource("18_lwh1r")]
+position = Vector2(47, -114)
+
+[node name="Fg_Plant_A" parent="." unique_id=1724738295 instance=ExtResource("19_4h7t6")]
+position = Vector2(76, 91)
+flip_h = true

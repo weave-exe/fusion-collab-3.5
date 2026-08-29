@@ -534,6 +534,7 @@ texture = ExtResource("5_x2dk5")
 10:3/0/custom_data_2 = true
 
 [resource]
+uv_clipping = true
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "WallsTop"
 terrain_set_0/terrain_0/color = Color(0.5722173, 0.09984674, 0.5291428, 1)

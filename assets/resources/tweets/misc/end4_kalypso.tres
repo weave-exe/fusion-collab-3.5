@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://kvyug3u6xgd4"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_byvs2"]
+
+[resource]
+script = ExtResource("1_byvs2")
+account_name = "Kalypshohoho"
+text = "I guess the gnomeoral of the story was to trust gno-one but gnome one… i wouldn’t read into it gnthough."
+avatar = Vector2i(5, 3)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"

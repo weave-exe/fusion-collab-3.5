@@ -3,15 +3,15 @@ extends Node
 @export var timer: Timer
 
 func _input(event: InputEvent) -> void:
-
-	if event.is_action_pressed("move_up"):
-		timer.start()
-	elif event.is_action_pressed("move_left"):
-		timer.start()
-	elif event.is_action_pressed("move_right"):
-		timer.start()
-	elif event.is_action_pressed("move_down"):
-		timer.start()
+	if not UIG.phone_open:
+		if event.is_action_pressed("move_up"):
+			timer.start()
+		elif event.is_action_pressed("move_left"):
+			timer.start()
+		elif event.is_action_pressed("move_right"):
+			timer.start()
+		elif event.is_action_pressed("move_down"):
+			timer.start()
 
 		
 

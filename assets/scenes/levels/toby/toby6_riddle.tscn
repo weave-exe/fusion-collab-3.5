@@ -12,6 +12,9 @@
 [ext_resource type="PackedScene" uid="uid://dym3o6h6mglps" path="res://assets/scenes/decorative/decals/fg/fg_plant_a.tscn" id="10_gy5n5"]
 [ext_resource type="PackedScene" uid="uid://cv88xepjuy7ab" path="res://assets/scenes/decorative/decals/fg/fg_plant_b.tscn" id="11_0ao5j"]
 [ext_resource type="PackedScene" uid="uid://bqjpcxf0ajgn4" path="res://assets/scenes/decorative/decals/fg/fg_plant_c.tscn" id="12_mk0li"]
+[ext_resource type="PackedScene" uid="uid://d2gmgime7utoh" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_b.tscn" id="13_mk0li"]
+[ext_resource type="PackedScene" uid="uid://fn6udnhstcuw" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_c.tscn" id="14_r88c0"]
+[ext_resource type="PackedScene" uid="uid://crkcpihkr6rid" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_d.tscn" id="15_r88c0"]
 
 [sub_resource type="Resource" id="Resource_4kyv5"]
 script = ExtResource("3_gy5n5")
@@ -163,10 +166,11 @@ texture = ExtResource("4_0ao5j")
 [sub_resource type="TileSet" id="TileSet_g6fo8"]
 sources/0 = SubResource("TileSetAtlasSource_frn7h")
 
-[node name="Level0" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root")]
+[node name="Level0" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root", "decal_layer")]
 script = ExtResource("1_qubdb")
 terrain_layer = NodePath("TileMapLayer")
 moveables_root = NodePath("Moveables")
+decal_layer = NodePath("Mushrooms")
 win_conditions = Array[ExtResource("2_rn20g")]([SubResource("Resource_4kyv5")])
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1567310552 groups=["LevelTileMap"]]
@@ -252,3 +256,24 @@ position = Vector2(-109, 88)
 [node name="Fg_Plant_C4" parent="Decals" unique_id=544831833 instance=ExtResource("12_mk0li")]
 position = Vector2(-94, 95)
 flip_h = true
+
+[node name="Fg_Plant_B" parent="." unique_id=935608151 instance=ExtResource("13_mk0li")]
+position = Vector2(64, -119)
+flip_h = true
+
+[node name="Fg_Plant_C" parent="." unique_id=898259456 instance=ExtResource("14_r88c0")]
+position = Vector2(-108, 103)
+flip_h = true
+
+[node name="Fg_Plant_C2" parent="." unique_id=194346741 instance=ExtResource("14_r88c0")]
+position = Vector2(136, 48)
+
+[node name="Fg_Plant_C3" parent="." unique_id=2071607966 instance=ExtResource("14_r88c0")]
+position = Vector2(146, -24)
+flip_h = true
+
+[node name="Fg_Plant_B2" parent="." unique_id=1936618057 instance=ExtResource("13_mk0li")]
+position = Vector2(-140, -53)
+
+[node name="Fg_Plant_D" parent="." unique_id=532354428 instance=ExtResource("15_r88c0")]
+position = Vector2(-147, -10)

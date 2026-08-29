@@ -16,6 +16,9 @@
 [ext_resource type="PackedScene" uid="uid://c1j483j6fc4w5" path="res://assets/scenes/decorative/decals/bg/flower_blue.tscn" id="13_su26m"]
 [ext_resource type="PackedScene" uid="uid://itsdrmfp47ft" path="res://assets/scenes/decorative/decals/bg/rocks_normal.tscn" id="15_ri50n"]
 [ext_resource type="PackedScene" uid="uid://dhux84q7502pj" path="res://assets/scenes/decorative/decals/bg/rocks_planty.tscn" id="16_3lo4x"]
+[ext_resource type="PackedScene" uid="uid://fn6udnhstcuw" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_c.tscn" id="17_dd85r"]
+[ext_resource type="PackedScene" uid="uid://earb6t16uu2a" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_a.tscn" id="18_r78p1"]
+[ext_resource type="PackedScene" uid="uid://d2gmgime7utoh" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_b.tscn" id="19_mherq"]
 
 [sub_resource type="Resource" id="Resource_4kyv5"]
 script = ExtResource("3_kycbw")
@@ -264,3 +267,22 @@ position = Vector2(-56, 8)
 
 [node name="Rocks_Planty2" parent="Decals" unique_id=36175073 instance=ExtResource("16_3lo4x")]
 position = Vector2(40, 8)
+
+[node name="Fg_Plant_C" parent="." unique_id=643362092 instance=ExtResource("17_dd85r")]
+position = Vector2(25, 104)
+centered = false
+
+[node name="Fg_Plant_A" parent="." unique_id=2072255451 instance=ExtResource("18_r78p1")]
+position = Vector2(-125, 26)
+
+[node name="Fg_Plant_C2" parent="." unique_id=1687393676 instance=ExtResource("17_dd85r")]
+position = Vector2(-123, -21)
+flip_h = true
+
+[node name="Fg_Plant_B" parent="." unique_id=594182907 instance=ExtResource("19_mherq")]
+position = Vector2(57, -115)
+flip_h = true
+
+[node name="Fg_Plant_A2" parent="." unique_id=1797795983 instance=ExtResource("18_r78p1")]
+position = Vector2(113, -32)
+flip_h = true

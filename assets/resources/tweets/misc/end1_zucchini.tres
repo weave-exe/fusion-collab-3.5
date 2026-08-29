@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://dv3emdykissd6"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_tgbm3"]
+
+[resource]
+script = ExtResource("1_tgbm3")
+account_name = "@wise_mystical_gage"
+text = "Thanks for playing our game, we hope your perception towards the word \"gnome\" has been forever altered <3"
+avatar = Vector2i(4, 4)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"

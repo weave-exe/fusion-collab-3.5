@@ -12,7 +12,10 @@
 [ext_resource type="PackedScene" uid="uid://bqjpcxf0ajgn4" path="res://assets/scenes/decorative/decals/fg/fg_plant_c.tscn" id="11_5jx12"]
 [ext_resource type="PackedScene" uid="uid://cv88xepjuy7ab" path="res://assets/scenes/decorative/decals/fg/fg_plant_b.tscn" id="12_fob3s"]
 [ext_resource type="PackedScene" uid="uid://dym3o6h6mglps" path="res://assets/scenes/decorative/decals/fg/fg_plant_a.tscn" id="13_4ob1f"]
+[ext_resource type="PackedScene" uid="uid://d2gmgime7utoh" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_b.tscn" id="14_32sa2"]
+[ext_resource type="PackedScene" uid="uid://fn6udnhstcuw" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_c.tscn" id="15_lc7ce"]
 [ext_resource type="PackedScene" uid="uid://itsdrmfp47ft" path="res://assets/scenes/decorative/decals/bg/rocks_normal.tscn" id="15_usory"]
+[ext_resource type="PackedScene" uid="uid://crkcpihkr6rid" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_d.tscn" id="16_wagjh"]
 
 [sub_resource type="Resource" id="Resource_4kyv5"]
 script = ExtResource("3_wagjh")
@@ -248,3 +251,16 @@ flip_h = true
 [node name="Fg_Plant_A4" parent="Decals" unique_id=1348291915 instance=ExtResource("13_4ob1f")]
 position = Vector2(163, 18)
 flip_h = true
+
+[node name="Fg_Plant_B" parent="." unique_id=1582276402 instance=ExtResource("14_32sa2")]
+position = Vector2(-113, -64)
+
+[node name="Fg_Plant_C" parent="." unique_id=1650118147 instance=ExtResource("15_lc7ce")]
+position = Vector2(156, -26)
+flip_h = true
+
+[node name="Fg_Plant_D" parent="." unique_id=531779781 instance=ExtResource("16_wagjh")]
+position = Vector2(83, 138)
+
+[node name="Fg_Plant_C2" parent="." unique_id=1369894413 instance=ExtResource("15_lc7ce")]
+position = Vector2(-92, -77)
