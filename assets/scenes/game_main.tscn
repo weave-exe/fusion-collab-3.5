@@ -3,18 +3,35 @@
 [ext_resource type="Script" uid="uid://be0rxmg0c3itn" path="res://assets/scripts/game_main.gd" id="1_mvut7"]
 [ext_resource type="PackedScene" uid="uid://dfss7a7mv0k4f" path="res://assets/scenes/decorative/background_water.tscn" id="2_jtx3k"]
 [ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="2_mlek0"]
-[ext_resource type="Resource" uid="uid://4v5tap0hyu70" path="res://assets/resources/levels/gage_levels/gage7_bad.tres" id="3_03gwc"]
+[ext_resource type="Resource" uid="uid://btiqsvagu6do2" path="res://assets/resources/levels/Test1.tres" id="3_lw8wq"]
 [ext_resource type="Resource" uid="uid://8j3uy6whhp8v" path="res://assets/resources/levels/gage_levels/gage1.tres" id="3_sohnc"]
+[ext_resource type="Resource" uid="uid://e6uui4c5w0d4" path="res://assets/resources/levels/toby/toby1.tres" id="4_5japu"]
 [ext_resource type="PackedScene" uid="uid://gm6k6yjpbjlx" path="res://assets/scenes/decorative/mist2.tscn" id="4_5rqp6"]
 [ext_resource type="Resource" uid="uid://bvucpb0owl6gx" path="res://assets/resources/levels/gage_levels/gage2.tres" id="4_hrpjq"]
 [ext_resource type="Resource" uid="uid://dlorpcdlugeyu" path="res://assets/resources/levels/gage_levels/gage3.tres" id="5_03gwc"]
+[ext_resource type="Resource" uid="uid://c8y0x6qhg06fh" path="res://assets/resources/levels/toby/toby2.tres" id="5_hxf26"]
 [ext_resource type="PackedScene" uid="uid://dhw1iqckc8ha7" path="res://assets/scenes/decorative/mist.tscn" id="5_nd2f5"]
+[ext_resource type="Resource" uid="uid://dmf1428n3wooi" path="res://assets/resources/levels/toby/toby3.tres" id="6_etbrm"]
 [ext_resource type="Resource" uid="uid://bfgl2s3ypbtwi" path="res://assets/resources/levels/gage_levels/gage4.tres" id="6_s7csj"]
+[ext_resource type="Resource" uid="uid://dm3a8r0xyi0xy" path="res://assets/resources/levels/gage_levels/gage9.tres" id="7_lxstn"]
 [ext_resource type="AudioStream" uid="uid://ccw2xynojeglh" path="res://assets/audio/sound/ForestMorningBirds_SFXB.75.ogg" id="8_hb0f8"]
+[ext_resource type="Resource" uid="uid://f6lrnbu0kjj5" path="res://assets/resources/levels/chelito/chel1.tres" id="8_jq754"]
+[ext_resource type="Resource" uid="uid://c55d4h8qfgj5i" path="res://assets/resources/levels/toby/toby5.tres" id="9_ntvo3"]
 [ext_resource type="AudioStream" uid="uid://0yq41ly6l7vm" path="res://assets/audio/sound/reset.ogg" id="10_k57sx"]
+[ext_resource type="Resource" uid="uid://bkk4tdwdxu2i2" path="res://assets/resources/levels/toby/toby7.tres" id="10_kq3nb"]
+[ext_resource type="Resource" uid="uid://dm4swk7401jla" path="res://assets/resources/levels/gage_levels/gage8.tres" id="11_b3r0y"]
 [ext_resource type="Script" uid="uid://gpwondiqjt7y" path="res://assets/scripts/ui/reset_sound.gd" id="11_hb0f8"]
+[ext_resource type="Resource" uid="uid://dvv4sbsjr7ipn" path="res://assets/resources/levels/toby/toby4.tres" id="12_bpgni"]
 [ext_resource type="Script" uid="uid://bki10dp861dw1" path="res://assets/scripts/ui/win_sound.gd" id="12_hb0f8"]
+[ext_resource type="Resource" uid="uid://cxmff1lp0pj1p" path="res://assets/resources/levels/gage_levels/gage5.tres" id="13_7i5io"]
 [ext_resource type="AudioStream" uid="uid://c71k5viy7qp1i" path="res://assets/audio/sound/win.ogg" id="13_hrpjq"]
+[ext_resource type="Resource" uid="uid://wcj01elnqbnd" path="res://assets/resources/levels/gage_levels/gage6.tres" id="14_1m8ah"]
+[ext_resource type="Resource" uid="uid://c3jrct8f40v18" path="res://assets/resources/levels/gage_levels/gage13.tres" id="15_oc32e"]
+[ext_resource type="Resource" uid="uid://ddh8i7qgaotjv" path="res://assets/resources/levels/gage_levels/gage12.tres" id="16_k7kjd"]
+[ext_resource type="Resource" uid="uid://eln08y041gqo" path="res://assets/resources/levels/gage_levels/gage11.tres" id="17_3i1qb"]
+[ext_resource type="Resource" uid="uid://bghbitgbc6x33" path="res://assets/resources/levels/gage_levels/gage10.tres" id="18_srql8"]
+[ext_resource type="Resource" uid="uid://cf33cym73cto8" path="res://assets/resources/levels/ricky06/ricky0.tres" id="22_x65a4"]
+[ext_resource type="Resource" uid="uid://be8e7c5iq03oq" path="res://assets/resources/levels/toby/toby6.tres" id="23_uj6ii"]
 
 [sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_3cxim"]
 clip_count = 1
@@ -33,7 +50,7 @@ glow_blend_mode = 0
 
 [node name="GameMain" type="Node2D" unique_id=865138517]
 script = ExtResource("1_mvut7")
-levels = Array[ExtResource("2_mlek0")]([ExtResource("3_03gwc"), ExtResource("3_sohnc"), ExtResource("4_hrpjq"), ExtResource("5_03gwc"), ExtResource("6_s7csj")])
+levels = Array[ExtResource("2_mlek0")]([ExtResource("3_lw8wq"), ExtResource("4_5japu"), ExtResource("5_hxf26"), ExtResource("6_etbrm"), ExtResource("7_lxstn"), ExtResource("8_jq754"), ExtResource("9_ntvo3"), ExtResource("18_srql8"), ExtResource("10_kq3nb"), ExtResource("11_b3r0y"), ExtResource("12_bpgni"), ExtResource("13_7i5io"), ExtResource("14_1m8ah"), ExtResource("4_hrpjq"), ExtResource("17_3i1qb"), ExtResource("16_k7kjd"), ExtResource("6_s7csj"), ExtResource("15_oc32e"), ExtResource("5_03gwc"), ExtResource("22_x65a4"), ExtResource("23_uj6ii"), ExtResource("3_sohnc")])
 
 [node name="LevelContainer" type="Node2D" parent="." unique_id=880857937]
 
