@@ -42,7 +42,7 @@ func _on_focus_entered() -> void:
 	_kill_tween()
 	_tween = create_tween()
 	_tween.tween_property(_clone, "scale", Vector2(1.1, 1.1), 0.1).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
-	_tween.tween_property(_clone, "scale", Vector2(1.05, 1.05), 0.1).set_ease(Tween.EASE_IN).set_trans(Tween.TRANS_CUBIC)
+	_tween.tween_property(_clone, "scale", Vector2(1.0, 1.0), 0.1).set_ease(Tween.EASE_IN).set_trans(Tween.TRANS_CUBIC)
 		
 func _on_focus_exited() -> void:
 	if _focus_layer == null:
