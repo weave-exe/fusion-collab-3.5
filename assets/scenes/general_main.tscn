@@ -3,32 +3,35 @@
 [ext_resource type="Script" uid="uid://dog4kxrbwqd2w" path="res://assets/scripts/core/general_main.gd" id="1_8q1tn"]
 [ext_resource type="Script" uid="uid://c3so5a4mhteio" path="res://assets/scripts/core/world_audio_manager.gd" id="1_cpnpi"]
 [ext_resource type="PackedScene" uid="uid://bvviimgftb6ul" path="res://assets/scenes/game_main.tscn" id="1_rgwe6"]
-[ext_resource type="AudioStream" uid="uid://b0i5sp6lebd34" path="res://assets/audio/music/overworld oggs/bass-track-ow.ogg" id="2_afhpk"]
 [ext_resource type="PackedScene" uid="uid://ddx7lmc6oorfv" path="res://assets/scenes/ui_main.tscn" id="2_cpnpi"]
-[ext_resource type="AudioStream" uid="uid://ckj2m2g8xqb8c" path="res://assets/audio/music/overworld oggs/melody-track-ow.ogg" id="3_o0f1a"]
+[ext_resource type="AudioStream" uid="uid://cuj8o0udmpqwo" path="res://assets/audio/music/overworld oggs/melody track ow.ogg" id="3_a8sqs"]
+[ext_resource type="AudioStream" uid="uid://bvbub2m3dtrrr" path="res://assets/audio/music/overworld oggs/harmony track ow.ogg" id="4_bnxol"]
 [ext_resource type="Script" uid="uid://dwgukh3klxv3o" path="res://assets/scripts/core/zoomout_ft_touhoe.gd" id="4_oxucs"]
-[ext_resource type="AudioStream" uid="uid://b0qm2hrg0got7" path="res://assets/audio/music/overworld oggs/harmony-track-ow.ogg" id="4_vgr81"]
-[ext_resource type="AudioStream" uid="uid://3xff1mqyeqqw" path="res://assets/audio/music/overworld oggs/harmony-2-track-ow.ogg" id="5_dxtt1"]
-[ext_resource type="AudioStream" uid="uid://cf73p85ymgcqi" path="res://assets/audio/music/overworld oggs/percussion-sfx-track-ow.ogg" id="6_8q1tn"]
+[ext_resource type="AudioStream" uid="uid://8fav2tkljoqa" path="res://assets/audio/music/overworld oggs/harmony 2 track ow.ogg" id="5_30o63"]
+[ext_resource type="AudioStream" uid="uid://dn15f0ka106bs" path="res://assets/audio/music/overworld oggs/percussion sfx track ow.ogg" id="6_s3erl"]
 [ext_resource type="AudioStream" uid="uid://cax7gsial1f0m" path="res://assets/audio/music/twitter oggs/melody-track-twt.ogg" id="7_dxtt1"]
+[ext_resource type="AudioStream" uid="uid://363us6qcbbeu" path="res://assets/audio/music/overworld oggs/bass track ow.ogg" id="7_uuqc0"]
 [ext_resource type="AudioStream" uid="uid://dmbbc4ksc5c7b" path="res://assets/audio/music/twitter oggs/harmony-track-twt.ogg" id="8_8q1tn"]
+[ext_resource type="AudioStream" uid="uid://cbporjqjglpfb" path="res://assets/audio/music/overworld oggs/persistent track ow.ogg" id="8_gevny"]
 [ext_resource type="AudioStream" uid="uid://dmrju2rubywke" path="res://assets/audio/music/twitter oggs/drums-track-twt.ogg" id="9_3di84"]
 [ext_resource type="AudioStream" uid="uid://cffd3kee7aoku" path="res://assets/audio/music/twitter oggs/bass-track-twt.ogg" id="10_qi1ok"]
 [ext_resource type="Script" uid="uid://bd6jnxbukrubl" path="res://assets/scripts/core/background_music_player.gd" id="12_3di84"]
 [ext_resource type="PackedScene" uid="uid://brgnkcsx1pevy" path="res://assets/scenes/decorative/deathwipe.tscn" id="16_qi1ok"]
 
 [sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_2cuwm"]
-stream_count = 5
-stream_0/stream = ExtResource("3_o0f1a")
+stream_count = 6
+stream_0/stream = ExtResource("3_a8sqs")
 stream_0/volume = 0.0
-stream_1/stream = ExtResource("4_vgr81")
+stream_1/stream = ExtResource("4_bnxol")
 stream_1/volume = 0.0
-stream_2/stream = ExtResource("5_dxtt1")
+stream_2/stream = ExtResource("5_30o63")
 stream_2/volume = 0.0
-stream_3/stream = ExtResource("6_8q1tn")
+stream_3/stream = ExtResource("6_s3erl")
 stream_3/volume = 0.0
-stream_4/stream = ExtResource("2_afhpk")
+stream_4/stream = ExtResource("7_uuqc0")
 stream_4/volume = 0.0
+stream_5/stream = ExtResource("8_gevny")
+stream_5/volume = 0.0
 
 [sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_3di84"]
 stream_count = 4

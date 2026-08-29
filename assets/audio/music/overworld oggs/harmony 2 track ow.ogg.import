@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://8fav2tkljoqa"
+path="res://.godot/imported/harmony 2 track ow.ogg-c69d4859d5a02792fd1a80e100c41d50.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/music/overworld oggs/harmony 2 track ow.ogg"
+dest_files=["res://.godot/imported/harmony 2 track ow.ogg-c69d4859d5a02792fd1a80e100c41d50.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
