@@ -140,27 +140,8 @@ position = Vector2(41, 46)
 
 [node name="Decals" type="Node2D" parent="." unique_id=1093825727]
 
-[node name="Fg_Plant_B" parent="." unique_id=2043718838 instance=ExtResource("9_sbeeu")]
-position = Vector2(-116, -111)
-
 [node name="Fg_Plant_B2" parent="." unique_id=199470377 instance=ExtResource("10_buqim")]
 position = Vector2(-122, -92)
-flip_h = true
-
-[node name="Fg_Plant_B3" parent="." unique_id=1835408059 instance=ExtResource("10_buqim")]
-position = Vector2(-77, -116)
-flip_h = true
-
-[node name="Fg_Plant_B4" parent="." unique_id=1464962866 instance=ExtResource("10_buqim")]
-position = Vector2(2, -117)
-flip_h = true
-
-[node name="Fg_Plant_B6" parent="." unique_id=839993323 instance=ExtResource("10_buqim")]
-position = Vector2(76, -116)
-flip_h = true
-
-[node name="Fg_Plant_B7" parent="." unique_id=1082681355 instance=ExtResource("10_buqim")]
-position = Vector2(133, -120)
 flip_h = true
 
 [node name="Fg_Plant_B8" parent="." unique_id=973503773 instance=ExtResource("10_buqim")]
@@ -175,40 +156,12 @@ flip_h = true
 position = Vector2(150, 23)
 flip_h = true
 
-[node name="Fg_Plant_B11" parent="." unique_id=3733229 instance=ExtResource("10_buqim")]
-position = Vector2(141, 47)
-flip_h = true
-
-[node name="Fg_Plant_B12" parent="." unique_id=1871983375 instance=ExtResource("10_buqim")]
-position = Vector2(138, 146)
-flip_h = true
-
-[node name="Fg_Plant_B13" parent="." unique_id=276326737 instance=ExtResource("10_buqim")]
-position = Vector2(115, 164)
-flip_h = true
-
-[node name="Fg_Plant_B14" parent="." unique_id=635196892 instance=ExtResource("10_buqim")]
-position = Vector2(70, 157)
-flip_h = true
-
-[node name="Fg_Plant_B15" parent="." unique_id=1332490101 instance=ExtResource("10_buqim")]
-position = Vector2(54, 164)
-flip_h = true
-
-[node name="Fg_Plant_B16" parent="." unique_id=361972764 instance=ExtResource("10_buqim")]
-position = Vector2(-25, 158)
-flip_h = true
-
-[node name="Fg_Plant_B17" parent="." unique_id=1819160955 instance=ExtResource("10_buqim")]
-position = Vector2(-85, 164)
-flip_h = true
-
-[node name="Fg_Plant_B18" parent="." unique_id=2048852170 instance=ExtResource("10_buqim")]
-position = Vector2(-113, 155)
-flip_h = true
-
 [node name="Fg_Plant_B19" parent="." unique_id=1533610952 instance=ExtResource("10_buqim")]
 position = Vector2(-134, 127)
+flip_h = true
+
+[node name="Fg_Plant_B11" parent="." unique_id=3733229 instance=ExtResource("10_buqim")]
+position = Vector2(141, 47)
 flip_h = true
 
 [node name="Fg_Plant_B20" parent="." unique_id=1831948447 instance=ExtResource("10_buqim")]
@@ -230,9 +183,6 @@ flip_h = true
 [node name="Fg_Plant_B24" parent="." unique_id=2042152444 instance=ExtResource("10_buqim")]
 position = Vector2(-141, -57)
 
-[node name="Fg_Plant_B25" parent="." unique_id=1262136497 instance=ExtResource("10_buqim")]
-position = Vector2(-42, -116)
-
 [node name="Fg_Plant_B27" parent="." unique_id=591274720 instance=ExtResource("10_buqim")]
 position = Vector2(155, -66)
 
@@ -241,15 +191,6 @@ position = Vector2(136, 4)
 
 [node name="Fg_Plant_B29" parent="." unique_id=2113264325 instance=ExtResource("10_buqim")]
 position = Vector2(156, -32)
-
-[node name="Fg_Plant_B30" parent="." unique_id=510718861 instance=ExtResource("10_buqim")]
-position = Vector2(0, 152)
-
-[node name="Fg_Plant_B31" parent="." unique_id=172033254 instance=ExtResource("10_buqim")]
-position = Vector2(32, 168)
-
-[node name="Fg_Plant_B32" parent="." unique_id=1376790065 instance=ExtResource("10_buqim")]
-position = Vector2(-72, 176)
 
 [node name="Fg_Plant_B33" parent="." unique_id=1033220578 instance=ExtResource("10_buqim")]
 position = Vector2(-136, 72)
@@ -270,13 +211,6 @@ position = Vector2(144, 104)
 position = Vector2(160, 0)
 flip_h = true
 
-[node name="Fg_Plant_B40" parent="." unique_id=1416196026 instance=ExtResource("9_sbeeu")]
-position = Vector2(144, -104)
-flip_h = true
-
-[node name="Fg_Plant_B43" parent="." unique_id=423791156 instance=ExtResource("9_sbeeu")]
-position = Vector2(28, -115)
-
 [node name="Fg_Plant_B44" parent="." unique_id=746031629 instance=ExtResource("9_sbeeu")]
 position = Vector2(-158, -44)
 flip_h = true
@@ -289,28 +223,20 @@ flip_h = true
 position = Vector2(-123, 53)
 flip_h = true
 
-[node name="Fg_Plant_B47" parent="." unique_id=1312975989 instance=ExtResource("9_sbeeu")]
-position = Vector2(-60, 160)
-flip_h = true
-
-[node name="Fg_Plant_B49" parent="." unique_id=78016488 instance=ExtResource("9_sbeeu")]
-position = Vector2(91, 156)
-flip_h = true
-
 [node name="Fg_Plant_B51" parent="." unique_id=959378138 instance=ExtResource("9_sbeeu")]
 position = Vector2(-127, 109)
 
 [node name="Fg_Plant_B52" parent="." unique_id=446846461 instance=ExtResource("9_sbeeu")]
 position = Vector2(-147, 25)
 
-[node name="Fg_Plant_B53" parent="." unique_id=843436049 instance=ExtResource("9_sbeeu")]
-position = Vector2(158, 66)
-
 [node name="Flower_Yellow" parent="." unique_id=146636199 instance=ExtResource("11_7fiol")]
 position = Vector2(56, -24)
 
 [node name="Flower_White" parent="." unique_id=1292593605 instance=ExtResource("12_4jx7j")]
 position = Vector2(56, 72)
+
+[node name="Fg_Plant_B53" parent="." unique_id=843436049 instance=ExtResource("9_sbeeu")]
+position = Vector2(158, 66)
 
 [node name="Flower_Red" parent="." unique_id=823835447 instance=ExtResource("13_fw1ef")]
 position = Vector2(-40, 72)
