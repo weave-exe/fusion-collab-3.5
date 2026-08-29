@@ -91,6 +91,7 @@ texture = ExtResource("5_8khbd")
 sources/0 = SubResource("TileSetAtlasSource_q03nk")
 
 [node name="Level0" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root")]
+position = Vector2(0, 16)
 script = ExtResource("1_mqw8u")
 terrain_layer = NodePath("TileMapLayer")
 moveables_root = NodePath("Moveables")
