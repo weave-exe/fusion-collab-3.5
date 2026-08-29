@@ -80,6 +80,7 @@ script = ExtResource("11_hb0f8")
 
 [node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=712101643]
 stream = ExtResource("13_hrpjq")
+volume_db = -7.158
 max_polyphony = 3
 bus = &"SFX"
 script = ExtResource("12_hb0f8")
