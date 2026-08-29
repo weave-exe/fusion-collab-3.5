@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://bmxml66x3erhi"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_muaa7"]
+
+[resource]
+script = ExtResource("1_muaa7")
+account_name = "@abuffgnome"
+text = "im big and hairy"
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"
