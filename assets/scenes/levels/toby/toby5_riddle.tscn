@@ -16,8 +16,7 @@
 
 [sub_resource type="Resource" id="Resource_4kyv5"]
 script = ExtResource("3_wagjh")
-group = "Frog"
-win_tiles_group = "WinTilesFrog"
+win_tiles_group = "WinTilesLog"
 metadata/_custom_type_script = "uid://c1adwhrifqsg5"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_frn7h"]
@@ -147,7 +146,8 @@ terrain_layer = NodePath("TileMapLayer")
 moveables_root = NodePath("Moveables")
 win_conditions = Array[ExtResource("2_lc7ce")]([SubResource("Resource_4kyv5")])
 
-[node name="TileMapLayerWinFrog" type="TileMapLayer" parent="." unique_id=1241500889 groups=["WinTilesFrog"]]
+[node name="TileMapLayerWinFrog" type="TileMapLayer" parent="." unique_id=1241500889 groups=["WinTilesLog"]]
+tile_map_data = PackedByteArray("AAD//wUAAAAFAAAAAAABAAUAAAAFAAAAAAD8/wEAAAAFAAAAAAD9/wIAAAAFAAAAAAAAAP//AAAFAAAAAAAAAP3/AAAFAAAAAAA=")
 tile_set = SubResource("TileSet_g6fo8")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1567310552 groups=["LevelTileMap"]]
@@ -157,7 +157,6 @@ tile_set = ExtResource("5_ilkdv")
 
 [node name="TileMapLayerWin" type="TileMapLayer" parent="." unique_id=1666982416 groups=["WinTiles"]]
 z_index = -3
-tile_map_data = PackedByteArray("AAABAAUAAAAGAAEAAAD//wUAAAAGAAEAAAD9/wIAAAAGAAEAAAD8/wEAAAAGAAEAAAAAAP//AAAGAAEAAAAAAP3/AAAGAAEAAAA=")
 tile_set = SubResource("TileSet_xrxaf")
 
 [node name="Moveables" type="Node2D" parent="." unique_id=1616387951]

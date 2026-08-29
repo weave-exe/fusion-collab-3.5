@@ -95,11 +95,10 @@ texture = ExtResource("4_jo7es")
 [sub_resource type="TileSet" id="TileSet_p1ygr"]
 sources/0 = SubResource("TileSetAtlasSource_c8sgo")
 
-[node name="chel1" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root", "decal_layer")]
+[node name="chel1" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root")]
 script = ExtResource("1_ny3ne")
 terrain_layer = NodePath("TileMapLayer")
 moveables_root = NodePath("Moveables")
-decal_layer = NodePath("")
 win_conditions = Array[ExtResource("2_6mrsb")]([SubResource("Resource_2cuwm"), SubResource("Resource_xrxaf")])
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1567310552 groups=["LevelTileMap"]]
@@ -122,7 +121,7 @@ z_index = 2
 position = Vector2(56, -56)
 
 [node name="Player" parent="Moveables" unique_id=781662428 instance=ExtResource("7_77u1l")]
-position = Vector2(7, 19)
+position = Vector2(8, 24)
 
 [node name="Log" parent="Moveables" unique_id=732302422 instance=ExtResource("8_sq28a")]
 position = Vector2(-24, 39)

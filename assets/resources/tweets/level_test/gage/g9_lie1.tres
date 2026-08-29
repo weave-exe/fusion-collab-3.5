@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_ujkx0")
-account_name = "listen_listen_listen"
+account_name = "second_fiddle"
 text = "I have a head, a shoulder, a knees and toes. Yellow blue purple orange. What am I?"
 avatar = Vector2i(2, 3)
