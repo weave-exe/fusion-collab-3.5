@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_hpe6x")
 account_name = "OneGnomeToRuleThemAll"
-text = "No one on this island knows the time. I can mark where the hands meet, but I'll need some help arranging the rest."
+text = "The smallest echoes midnight. The others follow it round. And remember! A clock can't turn without"
 avatar = Vector2i(0, 3)

@@ -17,11 +17,11 @@
 [ext_resource type="AudioStream" uid="uid://cffd3kee7aoku" path="res://assets/audio/music/twitter oggs/bass-track-twt.ogg" id="10_qi1ok"]
 [ext_resource type="Script" uid="uid://bd6jnxbukrubl" path="res://assets/scripts/core/background_music_player.gd" id="12_3di84"]
 [ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="15_yotbe"]
-[ext_resource type="Resource" uid="uid://c4ssgevqs7irq" path="res://assets/resources/levels/ricky06/ricky2.tres" id="16_617bi"]
 [ext_resource type="Resource" uid="uid://57hnk25ihl6s" path="res://assets/resources/levels/ricky06/ricky1.tres" id="16_cikn5"]
 [ext_resource type="PackedScene" uid="uid://brgnkcsx1pevy" path="res://assets/scenes/decorative/deathwipe.tscn" id="16_qi1ok"]
 [ext_resource type="Resource" uid="uid://4v5tap0hyu70" path="res://assets/resources/levels/gage_levels/gage7_bad.tres" id="17_617bi"]
 [ext_resource type="Resource" uid="uid://cf33cym73cto8" path="res://assets/resources/levels/ricky06/ricky0.tres" id="17_cikn5"]
+[ext_resource type="Resource" uid="uid://dfkfox2okcphx" path="res://assets/resources/levels/gage_levels/gage14.tres" id="17_ke02j"]
 [ext_resource type="Resource" uid="uid://8j3uy6whhp8v" path="res://assets/resources/levels/gage_levels/gage1.tres" id="18_ke02j"]
 [ext_resource type="Resource" uid="uid://bvucpb0owl6gx" path="res://assets/resources/levels/gage_levels/gage2.tres" id="19_4dk0s"]
 [ext_resource type="Resource" uid="uid://dlorpcdlugeyu" path="res://assets/resources/levels/gage_levels/gage3.tres" id="20_segdw"]
@@ -120,7 +120,7 @@ size = Vector2i(640, 360)
 render_target_update_mode = 4
 
 [node name="GameMain" parent="GameCanvas/SubViewportContainer/SubViewport" unique_id=865138517 instance=ExtResource("1_rgwe6")]
-levels = Array[ExtResource("15_yotbe")]([ExtResource("16_617bi"), ExtResource("16_cikn5"), ExtResource("17_cikn5"), ExtResource("17_617bi"), ExtResource("18_ke02j"), ExtResource("19_4dk0s"), ExtResource("20_segdw"), ExtResource("21_0bn8m")])
+levels = Array[ExtResource("15_yotbe")]([ExtResource("17_cikn5"), ExtResource("17_ke02j"), ExtResource("16_cikn5"), ExtResource("17_617bi"), ExtResource("18_ke02j"), ExtResource("19_4dk0s"), ExtResource("20_segdw"), ExtResource("21_0bn8m")])
 
 [node name="UIMain" parent="GameCanvas" unique_id=1401640239 instance=ExtResource("2_cpnpi")]
 position = Vector2(1000, 527)
