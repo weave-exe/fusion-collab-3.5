@@ -13,6 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://363us6qcbbeu" path="res://assets/audio/music/overworld oggs/bass track ow.ogg" id="7_uuqc0"]
 [ext_resource type="AudioStream" uid="uid://dmbbc4ksc5c7b" path="res://assets/audio/music/twitter oggs/harmony-track-twt.ogg" id="8_8q1tn"]
 [ext_resource type="AudioStream" uid="uid://cbporjqjglpfb" path="res://assets/audio/music/overworld oggs/persistent track ow.ogg" id="8_gevny"]
+[ext_resource type="AudioStream" uid="uid://4rk23w32i18v" path="res://assets/audio/sound/water.ogg" id="9_1da20"]
 [ext_resource type="AudioStream" uid="uid://dmrju2rubywke" path="res://assets/audio/music/twitter oggs/drums-track-twt.ogg" id="9_3di84"]
 [ext_resource type="AudioStream" uid="uid://cffd3kee7aoku" path="res://assets/audio/music/twitter oggs/bass-track-twt.ogg" id="10_qi1ok"]
 [ext_resource type="Script" uid="uid://bd6jnxbukrubl" path="res://assets/scripts/core/background_music_player.gd" id="12_3di84"]
@@ -52,7 +53,7 @@
 [ext_resource type="Resource" uid="uid://bmyjb6d3343fk" path="res://assets/resources/levels/misc/ending.tres" id="48_2d7kn"]
 
 [sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_2cuwm"]
-stream_count = 6
+stream_count = 7
 stream_0/stream = ExtResource("3_a8sqs")
 stream_0/volume = -60.0
 stream_1/stream = ExtResource("4_bnxol")
@@ -65,6 +66,8 @@ stream_4/stream = ExtResource("7_uuqc0")
 stream_4/volume = -60.0
 stream_5/stream = ExtResource("8_gevny")
 stream_5/volume = -60.0
+stream_6/stream = ExtResource("9_1da20")
+stream_6/volume = 0.2
 
 [sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_3di84"]
 stream_count = 4

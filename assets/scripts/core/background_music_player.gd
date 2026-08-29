@@ -5,7 +5,8 @@ const ow_harm1 = 1
 const ow_harm2 = 2
 const ow_perc = 3
 const ow_bass = 4
-const ow_pers = 4
+const ow_pers = 5
+const ow_water = 6
 
 var interactive_stream: AudioStreamInteractive
 var sync_stream: AudioStreamSynchronized
@@ -47,6 +48,3 @@ func set_levels(layers: Array):
 func _kill_tween():
 	if tween and tween.is_valid():
 		tween.kill()
-	
-
-		
