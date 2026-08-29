@@ -54,17 +54,17 @@
 [sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_2cuwm"]
 stream_count = 6
 stream_0/stream = ExtResource("3_a8sqs")
-stream_0/volume = 0.0
+stream_0/volume = -60.0
 stream_1/stream = ExtResource("4_bnxol")
 stream_1/volume = 0.0
 stream_2/stream = ExtResource("5_30o63")
-stream_2/volume = 0.0
+stream_2/volume = -60.0
 stream_3/stream = ExtResource("6_s3erl")
-stream_3/volume = 0.0
+stream_3/volume = -60.0
 stream_4/stream = ExtResource("7_uuqc0")
-stream_4/volume = 0.0
+stream_4/volume = -60.0
 stream_5/stream = ExtResource("8_gevny")
-stream_5/volume = 0.0
+stream_5/volume = -60.0
 
 [sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_3di84"]
 stream_count = 4

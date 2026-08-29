@@ -6,11 +6,11 @@
 [ext_resource type="Resource" uid="uid://cagp3viyn767w" path="res://assets/resources/tweets/level_test/gage/g8_truth.tres" id="4_f51gq"]
 [ext_resource type="Resource" uid="uid://co66admq36t0m" path="res://assets/resources/tweets/level_test/gage/g8_lie1.tres" id="5_pc8pp"]
 [ext_resource type="Resource" uid="uid://d4hfg5xk7sfbe" path="res://assets/resources/tweets/level_test/gage/g8_lie2.tres" id="6_o50ur"]
-[ext_resource type="Resource" uid="uid://bl1h41qtkepnr" path="res://assets/resources/tweets/level_test/gage/g8_lie3.tres" id="7_q117v"]
 
 [resource]
 script = ExtResource("2_tdhf2")
 scene = ExtResource("1_dbl4h")
-tweets = Array[ExtResource("3_wvdsm")]([ExtResource("4_f51gq"), ExtResource("5_pc8pp"), ExtResource("6_o50ur"), ExtResource("7_q117v")])
+tweets = Array[ExtResource("3_wvdsm")]([ExtResource("4_f51gq"), ExtResource("5_pc8pp"), ExtResource("6_o50ur")])
+music_layers = Array[bool]([false, true, true, false, true, false])
 zoom = 5
 metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"

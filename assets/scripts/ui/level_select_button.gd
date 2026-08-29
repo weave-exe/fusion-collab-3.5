@@ -14,7 +14,7 @@ func initialize(unlocked:bool):
 		disabled=true
 
 func _ready():
-	richtext.text="[center]"+str(level_num)+"[/center]"
+	richtext.text="[center]"+str(level_num+1)+"[/center]"
 	menu_manager = %MenuManager
 
 
