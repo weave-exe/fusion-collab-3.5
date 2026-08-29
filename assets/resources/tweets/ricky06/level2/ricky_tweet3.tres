@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_hpe6x")
 account_name = "OneGnomeToRuleThemAll"
-text = "The smallest echoes midnight. The others follow it round. And remember! A clock can't turn without"
+text = "The smallest echoes midnight. The others follow it round. And remember! A clock can't turn without a pointy pin in the center"
 avatar = Vector2i(0, 3)

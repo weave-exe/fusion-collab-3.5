@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://c4ok5d1tsex6p"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_jalkn"]
+
+[resource]
+script = ExtResource("1_jalkn")
+account_name = "DefinitelyNotGnome1"
+text = "(i'm hiding my identity because they're out to GET me, do you think it's working?)"
+avatar = Vector2i(3, 1)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"

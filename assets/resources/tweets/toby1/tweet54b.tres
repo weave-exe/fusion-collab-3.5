@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://tusda2j74y62"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_kfsk0"]
+
+[resource]
+script = ExtResource("1_kfsk0")
+account_name = "gnome1"
+text = "You got all that? Remember, if it wasn't gnome1 who said it, the opposite of what they said is true! You can do this!"

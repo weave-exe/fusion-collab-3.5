@@ -5,4 +5,4 @@
 [resource]
 script = ExtResource("1_u42ia")
 account_name = "lawn gnome larry"
-text = "some trees deserve to be next to an odd number of logs."
+text = "trees deserve to be next to an odd number of logs."

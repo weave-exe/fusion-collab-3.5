@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://cv88xepjuy7ab" path="res://assets/scenes/decorative/decals/fg/fg_plant_b.tscn" id="19_cvkrm"]
 [ext_resource type="PackedScene" uid="uid://bqjpcxf0ajgn4" path="res://assets/scenes/decorative/decals/fg/fg_plant_c.tscn" id="20_rtwby"]
 [ext_resource type="PackedScene" uid="uid://bxthxmrub33hm" path="res://assets/scenes/decorative/decals/fg/fg_plant_d.tscn" id="21_uft1q"]
+[ext_resource type="PackedScene" uid="uid://bosy4gmmyvvnf" path="res://assets/scenes/decorative/decals/bg/the_bug.tscn" id="22_schqb"]
 
 [sub_resource type="Resource" id="Resource_4kyv5"]
 script = ExtResource("3_fqck0")
@@ -190,3 +191,6 @@ flip_h = true
 [node name="Fg_Plant_B5" parent="." unique_id=1301055446 instance=ExtResource("19_cvkrm")]
 position = Vector2(-170, -78)
 flip_h = true
+
+[node name="The_Bug" parent="." unique_id=949799559 instance=ExtResource("22_schqb")]
+position = Vector2(-120, -72)

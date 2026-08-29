@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_xyujk")
 account_name = "youGOTTAlisten"
-text = "The smallest log, must cover the yellow flower, to complete the level."
+text = "The smallest log, must cover the yellow flower next to the bug, to complete the level."
 avatar = Vector2i(2, 4)
