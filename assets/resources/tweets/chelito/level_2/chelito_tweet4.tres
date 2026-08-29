@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_ttwwv")
 account_name = "TheFirstGnome"
-text = "This garden is in total disarray! Please help me fix it!"
+text = "This garden fence is in total disarray! Please help me fix it!"
 avatar = Vector2i(3, 0)
 metadata/_custom_type_script = "uid://cgh8yoy761vx4"

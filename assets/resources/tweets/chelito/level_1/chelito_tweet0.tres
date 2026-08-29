@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_qsafg")
 account_name = "DefinitelyNotGnome1"
-text = "I really like when logs fit perfectly in small spaces, more people should do that"
+text = "I really like when logs and frogs fit perfectly in small spaces, more people should do that"
 avatar = Vector2i(3, 1)
 metadata/_custom_type_script = "uid://cgh8yoy761vx4"

@@ -4,5 +4,5 @@
 
 [resource]
 script = ExtResource("1_mf140")
-account_name = "gnome \"where\""
+account_name = "gn1me \"where\""
 text = "At least one frog is vertically aligned with a frog below it"
