@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://bcp4k2p4dwica"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_xq10s"]
+
+[resource]
+script = ExtResource("1_xq10s")
+account_name = "Bartholognome"
+text = "The ant population has been going kinda nuts recently, what is the council doing?"
+avatar = Vector2i(0, 1)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"

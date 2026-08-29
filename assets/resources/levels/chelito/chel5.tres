@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="LevelResource" format=3 uid="uid://cbolw443ystiy"]
+
+[ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="1_k4jd7"]
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="2_uqsxk"]
+
+[resource]
+script = ExtResource("1_k4jd7")
+metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"

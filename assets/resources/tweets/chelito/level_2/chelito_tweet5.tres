@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://c36210qxnjlda"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_jp0lx"]
+
+[resource]
+script = ExtResource("1_jp0lx")
+account_name = "DonGnomar"
+text = "Why is the youth always ready to meddle in other people's business? Back in my day this attitude would've gotten you a gnock on your door from the bad side of town"
+avatar = Vector2i(2, 3)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"

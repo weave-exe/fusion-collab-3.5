@@ -5,11 +5,13 @@
 [ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="2_wmaeh"]
 [ext_resource type="Resource" uid="uid://boj4ugupmg3jy" path="res://assets/resources/tweets/chelito/level_1/chelito_tweet0.tres" id="4_co0nh"]
 [ext_resource type="Resource" uid="uid://cpy0ts37cwwtd" path="res://assets/resources/tweets/chelito/level_1/chelito_tweet1.tres" id="5_nvrf4"]
+[ext_resource type="Resource" uid="uid://d88cw7t8vh0a" path="res://assets/resources/tweets/chelito/level_1/chelito_tweet2.tres" id="6_nvrf4"]
+[ext_resource type="Resource" uid="uid://bdjuww3fj3ada" path="res://assets/resources/tweets/chelito/level_1/chelito_tweet3.tres" id="7_l6f5h"]
 
 [resource]
 script = ExtResource("1_7k5o7")
 scene = ExtResource("1_egip7")
-tweets = Array[ExtResource("2_wmaeh")]([ExtResource("4_co0nh"), ExtResource("5_nvrf4")])
+tweets = Array[ExtResource("2_wmaeh")]([ExtResource("4_co0nh"), ExtResource("5_nvrf4"), ExtResource("6_nvrf4"), ExtResource("7_l6f5h")])
 music_layers = Array[bool]([true, true, true, true, false])
 zoom = 4
 metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"

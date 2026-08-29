@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://dguy87fdimv2i"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_2hvmo"]
+
+[resource]
+script = ExtResource("1_2hvmo")
+account_name = "FrogHaterReal"
+text = "I think the world would be a better place if frogs went extinct"
+avatar = Vector2i(1, 3)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"
