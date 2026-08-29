@@ -221,6 +221,11 @@ position = Vector2(8, -24)
 frame_progress = 0.49892828
 flip_h = true
 
+[node name="The_Bug5" parent="." unique_id=1864276880 instance=ExtResource("17_0l41g")]
+position = Vector2(72, 24)
+frame_progress = 0.49892828
+flip_h = true
+
 [node name="The_Bug3" parent="." unique_id=1015464331 instance=ExtResource("17_0l41g")]
 position = Vector2(72, -56)
 flip_h = true

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://b6i5uov3twkqn"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_gytt5"]
+
+[resource]
+script = ExtResource("1_gytt5")
+account_name = "gnomelito"
+text = "\"It was both an honor and a pleasure to work on this with everyone, and remember kids, stay gnomey!\""
+avatar = Vector2i(5, 0)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"

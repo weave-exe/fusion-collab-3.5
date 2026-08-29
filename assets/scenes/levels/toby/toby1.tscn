@@ -18,6 +18,8 @@
 [ext_resource type="PackedScene" uid="uid://btswkbfoaeitc" path="res://assets/scenes/decorative/decals/tutorial/opentwitter.tscn" id="16_sqr7n"]
 [ext_resource type="PackedScene" uid="uid://c1j483j6fc4w5" path="res://assets/scenes/decorative/decals/bg/flower_blue.tscn" id="17_8lodb"]
 [ext_resource type="PackedScene" uid="uid://cwq8lsgwkurxq" path="res://assets/scenes/decorative/decals/tutorial/reset.tscn" id="17_44evc"]
+[ext_resource type="PackedScene" uid="uid://fn6udnhstcuw" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_c.tscn" id="19_fxybx"]
+[ext_resource type="PackedScene" uid="uid://crkcpihkr6rid" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_d.tscn" id="20_x8wdd"]
 
 [sub_resource type="Resource" id="Resource_4kyv5"]
 script = ExtResource("3_fsprc")
@@ -187,3 +189,16 @@ position = Vector2(88, -24)
 
 [node name="Flower_Blue8" parent="Decals" unique_id=1431691904 instance=ExtResource("17_8lodb")]
 position = Vector2(104, -8)
+
+[node name="Fg_Plant_C" parent="." unique_id=403117052 instance=ExtResource("19_fxybx")]
+position = Vector2(-122, 39)
+
+[node name="Fg_Plant_C2" parent="." unique_id=790198593 instance=ExtResource("19_fxybx")]
+position = Vector2(140, 1)
+
+[node name="Fg_Plant_D" parent="." unique_id=1859625070 instance=ExtResource("20_x8wdd")]
+position = Vector2(-45, -84)
+
+[node name="Fg_Plant_D2" parent="." unique_id=1374898142 instance=ExtResource("20_x8wdd")]
+position = Vector2(79, 95)
+flip_h = true

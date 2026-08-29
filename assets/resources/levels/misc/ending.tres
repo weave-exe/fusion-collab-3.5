@@ -3,12 +3,18 @@
 [ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="1_6auqh"]
 [ext_resource type="PackedScene" uid="uid://n7sl82v18vv3" path="res://assets/scenes/levels/misc/ending0.tscn" id="1_huul6"]
 [ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="2_qtf4n"]
-[ext_resource type="Resource" uid="uid://bmxml66x3erhi" path="res://assets/resources/tweets/misc/ending_tweet0.tres" id="4_34500"]
+[ext_resource type="Resource" uid="uid://dv3emdykissd6" path="res://assets/resources/tweets/misc/end1_zucchini.tres" id="4_d2kdi"]
+[ext_resource type="Resource" uid="uid://b6i5uov3twkqn" path="res://assets/resources/tweets/misc/end2_chelito.tres" id="5_ivtwr"]
+[ext_resource type="Resource" uid="uid://b5pscvggpboc6" path="res://assets/resources/tweets/misc/end3_estes.tres" id="6_ucomy"]
+[ext_resource type="Resource" uid="uid://kvyug3u6xgd4" path="res://assets/resources/tweets/misc/end4_kalypso.tres" id="7_g6i1p"]
+[ext_resource type="Resource" uid="uid://c17lh4uet8wdo" path="res://assets/resources/tweets/misc/end5_ricky.tres" id="8_fmhbu"]
+[ext_resource type="Resource" uid="uid://cqgrn7iapr574" path="res://assets/resources/tweets/misc/end6_tobyaaa.tres" id="9_i65st"]
+[ext_resource type="Resource" uid="uid://bmxml66x3erhi" path="res://assets/resources/tweets/misc/end7_gnome1.tres" id="10_hsltr"]
 
 [resource]
 script = ExtResource("1_6auqh")
 scene = ExtResource("1_huul6")
-tweets = Array[ExtResource("2_qtf4n")]([ExtResource("4_34500")])
-music_layers = Array[bool]([true, true, true, false, true, false, false])
+tweets = Array[ExtResource("2_qtf4n")]([ExtResource("4_d2kdi"), ExtResource("5_ivtwr"), ExtResource("6_ucomy"), ExtResource("7_g6i1p"), ExtResource("8_fmhbu"), ExtResource("9_i65st"), ExtResource("10_hsltr")])
+music_layers = Array[bool]([true, true, true, false, true, false, true])
 zoom = 3
 metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"

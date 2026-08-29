@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_50ij6")
 account_name = "FirstGnome_looks_left_and"
-text = "This frog is looking for a certain bug! Make sure you pick the right one."
+text = "This frog is looking for a certain bug! Make sure you pick the \"right\" one."
 avatar = Vector2i(3, 1)

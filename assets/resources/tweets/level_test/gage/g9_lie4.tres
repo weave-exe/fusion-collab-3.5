@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_ojpwa")
 account_name = "gnertrude_left_bumper"
-text = "G is a button on your keyboard which . when pressed in this level does not do anything at all"
+text = "G is a button on your keyboard which . when pressed with your phone off, in this level does not do anything at all"
 avatar = Vector2i(4, 3)
