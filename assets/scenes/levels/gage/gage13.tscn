@@ -33,7 +33,7 @@ group = "Player"
 win_tiles_group = "WinTilesPlayer"
 metadata/_custom_type_script = "uid://c1adwhrifqsg5"
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fitpy"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mqfx3"]
 texture = ExtResource("5_3n0qy")
 0:0/0 = 0
 1:0/0 = 0
@@ -95,7 +95,7 @@ texture = ExtResource("5_3n0qy")
 8:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_4yaw5"]
-sources/0 = SubResource("TileSetAtlasSource_fitpy")
+sources/0 = SubResource("TileSetAtlasSource_mqfx3")
 
 [node name="Level0" type="Node2D" unique_id=158586424 node_paths=PackedStringArray("terrain_layer", "moveables_root")]
 position = Vector2(48, 32)
