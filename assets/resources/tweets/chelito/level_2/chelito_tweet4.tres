@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://dm6t3pfsuvxw0"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_ttwwv"]
+
+[resource]
+script = ExtResource("1_ttwwv")
+account_name = "TheFirstGnome"
+text = "This garden is in total disarray! Please help me fix it!"
+avatar = Vector2i(3, 0)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"
