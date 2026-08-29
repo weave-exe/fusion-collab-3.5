@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_fxuw1")
-account_name = "gnomiocci_una"
-text = "that frog looks PERTURBED by that frowny face. turn it upside down, and don't bug the poor frog anymore!"
+account_name = "gnomiocci_uno"
+text = "that frog looks PERTURBED by that frowny face. turn the frown upside down, keep the face intact, and don't bug that poor frog!"
 avatar = Vector2i(3, 3)
