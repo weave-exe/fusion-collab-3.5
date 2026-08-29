@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_tgbm3")
 account_name = "@wise_mystical_gage"
-text = "Thanks for playing our game, we hope your perception towards the word \"gnome\" has been forever altered <3"
+text = "Thanks for playing our game, we hope your perception towards the word \"gnome\" has been forever altered."
 avatar = Vector2i(4, 4)
 metadata/_custom_type_script = "uid://cgh8yoy761vx4"
