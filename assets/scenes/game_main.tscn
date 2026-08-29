@@ -3,7 +3,8 @@
 [ext_resource type="Script" uid="uid://be0rxmg0c3itn" path="res://assets/scripts/game_main.gd" id="1_mvut7"]
 [ext_resource type="PackedScene" uid="uid://dfss7a7mv0k4f" path="res://assets/scenes/decorative/background_water.tscn" id="2_jtx3k"]
 [ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="2_mlek0"]
-[ext_resource type="Resource" uid="uid://btiqsvagu6do2" path="res://assets/resources/levels/Test1.tres" id="3_lw8wq"]
+[ext_resource type="Resource" uid="uid://btiqsvagu6do2" path="res://assets/resources/levels/Test1.tres" id="3_5japu"]
+[ext_resource type="Resource" uid="uid://cuuc6pi7u3cef" path="res://assets/resources/levels/estes/e_lr_1.tres" id="3_lw8wq"]
 [ext_resource type="Resource" uid="uid://8j3uy6whhp8v" path="res://assets/resources/levels/gage_levels/gage1.tres" id="3_sohnc"]
 [ext_resource type="Resource" uid="uid://e6uui4c5w0d4" path="res://assets/resources/levels/toby/toby1.tres" id="4_5japu"]
 [ext_resource type="PackedScene" uid="uid://gm6k6yjpbjlx" path="res://assets/scenes/decorative/mist2.tscn" id="4_5rqp6"]
@@ -50,7 +51,7 @@ glow_blend_mode = 0
 
 [node name="GameMain" type="Node2D" unique_id=865138517]
 script = ExtResource("1_mvut7")
-levels = Array[ExtResource("2_mlek0")]([ExtResource("3_lw8wq"), ExtResource("4_5japu"), ExtResource("5_hxf26"), ExtResource("6_etbrm"), ExtResource("7_lxstn"), ExtResource("8_jq754"), ExtResource("9_ntvo3"), ExtResource("18_srql8"), ExtResource("10_kq3nb"), ExtResource("11_b3r0y"), ExtResource("12_bpgni"), ExtResource("13_7i5io"), ExtResource("14_1m8ah"), ExtResource("4_hrpjq"), ExtResource("17_3i1qb"), ExtResource("16_k7kjd"), ExtResource("6_s7csj"), ExtResource("15_oc32e"), ExtResource("5_03gwc"), ExtResource("22_x65a4"), ExtResource("23_uj6ii"), ExtResource("3_sohnc")])
+levels = Array[ExtResource("2_mlek0")]([ExtResource("3_5japu"), ExtResource("4_5japu"), ExtResource("5_hxf26"), ExtResource("6_etbrm"), ExtResource("7_lxstn"), ExtResource("8_jq754"), ExtResource("9_ntvo3"), ExtResource("18_srql8"), ExtResource("10_kq3nb"), ExtResource("11_b3r0y"), ExtResource("12_bpgni"), ExtResource("13_7i5io"), ExtResource("14_1m8ah"), ExtResource("4_hrpjq"), ExtResource("17_3i1qb"), ExtResource("16_k7kjd"), ExtResource("6_s7csj"), ExtResource("15_oc32e"), ExtResource("5_03gwc"), ExtResource("22_x65a4"), ExtResource("23_uj6ii"), ExtResource("3_sohnc"), ExtResource("3_lw8wq")])
 
 [node name="LevelContainer" type="Node2D" parent="." unique_id=880857937]
 

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://bti4h6ryl2fju"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_p7eh7"]
+
+[resource]
+script = ExtResource("1_p7eh7")
+account_name = "yung gnxme"
+text = "what is GNXMING gnxme gxng.... just dropped a new HIT. find it HERE: https://gnxmegxng.bandcamp.com/"
+avatar = Vector2i(4, 1)
