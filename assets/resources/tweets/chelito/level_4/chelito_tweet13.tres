@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://c14fa0srqgyay"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_xt8eo"]
+
+[resource]
+script = ExtResource("1_xt8eo")
+account_name = "GnomeOneKnows"
+text = "These frogs are trying to get to the water but some paragnormal activity is rendering them immobile, give them a push!"
+avatar = Vector2i(1, 1)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"

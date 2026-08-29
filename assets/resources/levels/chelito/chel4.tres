@@ -1,8 +1,17 @@
 [gd_resource type="Resource" script_class="LevelResource" format=3 uid="uid://dk8y1evy8unip"]
 
 [ext_resource type="Script" uid="uid://cs3ngy0vw3bbd" path="res://assets/scripts/core/level_resource.gd" id="1_1aqyj"]
+[ext_resource type="PackedScene" uid="uid://b6lom1unwpj33" path="res://assets/scenes/levels/chelito/chel4.tscn" id="1_blhc7"]
 [ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="2_blhc7"]
+[ext_resource type="Resource" uid="uid://caxdnf4b32iba" path="res://assets/resources/tweets/chelito/level_4/chelito_tweet11.tres" id="4_0t4nq"]
+[ext_resource type="Resource" uid="uid://c14fa0srqgyay" path="res://assets/resources/tweets/chelito/level_4/chelito_tweet13.tres" id="5_o7j61"]
+[ext_resource type="Resource" uid="uid://bx6cu4a030l5d" path="res://assets/resources/tweets/chelito/level_4/chelito_tweet14.tres" id="6_cl1d8"]
+[ext_resource type="Resource" uid="uid://nq0s3y1k7x1u" path="res://assets/resources/tweets/chelito/level_4/chelito_tweet12.tres" id="7_niq0v"]
 
 [resource]
 script = ExtResource("1_1aqyj")
+scene = ExtResource("1_blhc7")
+tweets = Array[ExtResource("2_blhc7")]([ExtResource("4_0t4nq"), ExtResource("5_o7j61"), ExtResource("6_cl1d8"), ExtResource("7_niq0v")])
+music_layers = Array[bool]([true, true, true, true, true])
+zoom = 4
 metadata/_custom_type_script = "uid://cs3ngy0vw3bbd"

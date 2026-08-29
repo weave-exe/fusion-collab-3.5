@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://caxdnf4b32iba"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_ecc5q"]
+
+[resource]
+script = ExtResource("1_ecc5q")
+account_name = "LogPusherV2"
+text = "Pushing logs gives me LIFE, I wake up at 5AM to push as many logs as my tiny gnome arms allow me to until I pass out from log related exhaustion"
+avatar = Vector2i(0, 2)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://bx6cu4a030l5d"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_5rsly"]
+
+[resource]
+script = ExtResource("1_5rsly")
+account_name = "Gnome1 #1 Hater"
+text = "There is not a single day where I do not wish harm against my biggest enemies, that is called having a #gnomeset"
+avatar = Vector2i(3, 0)
+metadata/_custom_type_script = "uid://cgh8yoy761vx4"
