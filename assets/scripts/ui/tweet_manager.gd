@@ -36,9 +36,11 @@ func _input(event: InputEvent) -> void:
 		return
 	if event.is_action_pressed("move_up"):
 		_move_focus(-1)
+		$UIClicker.play()
 		get_viewport().set_input_as_handled()
 	if event.is_action_pressed("move_down"):
 		_move_focus(1)
+		$UIClicker.play()
 		get_viewport().set_input_as_handled()
 
 func _move_focus(move: int) -> void:

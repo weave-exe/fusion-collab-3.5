@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dw66ev17lm5g0" path="res://assets/sprites/ui/phonescreen.png" id="8_d7eer"]
 [ext_resource type="PackedScene" uid="uid://cw2t6xvco1abk" path="res://assets/scenes/ui/volume_slider.tscn" id="8_pkm2w"]
 [ext_resource type="FontFile" uid="uid://cvfwspgoivda6" path="res://assets/misc/fonts/Blenda Script.otf" id="9_utfp5"]
+[ext_resource type="Script" uid="uid://csj86qll1p8x8" path="res://assets/scenes/ui/ui_clicker.gd" id="9_yr2h1"]
 [ext_resource type="Texture2D" uid="uid://345iw7ad8n5q" path="res://assets/sprites/ui/gnomeTwitterUI.png" id="12_f4v07"]
 
 [sub_resource type="Theme" id="Theme_35ju6"]
@@ -52,6 +53,13 @@ visible = false
 z_index = -10
 layout_mode = 1
 focus_layer = NodePath("../../FocusLayer")
+
+[node name="UIClicker" type="AudioStreamPlayer" parent="Phone/OnScreen/TweetManager" unique_id=2109376023 node_paths=PackedStringArray("ui_click")]
+stream = ExtResource("4_7ctsv")
+volume_db = -14.483
+bus = &"SFX"
+script = ExtResource("9_yr2h1")
+ui_click = NodePath(".")
 
 [node name="MenuManager" type="CanvasGroup" parent="Phone/OnScreen" unique_id=2143955468 node_paths=PackedStringArray("level_buttons", "phone", "sliders")]
 unique_name_in_owner = true
@@ -366,6 +374,7 @@ mouse_filter = 2
 color = Color(0.056097224, 0.005824158, 0.09311775, 0.8627451)
 
 [node name="PhoneOpenClose" type="AudioStreamPlayer2D" parent="." unique_id=1548730787]
+volume_db = -8.667
 max_polyphony = 2
 bus = &"SFX"
 
