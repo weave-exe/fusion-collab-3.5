@@ -24,6 +24,8 @@ func bind_tweets():
 		tweet.bind(data, focus_layer)
 
 func focus_tweet(index: int):
+	if feed_list == null or feed_list.get_child(index) == null:
+		return
 	feed_list.get_child(index).grab_focus()
 	current_focus_index = index
 	

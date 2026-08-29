@@ -334,6 +334,7 @@ offset_left = -312.0
 offset_top = -421.0
 offset_right = 325.0
 offset_bottom = 394.0
+mouse_filter = 2
 
 [node name="FocusLayer" type="Control" parent="Phone" unique_id=432822484]
 unique_name_in_owner = true
