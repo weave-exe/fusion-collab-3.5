@@ -6,3 +6,4 @@
 script = ExtResource("1_808bs")
 account_name = "red_herring"
 text = "PAY ATTENTION TO ME"
+avatar = Vector2i(3, 3)

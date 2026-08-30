@@ -4,5 +4,6 @@
 
 [resource]
 script = ExtResource("1_47vab")
-account_name = "gnome1"
+account_name = "gn1me"
 text = "I have decided that water is a frankly repugnant substance and I never want to see it again"
+avatar = Vector2i(1, 3)

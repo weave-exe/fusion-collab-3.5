@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TweetData" format=3 uid="uid://doic2eshk7t3j"]
+
+[ext_resource type="Script" uid="uid://cgh8yoy761vx4" path="res://assets/scripts/ui/tweet_data.gd" id="1_vqyw8"]
+
+[resource]
+script = ExtResource("1_vqyw8")
+account_name = "bog_connoisseur"
+text = "Ever since I was just a gnomeling I've feared putting L-shaped logs on the bottom. Thank goodness I have nothing to fear today!"
+avatar = Vector2i(2, 3)

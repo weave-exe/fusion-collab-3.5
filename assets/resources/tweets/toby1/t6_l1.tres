@@ -4,5 +4,5 @@
 
 [resource]
 script = ExtResource("1_g0ga6")
-account_name = "gn0me \"how\""
+account_name = "gnome \"how\""
 text = "The top row of pens all have frogs on the left"

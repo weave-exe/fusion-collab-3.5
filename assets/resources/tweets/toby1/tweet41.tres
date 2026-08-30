@@ -6,3 +6,4 @@
 script = ExtResource("1_prw1d")
 account_name = "oh_gnome"
 text = "you have too many frogs dude. that's just not right"
+avatar = Vector2i(2, 1)

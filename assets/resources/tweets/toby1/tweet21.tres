@@ -6,3 +6,4 @@
 script = ExtResource("1_cb7tb")
 account_name = "red_herring"
 text = "PLEEEEEAAASE"
+avatar = Vector2i(3, 3)

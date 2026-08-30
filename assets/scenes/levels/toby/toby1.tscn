@@ -13,8 +13,6 @@
 [ext_resource type="PackedScene" uid="uid://bqjpcxf0ajgn4" path="res://assets/scenes/decorative/decals/fg/fg_plant_c.tscn" id="11_3mrf7"]
 [ext_resource type="PackedScene" uid="uid://itsdrmfp47ft" path="res://assets/scenes/decorative/decals/bg/rocks_normal.tscn" id="12_g520j"]
 [ext_resource type="PackedScene" uid="uid://bosy4gmmyvvnf" path="res://assets/scenes/decorative/decals/bg/the_bug.tscn" id="13_61hjr"]
-[ext_resource type="PackedScene" uid="uid://bnum701dnjie4" path="res://assets/scenes/decorative/decals/tutorial/arrowkeys.tscn" id="14_sqr7n"]
-[ext_resource type="PackedScene" uid="uid://b0ao6us5lemfe" path="res://assets/scenes/decorative/decals/tutorial/wasd.tscn" id="15_8lodb"]
 [ext_resource type="PackedScene" uid="uid://btswkbfoaeitc" path="res://assets/scenes/decorative/decals/tutorial/opentwitter.tscn" id="16_sqr7n"]
 [ext_resource type="PackedScene" uid="uid://c1j483j6fc4w5" path="res://assets/scenes/decorative/decals/bg/flower_blue.tscn" id="17_8lodb"]
 [ext_resource type="PackedScene" uid="uid://cwq8lsgwkurxq" path="res://assets/scenes/decorative/decals/tutorial/reset.tscn" id="17_44evc"]
@@ -154,12 +152,6 @@ flip_h = true
 [node name="The_Bug2" parent="Decals" unique_id=72600199 instance=ExtResource("13_61hjr")]
 position = Vector2(-88, 40)
 flip_h = true
-
-[node name="ArrowKeys" parent="Decals" unique_id=2047962854 instance=ExtResource("14_sqr7n")]
-position = Vector2(155, 25)
-
-[node name="WASD" parent="Decals" unique_id=1691697824 instance=ExtResource("15_8lodb")]
-position = Vector2(157, -31)
 
 [node name="Twitter" parent="Decals" unique_id=1579079532 instance=ExtResource("16_sqr7n")]
 position = Vector2(-6, 108)
