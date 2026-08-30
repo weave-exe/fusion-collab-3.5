@@ -4,14 +4,15 @@ extends Node
 
 func _input(event: InputEvent) -> void:
 	if not UIG.phone_open:
-		if event.is_action_pressed("move_up"):
-			timer.start()
-		elif event.is_action_pressed("move_left"):
-			timer.start()
-		elif event.is_action_pressed("move_right"):
-			timer.start()
-		elif event.is_action_pressed("move_down"):
-			timer.start()
+		if not LevelManager.level_completed:
+			if event.is_action_pressed("move_up"):
+				timer.start()
+			elif event.is_action_pressed("move_left"):
+				timer.start()
+			elif event.is_action_pressed("move_right"):
+				timer.start()
+			elif event.is_action_pressed("move_down"):
+				timer.start()
 
 		
 

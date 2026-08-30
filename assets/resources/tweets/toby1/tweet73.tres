@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_vqyw8")
 account_name = "bog_connoisseur"
-text = "you had better not fill the bottom with a log shaped like a sideways L. I would be. oh. just so peeved."
+text = "you'd better not fill the bottom with a log shaped like a sideways L. I would be. oh. just so peeved."
 avatar = Vector2i(2, 3)
