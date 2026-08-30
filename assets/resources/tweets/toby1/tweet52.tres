@@ -6,3 +6,4 @@
 script = ExtResource("1_1l7yr")
 account_name = "gnome1"
 text = "I think all logs should be adjacent to trees."
+avatar = Vector2i(1, 0)

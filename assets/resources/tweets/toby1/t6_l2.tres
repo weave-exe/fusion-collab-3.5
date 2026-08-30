@@ -4,5 +4,5 @@
 
 [resource]
 script = ExtResource("1_45bq0")
-account_name = "gn0me \"how\""
+account_name = "gnome \"how\""
 text = "There are at least 4 pens with the same frog position"

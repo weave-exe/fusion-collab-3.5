@@ -5,4 +5,5 @@
 [resource]
 script = ExtResource("1_62jb4")
 account_name = "trustworthy sam"
-text = "tripped on my beard today"
+text = "tripped on my beard today."
+avatar = Vector2i(1, 1)

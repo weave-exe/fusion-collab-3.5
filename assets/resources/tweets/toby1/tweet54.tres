@@ -6,3 +6,4 @@
 script = ExtResource("1_8mrv7")
 account_name = "lawn gnome larry"
 text = "I have to be able to see some rocks on my lawn. Or else"
+avatar = Vector2i(4, 3)

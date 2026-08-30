@@ -6,3 +6,4 @@
 script = ExtResource("1_ioswo")
 account_name = "that \"gnome_one\" gentlemagn"
 text = "down with frogs!! all the way down!"
+avatar = Vector2i(4, 0)

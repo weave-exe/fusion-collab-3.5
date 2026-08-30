@@ -6,3 +6,4 @@
 script = ExtResource("1_2jymi")
 account_name = "gnome1_alt_3"
 text = "that moment when all 3 of your logs are in the same column #satisfying"
+avatar = Vector2i(0, 1)

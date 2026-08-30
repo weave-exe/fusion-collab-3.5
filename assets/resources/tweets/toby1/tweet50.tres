@@ -6,3 +6,4 @@
 script = ExtResource("1_u42ia")
 account_name = "gnome1"
 text = "The internet is a scary place, filled with liars, who are saying the exact opposite of the truth. Never forget: You can ONLY trust \"Gnome 1\"!"
+avatar = Vector2i(1, 0)

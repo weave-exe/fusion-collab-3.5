@@ -4,5 +4,5 @@
 
 [resource]
 script = ExtResource("1_sawey")
-account_name = "gn1me \"where\""
+account_name = "gnome \"where\""
 text = "At most 1 frog is on the right of its pen"
