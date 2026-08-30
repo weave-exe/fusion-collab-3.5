@@ -68,7 +68,7 @@ z_index = 2
 script = ExtResource("6_f4v07")
 level_buttons = [NodePath("lv1"), NodePath("lv2"), NodePath("lv3"), NodePath("lv4"), NodePath("lv5"), NodePath("lv6"), NodePath("lv7"), NodePath("lv8"), NodePath("lv9"), NodePath("lv10"), NodePath("lv11"), NodePath("lv12"), NodePath("lv13"), NodePath("lv14"), NodePath("lv15"), NodePath("lv16"), NodePath("lv17"), NodePath("lv18"), NodePath("lv19"), NodePath("lv20"), NodePath("lv21"), NodePath("lv22"), NodePath("lv23"), NodePath("lv24"), NodePath("lv25"), NodePath("lv26"), NodePath("lv27"), NodePath("lv28"), NodePath("lv29"), NodePath("lv30")]
 phone = NodePath("../../..")
-sliders = [NodePath("MusicSlider")]
+sliders = [NodePath("MusicSlider"), NodePath("SFXSlider"), NodePath("AmbienceSlider")]
 
 [node name="lv1" parent="Phone/OnScreen/MenuManager" unique_id=760891759 instance=ExtResource("7_yr2h1")]
 offset_left = 35.0

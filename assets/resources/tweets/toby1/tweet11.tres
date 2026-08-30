@@ -5,4 +5,4 @@
 [resource]
 script = ExtResource("1_gtdwb")
 account_name = "gnome1"
-text = "I can help! Cover up both bugs with logs!"
+text = "I can help! Cover up both bugs with logs! (E to close Gnome Twitter)"
