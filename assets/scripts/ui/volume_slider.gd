@@ -16,3 +16,4 @@ func _on_drag_started() -> void:
 func _on_value_changed(_value) -> void:
 
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index(bus),linear_to_db(value))
+	AudioGlobal.save_audio()
