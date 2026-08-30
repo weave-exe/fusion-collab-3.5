@@ -6,3 +6,4 @@
 script = ExtResource("1_4p52i")
 account_name = "the_bugs_r_here"
 text = "we're gonna be building a really big anthill right here if that's chill w y'all"
+avatar = Vector2i(3, 4)

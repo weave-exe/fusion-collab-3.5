@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_8mrv7")
 account_name = "lawn gnome larry"
-text = "I have to be able to see some rocks on my lawn. Or else"
+text = "I couldn't bear to see no rocks at all!"
 avatar = Vector2i(4, 3)
