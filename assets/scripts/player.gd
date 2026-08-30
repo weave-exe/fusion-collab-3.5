@@ -57,7 +57,7 @@ func _process(delta: float) -> void:
 	_repeat_timer -= delta
 	if _repeat_timer <= 0.0:
 		_do_action(_current_action)
-		_repeat_timer = REPEAT_RATE
+		_repeat_timer = REPEAT_RATE/4 if _current_action == "undo" else REPEAT_RATE
 	
 func _do_action(action: String) -> void:
 	match action:
