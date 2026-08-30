@@ -8,6 +8,7 @@ class_name Tweet
 var _focus_layer: Control
 var _clone: Tweet
 var _tween: Tween
+var sound_source: AudioStreamPlayer
 
 func _ready() -> void:
 	focus_entered.connect(_on_focus_entered)
@@ -27,6 +28,7 @@ func _on_focus_entered() -> void:
 	if _focus_layer == null:
 		return
 	
+	sound_source.play()
 	_clone = duplicate() as Tweet
 	_clone.focus_mode = Control.FOCUS_NONE
 	_clone.mouse_filter = Control.MOUSE_FILTER_IGNORE

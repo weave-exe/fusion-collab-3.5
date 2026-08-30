@@ -22,6 +22,7 @@ func bind_tweets():
 		var tweet := tweet_scene.instantiate() as Tweet
 		feed_list.add_child(tweet)
 		tweet.bind(data, focus_layer)
+		tweet.sound_source = $UIClicker
 
 func focus_tweet(index: int):
 	if feed_list == null or feed_list.get_child(index) == null:
@@ -43,10 +44,8 @@ func _input(event: InputEvent) -> void:
 	
 	if event.is_action_pressed("move_up"):
 		_move_focus(-1)
-		$UIClicker.play()
 	if event.is_action_pressed("move_down"):
 		_move_focus(1)
-		$UIClicker.play()
 
 func _move_focus(move: int) -> void:
 	var index = clampi(current_focus_index + move, 0, feed_list.get_child_count() - 1)

@@ -64,3 +64,9 @@ func get_blocking_moveables(direction: Vector2i) -> Array[Moveable]:
 # i.e. players can push logs, but not frogs.
 func can_push_other_moveable(moveable: Moveable) -> bool:
 	return true
+	
+func is_fully_submerged_in_water() -> bool:
+	for offset in shape:
+		if not level.grid.is_water(tile + offset):
+			return false
+	return true

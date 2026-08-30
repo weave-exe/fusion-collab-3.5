@@ -42,3 +42,10 @@ func is_blocking_log(tile: Vector2i) -> bool:
 	if data == null:
 		return true
 	return data.get_custom_data("block_log")
+
+func is_water(tile: Vector2i) -> bool:
+	# this is NOT extensible for the future. but it is the easiest way to identify water currently lmao
+	var data := terrain.get_cell_tile_data(tile)
+	if data == null:
+		return false
+	return data.get_custom_data("block_player") and not data.get_custom_data("block_log")
