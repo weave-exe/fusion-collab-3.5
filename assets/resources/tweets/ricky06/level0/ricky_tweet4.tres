@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_2pict")
-account_name = "TheOneAndGnomely"
-text = "anyone know how to bend a log into an L shape? i need to know for sure they can't escape this time. gnome more mr nice guy."
-avatar = Vector2i(2, 0)
+account_name = "just_a_lonely_bug"
+text = "i love this little garden of flowers around me. i really hope it doesn't get blocked off by an inconveniently shaped log."
+avatar = Vector2i(3, 4)

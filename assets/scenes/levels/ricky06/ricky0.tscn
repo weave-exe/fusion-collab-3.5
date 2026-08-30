@@ -242,34 +242,13 @@ position = Vector2(-56, -24)
 position = Vector2(56, 56)
 
 [node name="Flower_White" parent="." unique_id=576603032 instance=ExtResource("14_a2m7o")]
-position = Vector2(-8, -104)
-
-[node name="Flower_White3" parent="." unique_id=1443540436 instance=ExtResource("14_a2m7o")]
-position = Vector2(-8, -120)
-
-[node name="Flower_White4" parent="." unique_id=1126955095 instance=ExtResource("14_a2m7o")]
-position = Vector2(24, -72)
-
-[node name="Flower_White5" parent="." unique_id=1001202730 instance=ExtResource("14_a2m7o")]
-position = Vector2(8, -136)
-
-[node name="Flower_White6" parent="." unique_id=1169131498 instance=ExtResource("14_a2m7o")]
-position = Vector2(24, -88)
+position = Vector2(24, -120)
 
 [node name="Flower_Red2" parent="." unique_id=1760248414 instance=ExtResource("15_woa6b")]
-position = Vector2(-8, -88)
+position = Vector2(40, -120)
 
 [node name="Flower_Red5" parent="." unique_id=245169377 instance=ExtResource("15_woa6b")]
-position = Vector2(24, -104)
-
-[node name="Flower_Red6" parent="." unique_id=1855374900 instance=ExtResource("15_woa6b")]
-position = Vector2(8, -88)
-
-[node name="Flower_Red" parent="." unique_id=1277128958 instance=ExtResource("15_woa6b")]
-position = Vector2(-8, -136)
-
-[node name="Flower_White2" parent="." unique_id=5530410 instance=ExtResource("14_a2m7o")]
-position = Vector2(40, -88)
+position = Vector2(24, -136)
 
 [node name="Water_Plant" parent="." unique_id=807214702 instance=ExtResource("16_ec2h0")]
 position = Vector2(-24, -24)
