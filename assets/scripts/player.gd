@@ -8,8 +8,8 @@ extends Moveable
 @export var reset_timer: Timer
 
 const ALLOWED_ACTIONS := ["move_up", "move_left", "move_right", "move_down", "undo"]
-const FIRST_HOLD_TIMER := 0.4
-const REPEAT_RATE := 0.1
+const FIRST_HOLD_TIMER := 0.22
+const REPEAT_RATE := 0.22
 var _repeat_timer := 0.0
 var _current_action := ""
 
