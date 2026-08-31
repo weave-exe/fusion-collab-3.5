@@ -29,8 +29,14 @@ func can_move(direction: Vector2i, can_push: bool) -> bool:
 	return true
 
 func move(direction: Vector2i) -> void:
+	move_and_push(direction, [])
+	
+func move_and_push(direction: Vector2i, already_moved: Array[Moveable]) -> void:
+	if already_moved.has(self):
+		return
+	already_moved.append(self)
 	for moveable in get_blocking_moveables(direction):
-		moveable.move(direction)
+		moveable.move_and_push(direction, already_moved)
 	tile += direction
 	slide(level.grid.tile_to_world(tile))
 	
