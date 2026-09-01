@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="fusion-collab-3.5"
+config/name="Lost in Gnome Twitter"
 run/main_scene="uid://bw57pkmpgxos4"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://f6g2sfpbvlvc"
 
 [audio]
 

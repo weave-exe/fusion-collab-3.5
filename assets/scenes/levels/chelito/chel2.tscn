@@ -26,6 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://fn6udnhstcuw" path="res://assets/scenes/decorative/decals/fg/dark_fg_plant_c.tscn" id="20_4tvxj"]
 [ext_resource type="PackedScene" uid="uid://cv88xepjuy7ab" path="res://assets/scenes/decorative/decals/fg/fg_plant_b.tscn" id="21_y6vy6"]
 [ext_resource type="PackedScene" uid="uid://cka2vp1lacpod" path="res://assets/scenes/decorative/decals/bg/flower_white.tscn" id="26_y6vy6"]
+[ext_resource type="PackedScene" uid="uid://f5u04egtixuo" path="res://assets/scenes/decorative/decals/tutorial/undo.tscn" id="27_buene"]
 
 [sub_resource type="Resource" id="Resource_xrxaf"]
 script = ExtResource("3_p5qg0")
@@ -195,7 +196,7 @@ flip_h = true
 position = Vector2(-86, 26)
 
 [node name="Fg_Plant_B2" parent="." unique_id=821769902 instance=ExtResource("21_y6vy6")]
-position = Vector2(-71, -101)
+position = Vector2(-92, -100)
 
 [node name="Fg_Plant_A3" parent="." unique_id=766236664 instance=ExtResource("13_18cp8")]
 position = Vector2(-150, -89)
@@ -230,3 +231,6 @@ flip_h = true
 [node name="The_Bug2" parent="." unique_id=1832871805 instance=ExtResource("11_55hjd")]
 position = Vector2(-24, -24)
 flip_h = true
+
+[node name="Undo" parent="." unique_id=668245126 instance=ExtResource("27_buene")]
+position = Vector2(-32, -104)
